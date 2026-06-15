@@ -55,14 +55,13 @@
     var target = parseFloat(el.getAttribute('data-count'));
     var prefix = el.getAttribute('data-prefix') || '';
     var suffix = el.getAttribute('data-suffix') || '';
-    var isMoney = (el.textContent.indexOf('$') !== -1);
     var start = 0, dur = 1400, t0 = null;
     function tick(now) {
       if (!t0) t0 = now;
       var p = Math.min((now - t0) / dur, 1);
       var eased = 1 - Math.pow(1 - p, 3);
       var val = Math.round(start + (target - start) * eased);
-      el.textContent = (isMoney ? '$' : '') + prefix + val + suffix;
+      el.textContent = prefix + val + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
@@ -83,9 +82,32 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      var get = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+      var name = get('name'), email = get('email'), phone = get('phone');
+      var interest = get('interest'), message = get('message');
+
+      // Deliver the enquiry to Tom, cc Hannah, via the visitor's email client.
+      var to = 'tom.mccartney@raywhite.com';
+      var cc = 'hannah.williams@raywhite.com';
+      var subject = 'Website enquiry: ' + (interest || 'General') + (name ? ' — ' + name : '');
+      var body =
+        'New enquiry from tommccartney.co.nz\n\n' +
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Interested in: ' + interest + '\n\n' +
+        'Message:\n' + message + '\n';
+
+      var href = 'mailto:' + to +
+        '?cc=' + encodeURIComponent(cc) +
+        '&subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
       if (note) { note.hidden = false; }
-      form.reset();
-      // Hook up to a real handler (e.g. Formspree, Netlify forms, or an API route) to deliver enquiries.
+      window.location.href = href;
+      // To send server-side instead (no email client needed), POST these fields to a
+      // serverless route or a form service (Formspree/Resend) and keep the To/Cc above.
     });
   }
 
