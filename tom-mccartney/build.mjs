@@ -36,6 +36,16 @@ import { agentListings, vaultreConfigured } from "./vaultre.mjs";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const AGENT_EMAIL = "tom.mccartney@raywhite.com";
 const SITE_ORIGIN = "https://tommccartney.co.nz";
+/**
+ * Portrait source. `assets/tom-portrait.jpg` is a 2400x1600 master committed
+ * to the repo — a downscale of the 6000x4000 original Hannah supplied.
+ *
+ * It replaced the Supabase `agent-photos` copy, which is only 1280x720 and
+ * capped how sharp any upright crop could be. The Supabase URL is still used
+ * for og:image metadata elsewhere, and is worth updating there too so the
+ * main atrealty-next profile page benefits from the better photo.
+ */
+const PORTRAIT_SRC = "assets/tom-portrait.jpg";
 const PORTRAIT_URL =
   "https://tfksucrwafwyzxpjrtvj.supabase.co/storage/v1/object/public/agent-photos/A100/tom-mccartney.png";
 
@@ -240,13 +250,15 @@ function schema(stats) {
 /* ------------------------------------------------------------------ */
 
 /**
- * Slug is `sales-appraisal-renuka-bisht-2` — which reads wrong but is
- * right: the form is named "Sales Appraisal - Tom McCartney" in the
- * marketing-forms admin. It was created by duplicating Renuka Bisht's
- * form, and the duplicate kept her slug. Renaming it in the admin would
- * break this embed, so leave it unless the embed code is updated too.
+ * The A T Realty marketing form "Sales Appraisal - Tom McCartney",
+ * assigned to tom.mccartney@raywhite.com.
+ *
+ * This slug and the admin must stay in step: the form previously lived at
+ * `sales-appraisal-renuka-bisht-2` (it was duplicated from Renuka Bisht's
+ * and kept her slug), and renaming it there immediately broke the embed
+ * here. If the slug changes again, change it here too.
  */
-const FORM_SLUG = "sales-appraisal-renuka-bisht-2";
+const FORM_SLUG = "sales-appraisal-tom-mccartney";
 const FORM_ORIGIN = "https://atrealtygroup.co.nz";
 
 const formSlot = PREVIEW
@@ -279,6 +291,9 @@ const IMAGE_CACHE = path.join(HERE, ".image-cache");
 const derived = new Map();
 
 async function fetchBuffer(url) {
+  // Local path (a committed asset) rather than a remote URL.
+  if (!/^https?:\/\//.test(url)) return fs.readFile(path.join(HERE, url));
+
   const key = crypto.createHash("sha1").update(url).digest("hex");
   const cached = path.join(IMAGE_CACHE, key);
   try {
@@ -364,20 +379,20 @@ await fs.mkdir(path.join(OUT, "assets"), { recursive: true });
 
 console.log("[build] Optimising images…");
 
-// Two portrait derivatives, both cropped from the same 1280x720 source at
-// the largest size it can give without upscaling: a square for the hero
-// (720x720 — the biggest crop available, so the sharpest) and a 4:5 for the
-// smaller about-section frame.
-const portraitHero = await image(PORTRAIT_URL, {
-  width: 720,
-  height: 720,
-  quality: 80,
+// Two portrait derivatives. The 2400x1600 master has enough resolution for a
+// genuine upright crop, so the hero is a 4:5 portrait rather than the square
+// the old 1280x720 source forced. Both are cropped with sharp's attention
+// strategy so they centre on Tom, not the middle of the greenery.
+const portraitHero = await image(PORTRAIT_SRC, {
+  width: 900,
+  height: 1125,
+  quality: 82,
   name: "tom-hero",
 });
-const portraitAbout = await image(PORTRAIT_URL, {
-  width: 576,
-  height: 720,
-  quality: 80,
+const portraitAbout = await image(PORTRAIT_SRC, {
+  width: 640,
+  height: 800,
+  quality: 82,
   name: "tom-about",
 });
 

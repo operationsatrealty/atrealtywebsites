@@ -56,9 +56,21 @@ client-side fetch would not achieve.
 
 ### Keeping it fresh
 
-The trade-off is that data is only as current as the last deploy. Set a **Vercel Cron
-Job** (or a scheduled GitHub Action) to trigger a redeploy — daily is plenty for an
-agent site. Without one, the listings freeze at the last push.
+The trade-off is that data is only as current as the last deploy, so
+`.github/workflows/daily-rebuild.yml` rebuilds the site every morning
+(17:00 UTC = 5–6am NZ).
+
+It works through a **Vercel Deploy Hook** — a URL that starts a production build
+when something POSTs to it. To switch it on:
+
+1. Vercel → the project → **Settings → Git → Deploy Hooks**. Create one named
+   `daily`, branch `claude/cool-mayer-96prl5`. Copy the URL.
+2. GitHub → the repo → **Settings → Secrets and variables → Actions → New
+   repository secret**, named `VERCEL_DEPLOY_HOOK_TOM_MCCARTNEY`, pasting that URL.
+
+Until the secret exists the job skips rather than fails, so other agent sites can be
+added one at a time. You can also trigger a rebuild by hand from the Actions tab
+(**Daily rebuild → Run workflow**).
 
 ### If VaultRE is down
 
@@ -80,15 +92,17 @@ images become about 390 KB**; the whole site is under 500 KB.
 
 Downloads are cached in `.image-cache/` (gitignored), so repeat builds don't refetch.
 
-### The portrait is the weak link
+### The portrait
 
-The only headshot in the Supabase `agent-photos` bucket is **1280×720 — landscape**.
-Every upright frame on the page is therefore a heavy crop of it, done with sharp's
-`attention` strategy so it centres on Tom rather than the middle of the frame. The
-largest square it can yield is 720×720, which is the ceiling on sharpness here.
+`assets/tom-portrait.jpg` is a 2400×1600 master committed to the repo, downscaled
+from the 6000×4000 original. The hero (900×1125) and about (640×800) crops are cut
+from it with sharp's `attention` strategy, so they centre on Tom rather than the
+middle of the greenery.
 
-**Uploading a higher-resolution portrait to that bucket would improve the site with
-no code change.** Tom has 6000×4000 photos available.
+This replaced the Supabase `agent-photos` copy, which is only **1280×720 landscape**
+and capped how sharp any upright crop could be. That bucket is still the source for
+the main atrealty-next profile page, so **uploading the better photo there too** is
+worth doing — this site no longer depends on it, but the main site still does.
 
 ---
 
@@ -98,13 +112,16 @@ The contact section embeds a form from the A T Realty marketing-forms app:
 
 ```html
 <script src="https://atrealtygroup.co.nz/mkt-forms-embed.js" async></script>
-<div data-atr-form="sales-appraisal-renuka-bisht-2"></div>
+<div data-atr-form="sales-appraisal-tom-mccartney"></div>
 ```
 
-The slug reads wrong but **is correct**. That form is named *"Sales Appraisal - Tom
-McCartney"* and its assignee is `tom.mccartney@raywhite.com`. It was created by
-duplicating Renuka Bisht's form and the duplicate kept her slug. Renaming the slug in
-the admin would break this embed unless `FORM_SLUG` in `build.mjs` is updated to match.
+The form is named *"Sales Appraisal - Tom McCartney"* and its assignee is
+`tom.mccartney@raywhite.com`.
+
+**The slug here and the slug in the admin must stay in step.** The form previously
+lived at `sales-appraisal-renuka-bisht-2` — it was duplicated from Renuka Bisht's and
+kept her slug — and renaming it in the admin broke this embed until `FORM_SLUG` in
+`build.mjs` was updated to match. If it's renamed again, change it here too.
 
 > **Open item:** the form has no notification row, so a submission is stored but
 > **nobody is emailed**. Add an email notification in the marketing-forms admin
