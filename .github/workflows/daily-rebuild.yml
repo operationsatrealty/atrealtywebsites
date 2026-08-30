@@ -1,0 +1,67 @@
+# Rebuilds the agent sites once a day so their VaultRE listings and sales
+# stay current.
+#
+# These sites fetch VaultRE at BUILD time, not in the browser (a static site
+# can't hold an API key safely). That means the data is only ever as fresh as
+# the last deploy — without this workflow, the listings freeze at whatever
+# they were when the last commit landed.
+#
+# Each site is triggered through a Vercel Deploy Hook: a URL that starts a
+# production build when something POSTs to it. Create one per project in
+# Vercel under Settings -> Git -> Deploy Hooks (branch:
+# claude/cool-mayer-96prl5), then add the URL here as a repository secret
+# under Settings -> Secrets and variables -> Actions.
+#
+# A site whose secret hasn't been added is skipped, not failed — so new agent
+# sites can be added one at a time.
+
+name: Daily rebuild
+
+on:
+  schedule:
+    # 17:00 UTC = 5am NZDT / 6am NZST — done before the working day starts.
+    # GitHub cron is always UTC and does not follow NZ daylight saving, so
+    # this drifts by an hour twice a year. That's harmless here.
+    - cron: "0 17 * * *"
+  workflow_dispatch: # lets you trigger a rebuild by hand from the Actions tab
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tom McCartney
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_TOM_MCCARTNEY }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::notice::No deploy hook set for Tom McCartney — skipping."
+            exit 0
+          fi
+          code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
+          echo "Deploy hook responded $code"
+          # Vercel answers 201 when it queues the build.
+          [ "$code" = "201" ] || [ "$code" = "200" ]
+
+      - name: Levani Lum-On
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_LEVANI_LUMON }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::notice::No deploy hook set for Levani Lum-On — skipping."
+            exit 0
+          fi
+          code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
+          echo "Deploy hook responded $code"
+          [ "$code" = "201" ] || [ "$code" = "200" ]
+
+      - name: Aryaan Batra
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_ARYAAN_BATRA }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::notice::No deploy hook set for Aryaan Batra — skipping."
+            exit 0
+          fi
+          code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
+          echo "Deploy hook responded $code"
+          [ "$code" = "201" ] || [ "$code" = "200" ]

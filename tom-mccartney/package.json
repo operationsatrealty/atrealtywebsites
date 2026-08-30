@@ -1,0 +1,13 @@
+{
+  "name": "tom-mccartney-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:offline": "node build.mjs --offline",
+    "preview:file": "node build.mjs --preview"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}
