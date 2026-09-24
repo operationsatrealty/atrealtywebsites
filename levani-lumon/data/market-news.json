@@ -1,0 +1,69 @@
+{
+  "updatedAt": "2026-09-24",
+  "posts": [
+    {
+      "tag": "Market check",
+      "date": "24 September 2026",
+      "title": "Spring hasn't sprung yet, and for prepared sellers that's the opening",
+      "paragraphs": [
+        "The August REINZ numbers, released mid-September, describe a market still in its winter coat. Nationally, sales were down 13% on a year ago, the sixth-quietest August in 35 years, while the stock of unsold homes climbed 9.7% to nearly 33,000. Auckland took it further: sales down 15%, and a median 54 days to sell, the slowest August on record for the region against a ten-year average of 43 days.",
+        "Auction rooms tell the same story. The clearance rate has been pinned at 36% to 37% for five straight weeks, and the week ending 18 September saw 298 auctions monitored nationally, the most since May but still short of the volumes that mark a genuine spring lift. A year earlier that same week had 375 auctions selling at 44%.",
+        "Here's the nuance worth understanding before you price: the headline medians and the value indices are saying different things. Barfoot &amp; Thompson's August median actually rose 1.1% on July to <strong>$955,000</strong>, and REINZ's Auckland median was unchanged on a year ago, yet the mix-adjusted indices all point down, with the REINZ index off 2.3% year on year. Both are true: well-presented, realistically priced homes are holding their money while the wider pool sits. Peter Thompson called it a possible tipping point with signs that prices are hardening. In a market with this much choice, being the sharply priced, well-presented listing is the whole game."
+      ],
+      "bullets": [
+        "Auckland median days to sell: 54, the slowest August on record (REINZ)",
+        "Unsold stock nationally: up 9.7% on a year ago (REINZ)",
+        "Auction clearance: stuck at 36% to 37% for five consecutive weeks (interest.co.nz)",
+        "Barfoot & Thompson August median: $955,000, up 1.1% on July"
+      ],
+      "sources": [
+        { "label": "REINZ August 2026 via interest.co.nz", "url": "https://www.interest.co.nz/property/140245/reinz-says-residential-property-sales-were-down-13-year-year-august" },
+        { "label": "interest.co.nz auction monitoring", "url": "https://www.interest.co.nz/property/140319/spring-late-coming-residential-property-auction-rooms-sales-rate-stuck-37" },
+        { "label": "Barfoot & Thompson August results", "url": "https://www.interest.co.nz/property/140080/barfoot-thompsons-august-sales-down-prices-largely-flat-solid-buyers-market" }
+      ]
+    },
+    {
+      "tag": "Interest rates",
+      "date": "24 September 2026",
+      "title": "The OCR is climbing again: 2.75% now, and possibly 3.00% by Christmas",
+      "paragraphs": [
+        "On 2 September the Reserve Bank lifted the Official Cash Rate from 2.50% to <strong>2.75%</strong>, its second hike of 2026, with inflation running at 4.1% in the June quarter. The Bank's signalled track suggests a likely pause at the 28 October review and a possible further move to 3.00% at the December statement. Banks have responded the way they always do: most fixed rates have been lifted, and property analysts Cotality now list rising mortgage rates alongside elevated stock as the two forces holding buyers back.",
+        "If you're buying, this is a genuine regime change from the rate-cutting of 2025, and it argues for locking your pre-approval and knowing your ceiling before the December decision rather than after it. Every quarter-point trims what the bank will lend, and it trims every other buyer's budget at the same time.",
+        "If you're selling, the arithmetic works the other way: today's buyers hold approvals priced at today's rates. A spring campaign meets them while those approvals are still warm. Waiting for autumn means meeting buyers whose budgets were set two rate decisions from now."
+      ],
+      "bullets": [
+        "OCR: 2.75% since 2 September, next review 28 October (RBNZ)",
+        "Signalled path: possible 3.00% at the December statement",
+        "Most bank fixed rates have moved up since the decision"
+      ],
+      "sources": [
+        { "label": "RBNZ Monetary Policy Statement, September 2026", "url": "https://www.rbnz.govt.nz/monetary-policy/monetary-policy-statement/monetary-policy-statement-filtered-listing-page/2026/sep-0209/monetary-policy-statement-september-2026" },
+        { "label": "Cotality August index via interest.co.nz", "url": "https://www.interest.co.nz/property/140097/cotality-says-elevated-stock-levels-and-rising-mortgage-rates-are-making-buyers" },
+        { "label": "1News mortgage rates coverage", "url": "https://www.1news.co.nz/2026/09/22/major-bank-lowers-one-fixed-mortgage-rate-lifts-most-others/" }
+      ]
+    },
+    {
+      "tag": "South & Central",
+      "date": "24 September 2026",
+      "title": "Record first-home buyers, retreating investors, and an election five weeks away",
+      "paragraphs": [
+        "The buyer mix has never looked like this. First-home buyers took a record share of the market this year, around <strong>30% of Auckland purchases</strong>, helped by more than $2.2 billion of KiwiSaver first-home withdrawals in the year to March. At the same time mortgaged investors have slipped to 22.5% of purchases, below their long-run average, and the biggest landlords are at a seven-year low. Cotality's Nick Goodall put it simply: \"That's a record share\".",
+        "Part of the investor retreat is the calendar. The general election lands on 7 November, with a proposed 28% capital gains tax on investment-property profits in the campaign, and Ray White AT Realty's own Tom Rawson told OneRoof the result is a holding pattern, with fence-sitters postponing decisions until the policy picture clears. History says these pauses delay decisions more than they move prices, and they resolve quickly once the result is known.",
+        "For South Auckland that mix is close to ideal for sellers of well-priced family homes and townhouses: the record first-home cohort is exactly who buys here, and they keep turning up while investors wait. Values are still soft, with Auckland down 2.6% year on year on Cotality's index and QV reporting buyers negotiating hard, so the win comes from meeting the market, not chasing last year's price. Rents, meanwhile, are flat: Barfoot &amp; Thompson's Auckland average sits at $699 a week, up just 0.9% in a year, while Trade Me's median asking rent reads $660, down 1.5%. Different measures, same message, steady."
+      ],
+      "bullets": [
+        "First-home buyers: record share, about 30% of Auckland purchases (Cotality)",
+        "Mortgaged investors: 22.5% of purchases and falling; largest landlords at a seven-year low",
+        "Election 7 November; proposed 28% investment-property CGT has fence-sitters waiting",
+        "Auckland rents: $699 average (B&T, up 0.9% YoY) vs $660 median asking (Trade Me, down 1.5%)"
+      ],
+      "sources": [
+        { "label": "1News / Cotality first-home buyer record", "url": "https://www.1news.co.nz/2026/09/12/thats-a-record-share-first-home-buyers-surge-to-new-market-high/" },
+        { "label": "Cotality buyer composition via Staircase", "url": "https://www.staircase.co.nz/insights/new-zealand-property-buyer-composition" },
+        { "label": "OneRoof election coverage", "url": "https://www.oneroof.co.nz/news/election-2026-no-steep-decline-in-property-prices-but-its-not-going-to-be-rosy-49921" },
+        { "label": "QV House Price Index via RNZ", "url": "https://www.rnz.co.nz/news/business/1279576/housing-market-continues-to-soften-in-three-months-to-august-qv" },
+        { "label": "Barfoot & Thompson rentals via NZ Adviser", "url": "https://www.mpamag.com/nz/specialty/residential/auckland-rents-hold-steady-as-august-rental-market-cools-off/588982" }
+      ]
+    }
+  ]
+}
