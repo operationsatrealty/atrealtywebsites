@@ -1,0 +1,5081 @@
+{
+  "email": "levani.lumon@raywhite.com",
+  "current": [
+    {
+      "id": 32286494,
+      "address": "95 Gloria Avenue",
+      "suburb": "Te Atatu Peninsula",
+      "displayPrice": "",
+      "bed": 3,
+      "bath": 3,
+      "car": 0,
+      "status": "conditional",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/213518271__1786078370-76525-95GloriaAvenueTeAtatuPeninsulaNZ.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU46430",
+      "modified": "2026-09-24T01:41:31+00:00",
+      "office": "manukau"
+    },
+    {
+      "id": 34328576,
+      "address": "47 Cherrington Road",
+      "suburb": "Clevedon",
+      "displayPrice": "",
+      "bed": 5,
+      "bath": 3,
+      "car": 4,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/200907773__1778480147-110692-ChatGPTImageMay112026061518PM.png",
+        "width": 1536,
+        "height": 1024
+      },
+      "url": "https://rwmanukau.co.nz/MKU48841",
+      "modified": "2026-09-20T22:25:08+00:00",
+      "office": "manukau"
+    },
+    {
+      "id": 30003855,
+      "address": "54 Pah Road",
+      "suburb": "Cockle Bay",
+      "displayPrice": "",
+      "bed": 4,
+      "bath": 3,
+      "car": 1,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/205027693__1780974323-61926-004Open2viewID608862-54PahRoad.jpg",
+        "width": 1600,
+        "height": 1067
+      },
+      "url": "https://rwmanukau.co.nz/MKU44768",
+      "modified": "2026-09-17T22:25:12+00:00",
+      "office": "manukau"
+    },
+    {
+      "id": 17220477,
+      "address": "2/85 Kimpton Road",
+      "suburb": "Papatoetoe",
+      "displayPrice": "",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/206398170__1781818272-20364-GeminiGeneratedImagehqz414hqz414hqz4.png",
+        "width": 2660,
+        "height": 1600
+      },
+      "url": "https://rwmanukau.co.nz/MKU37513",
+      "modified": "2026-09-16T23:51:28+00:00",
+      "office": "manukau"
+    },
+    {
+      "id": 26818533,
+      "address": "795 Te Atatu Road",
+      "suburb": "Te Atatu Peninsula",
+      "displayPrice": "Price by Negotiation",
+      "bed": 3,
+      "bath": 1,
+      "car": 10,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/153042406__1750930684-94739-018Open2viewID594565-795TeAtatuRoad.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU45148",
+      "modified": "2026-09-10T21:25:46+00:00",
+      "office": "manukau"
+    }
+  ],
+  "sold": [
+    {
+      "id": 23080948,
+      "address": "14 Shalimar Place",
+      "suburb": "Clover Park",
+      "salePrice": 1150000,
+      "settlementDate": "2026-08-14",
+      "bed": 6,
+      "bath": 4,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/190203828__1772595109-80641-GameDayLogo20265.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU37546",
+      "office": "manukau"
+    },
+    {
+      "id": 34776135,
+      "address": "26 Thompson Terrace",
+      "suburb": "Manurewa",
+      "salePrice": 770000,
+      "settlementDate": "2026-08-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/201706459__1779059069-34089-GameDayLogo202632.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MGR34133",
+      "office": "manukau"
+    },
+    {
+      "id": 10602250,
+      "address": "1/18 Coombe Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 579000,
+      "settlementDate": "2026-08-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/193769124__1774370939-169936-006Open2viewID605971-118CoombeAvenue.jpg",
+        "width": 5367,
+        "height": 3578
+      },
+      "url": "https://rwmanukau.co.nz/MKU48355",
+      "office": "manukau"
+    },
+    {
+      "id": 33041579,
+      "address": "7 Welby Place",
+      "suburb": "Māngere",
+      "salePrice": 656000,
+      "settlementDate": "2026-07-24",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/190206481__1772595433-81637-GameDayLogo20266.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU47189",
+      "office": "manukau"
+    },
+    {
+      "id": 36066662,
+      "address": "10 Rimini Place",
+      "suburb": "Clover Park",
+      "salePrice": 885000,
+      "settlementDate": "2026-07-13",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU49457",
+      "office": "manukau"
+    },
+    {
+      "id": 33472509,
+      "address": "241 Rodney Street",
+      "suburb": "Wellsford",
+      "salePrice": 815000,
+      "settlementDate": "2026-05-28",
+      "bed": 6,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/180970269__1766363711-287837-241RodneyStreetWellsfordNZ.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanukau.co.nz/MKU47336",
+      "office": "manukau"
+    },
+    {
+      "id": 31703131,
+      "address": "27 Dovey Place",
+      "suburb": "Massey",
+      "salePrice": 683500,
+      "settlementDate": "2026-05-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/163860736__1758072839-44399-001Open2viewID597565-27DoveyPlace.jpg",
+        "width": 5078,
+        "height": 3385
+      },
+      "url": "https://rwmanukau.co.nz/MKU46022",
+      "office": "manukau"
+    },
+    {
+      "id": 32202311,
+      "address": "94 Hills Road",
+      "suburb": "Ōtara",
+      "salePrice": 665000,
+      "settlementDate": "2026-04-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/166863774__1759825165-114339-002Open2viewID598469-94HillsRoad.jpg",
+        "width": 5028,
+        "height": 3352
+      },
+      "url": "https://rwmanukau.co.nz/MKU46348",
+      "office": "manukau"
+    },
+    {
+      "id": 33440556,
+      "address": "35 Reynella Drive",
+      "suburb": "Massey",
+      "salePrice": 667000,
+      "settlementDate": "2026-04-17",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/181102638__1766455341-43347-TheDayPhotoswithLogo-OneSummerDay32.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanukau.co.nz/MKU47304",
+      "office": "manukau"
+    },
+    {
+      "id": 10617548,
+      "address": "36 Tamworth Close",
+      "suburb": "Manurewa",
+      "salePrice": 630000,
+      "settlementDate": "2026-04-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/180532723__1766013872-24578-TheDayPhotoswithLogo-OneSummerDay9.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanukau.co.nz/MKU47379",
+      "office": "manukau"
+    },
+    {
+      "id": 32893372,
+      "address": "185 Rahuikiri Road",
+      "suburb": "Tomarata",
+      "salePrice": 710000,
+      "settlementDate": "2026-03-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/180532339__1766013758-36921-TheDayPhotoswithLogo-OneSummerDay8.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanukau.co.nz/MKU47077",
+      "office": "manukau"
+    },
+    {
+      "id": 29190426,
+      "address": "4/60 Central Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 478000,
+      "settlementDate": "2026-03-13",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/177907153__1764712717-13295-460CentralAve1.jpg",
+        "width": 900,
+        "height": 490
+      },
+      "url": "https://rwmanukau.co.nz/MKU44083",
+      "office": "manukau"
+    },
+    {
+      "id": 10617608,
+      "address": "7 Malcolm Place",
+      "suburb": "Māngere East",
+      "salePrice": 777000,
+      "settlementDate": "2026-03-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/154340971__1751839374-20325-7MalcolmPlaceMangereEastNZ.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU45080",
+      "office": "manukau"
+    },
+    {
+      "id": 32286466,
+      "address": "6/69 Kenderdine Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 490000,
+      "settlementDate": "2026-02-02",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/168393286__1760655206-209863-DSC04156.jpg",
+        "width": 4242,
+        "height": 2837
+      },
+      "url": "https://rwmanukau.co.nz/MKU46401",
+      "office": "manukau"
+    },
+    {
+      "id": 27465792,
+      "address": "48 Browns Road",
+      "suburb": "Manurewa",
+      "salePrice": 1315000,
+      "settlementDate": "2026-01-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/129266498__1734545349-252569-015Open2viewID585960-48BrownsRoad.jpg",
+        "width": 3375,
+        "height": 2250
+      },
+      "url": "https://rwmanukau.co.nz/MKU42036",
+      "office": "manukau"
+    },
+    {
+      "id": 31725971,
+      "address": "91 Gloria Avenue",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 1040000,
+      "settlementDate": "2026-01-22",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/165899809__1759277068-44548-91GloriaAvenueTeAtatu.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU46048",
+      "office": "manukau"
+    },
+    {
+      "id": 31702535,
+      "address": "10/199 Birdwood Road",
+      "suburb": "Massey",
+      "salePrice": 1500000,
+      "settlementDate": "2025-12-01",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/163866824__1758073750-58736-018Open2viewID597566-10199BirdwoodRoad.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU46020",
+      "office": "manukau"
+    },
+    {
+      "id": 27406188,
+      "address": "1/252 Great South Road",
+      "suburb": "Manurewa",
+      "salePrice": 570000,
+      "settlementDate": "2025-11-21",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/152320922__1750633731-28258-8456052273011628017.jpg",
+        "width": 1000,
+        "height": 667
+      },
+      "url": "https://rwmanukau.co.nz/MKU42037",
+      "office": "manukau"
+    },
+    {
+      "id": 18714884,
+      "address": "2 Gifford Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 830434.75,
+      "settlementDate": "2025-09-22",
+      "bed": 5,
+      "bath": 4,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/77717174__1701739358-22019-2giffordrd1.png",
+        "width": 1516,
+        "height": 1086
+      },
+      "url": "https://rwmanukau.co.nz/MKU46103",
+      "office": "manukau"
+    },
+    {
+      "id": 31175256,
+      "address": "6A Christmas Road",
+      "suburb": "Manurewa",
+      "salePrice": 775000,
+      "settlementDate": "2025-09-10",
+      "bed": 4,
+      "bath": 3,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/169921375__1761610474-36845-003Open2viewID599549-6AChristmasRoad.jpg",
+        "width": 4608,
+        "height": 3072
+      },
+      "url": "https://rwmanukau.co.nz/MKU45597",
+      "office": "manukau"
+    },
+    {
+      "id": 29188083,
+      "address": "6 Beihlers Road",
+      "suburb": "Manurewa",
+      "salePrice": 1003000,
+      "settlementDate": "2025-08-18",
+      "bed": 5,
+      "bath": 3,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/144202354__1744749422-3349-003Open2viewID591757-6BeihlersRoad.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU44067",
+      "office": "manukau"
+    },
+    {
+      "id": 27726630,
+      "address": "9B Sunnyside Crescent",
+      "suburb": "Papatoetoe",
+      "salePrice": 648000,
+      "settlementDate": "2025-04-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/133496914__1738536354-116227-005Open2viewID587361-9BSunnysideCrescent.jpg",
+        "width": 5358,
+        "height": 3572
+      },
+      "url": "https://rwmanukau.co.nz/MKU42260",
+      "office": "manukau"
+    },
+    {
+      "id": 10584075,
+      "address": "11 Manchester Drive",
+      "suburb": "Flat Bush",
+      "salePrice": 855000,
+      "settlementDate": "2025-04-10",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/134109556__1738627717-128473-005Open2viewID587622-11ManchesterDrive1.jpg",
+        "width": 5174,
+        "height": 3449
+      },
+      "url": "https://rwmanukau.co.nz/MKU37040",
+      "office": "manukau"
+    },
+    {
+      "id": 27375937,
+      "address": "3 Tyrone Street",
+      "suburb": "Ōtara",
+      "salePrice": 885000,
+      "settlementDate": "2025-03-05",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/129509761__1734650627-129293-A6507653-r1.jpg",
+        "width": 1800,
+        "height": 1200
+      },
+      "url": "https://rwmanukau.co.nz/MKU41935",
+      "office": "manukau"
+    },
+    {
+      "id": 27321103,
+      "address": "27 Fisher Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 960000,
+      "settlementDate": "2025-02-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/123423875__1732566147-109513-DJI0463-r1.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanukau.co.nz/MKU41884",
+      "office": "manukau"
+    },
+    {
+      "id": 27219243,
+      "address": "3/33 Kimpton Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 661000,
+      "settlementDate": "2025-02-07",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/121926302__1731720423-140209-001Open2viewID584609-333KimptonRoad.jpg",
+        "width": 5127,
+        "height": 3418
+      },
+      "url": "https://rwmanukau.co.nz/MKU41787",
+      "office": "manukau"
+    },
+    {
+      "id": 17220819,
+      "address": "3/121A Selwyn Street",
+      "suburb": "Onehunga",
+      "salePrice": 425000,
+      "settlementDate": "2025-01-24",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/112475076__1727587605-173665-001Open2viewID581885-3121SelwynStreet-Copy.jpg",
+        "width": 4794,
+        "height": 3196
+      },
+      "url": "https://rwmanukau.co.nz/MKU37966",
+      "office": "manukau"
+    },
+    {
+      "id": 26702263,
+      "address": "3/26 Burundi Avenue",
+      "suburb": "Clendon Park",
+      "salePrice": 545000,
+      "settlementDate": "2024-12-12",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/116279450__1729116348-108518-001Open2viewID582691-326BurundiAvenue.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU40597",
+      "office": "manukau"
+    },
+    {
+      "id": 22097068,
+      "address": "73 Holmes Road",
+      "suburb": "Manurewa",
+      "salePrice": 641000,
+      "settlementDate": "2024-11-13",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/86766668__1712524919-8936-001Open2viewID574026-73HolmesRoad.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU37550",
+      "office": "manukau"
+    },
+    {
+      "id": 17220880,
+      "address": "4 Brough Road",
+      "suburb": "Manurewa East",
+      "salePrice": 855000,
+      "settlementDate": "2024-11-07",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/112064992__1727315684-56861-20240925135517.jpeg",
+        "width": 4000,
+        "height": 2252
+      },
+      "url": "https://rwmanukau.co.nz/MKU36863",
+      "office": "manukau"
+    },
+    {
+      "id": 24704637,
+      "address": "323 Mahia Road",
+      "suburb": "Weymouth",
+      "salePrice": 990000,
+      "settlementDate": "2024-10-17",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/113270536__1727840033-169980-323mahia13.jpeg",
+        "width": 1440,
+        "height": 960
+      },
+      "url": "https://rwmanukau.co.nz/MKU38981",
+      "office": "manukau"
+    },
+    {
+      "id": 18393026,
+      "address": "Lots 1,2 & 3/9 Fitzroy Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 1050000,
+      "settlementDate": "2024-10-07",
+      "bed": 10,
+      "bath": 5,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/81579076__1707864717-182062-mmexport1707859814607.jpg",
+        "width": 1706,
+        "height": 1280
+      },
+      "url": "https://rwmanukau.co.nz/MKU36525",
+      "office": "manukau"
+    },
+    {
+      "id": 22571931,
+      "address": "Lot 4/9 Fitzroy Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 290000,
+      "settlementDate": "2024-10-07",
+      "bed": 10,
+      "bath": 5,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/1707946989-1-mmexport1707859814607.jpg",
+        "width": 1706,
+        "height": 1280
+      },
+      "url": "https://rwmanukau.co.nz/MKU36994",
+      "office": "manukau"
+    },
+    {
+      "id": 22571961,
+      "address": "Lot 5/9 Fitzroy Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 290000,
+      "settlementDate": "2024-10-07",
+      "bed": 10,
+      "bath": 5,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/1707947822-1-mmexport1707859814607.jpg",
+        "width": 1706,
+        "height": 1280
+      },
+      "url": "https://rwmanukau.co.nz/MKU36995",
+      "office": "manukau"
+    },
+    {
+      "id": 17220807,
+      "address": "7/360A Onehunga Mall",
+      "suburb": "Onehunga",
+      "salePrice": 590000,
+      "settlementDate": "2024-10-03",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/90036589__1715127155-32574-004Open2viewID575640-7360OnehungaMall.jpg",
+        "width": 5517,
+        "height": 3678
+      },
+      "url": "https://rwmanukau.co.nz/MKU37890",
+      "office": "manukau"
+    },
+    {
+      "id": 21867576,
+      "address": "11/11 Carlos Drive",
+      "suburb": "Flat Bush",
+      "salePrice": 560000,
+      "settlementDate": "2024-07-05",
+      "bed": 2,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/78382062__1702587960-16978-001Open2viewID567697-1111CarlosDrive.jpg",
+        "width": 5208,
+        "height": 3472
+      },
+      "url": "https://rwmanukau.co.nz/MKU36691",
+      "office": "manukau"
+    },
+    {
+      "id": 23373032,
+      "address": "66 Ashton Ave",
+      "suburb": "Ōtara",
+      "salePrice": 700000,
+      "settlementDate": "2024-07-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/86848060__1712622881-40850-20240409102406.jpg",
+        "width": 4000,
+        "height": 1868
+      },
+      "url": "https://rwmanukau.co.nz/MKU37673",
+      "office": "manukau"
+    },
+    {
+      "id": 16730172,
+      "address": "12 Johnstones Road",
+      "suburb": "Ōtara",
+      "salePrice": 1000000,
+      "settlementDate": "2024-06-21",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/82394732__1708566131-55236-021Open2viewID541670-12JohnstoneRoad.jpg",
+        "width": 3186,
+        "height": 2124
+      },
+      "url": "https://rwmanukau.co.nz/MKU37006",
+      "office": "manukau"
+    },
+    {
+      "id": 22792684,
+      "address": "38 Awa Street",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 708000,
+      "settlementDate": "2024-05-27",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU37185",
+      "office": "manukau"
+    },
+    {
+      "id": 19948433,
+      "address": "69/2 Armoy Drive",
+      "suburb": "East Tamaki",
+      "salePrice": 531500,
+      "settlementDate": "2024-05-02",
+      "bed": 1,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/75493762__1699325612-6592-002Open2viewID565627-692ArmoyDrive.jpg",
+        "width": 3734,
+        "height": 2489
+      },
+      "url": "https://rwmanukau.co.nz/MKU35806",
+      "office": "manukau"
+    },
+    {
+      "id": 21617597,
+      "address": "6 Morewood Lane",
+      "suburb": "Favona",
+      "salePrice": 734000,
+      "settlementDate": "2024-03-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/76611734__1700693037-16288-001Open2viewID566722-6MorewoodLane.jpg",
+        "width": 5157,
+        "height": 3438
+      },
+      "url": "https://rwmanukau.co.nz/MKU36605",
+      "office": "manukau"
+    },
+    {
+      "id": 19081161,
+      "address": "75 Arimu Road",
+      "suburb": "Papakura",
+      "salePrice": 740000,
+      "settlementDate": "2024-02-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/75388967__1699158066-22663-004Open2viewID565527-75ArimuRoad.jpg",
+        "width": 5327,
+        "height": 3551
+      },
+      "url": "https://rwmanukau.co.nz/MKU35229",
+      "office": "manukau"
+    },
+    {
+      "id": 10601849,
+      "address": "18 Ballance Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 986000,
+      "settlementDate": "2024-02-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/78401012__1702605102-9506-mydimport-1627291484-hires.4998-WEBWITHLOGOIMG0017.jpg",
+        "width": 800,
+        "height": 533
+      },
+      "url": "https://rwmanukau.co.nz/MKU36705",
+      "office": "manukau"
+    },
+    {
+      "id": 19707941,
+      "address": "2 Papaku Road",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 895000,
+      "settlementDate": "2024-01-31",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU35627",
+      "office": "manukau"
+    },
+    {
+      "id": 19942523,
+      "address": "11 Doughty Place",
+      "suburb": "Totara Vale",
+      "salePrice": 705000,
+      "settlementDate": "2023-12-18",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU35790",
+      "office": "manukau"
+    },
+    {
+      "id": 21394227,
+      "address": "5 Sabi Place",
+      "suburb": "Papatoetoe",
+      "salePrice": 786000,
+      "settlementDate": "2023-12-14",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU36430",
+      "office": "manukau"
+    },
+    {
+      "id": 19889126,
+      "address": "7 Fausett Avenue",
+      "suburb": "Pukekohe",
+      "salePrice": 715000,
+      "settlementDate": "2023-11-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/69670556__1692295353-27762-002Open2viewID561294-7FausettAvenue.jpg",
+        "width": 1600,
+        "height": 1067
+      },
+      "url": "https://rwmanukau.co.nz/MKU35734",
+      "office": "manukau"
+    },
+    {
+      "id": 19398887,
+      "address": "2 Blampied Road",
+      "suburb": "Totara Vale",
+      "salePrice": 800000,
+      "settlementDate": "2023-10-31",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU35407",
+      "office": "manukau"
+    },
+    {
+      "id": 10593769,
+      "address": "10 Umu Place",
+      "suburb": "Māngere",
+      "salePrice": 745000,
+      "settlementDate": "2023-10-31",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/68448387__1690323700-26425-004Open2viewID560252-10UmuPlace.jpg",
+        "width": 5133,
+        "height": 3422
+      },
+      "url": "https://rwmanukau.co.nz/MKU35674",
+      "office": "manukau"
+    },
+    {
+      "id": 20541977,
+      "address": "7 Laxon Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 868000,
+      "settlementDate": "2023-10-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/69801636__1692823810-6715-02.jpg",
+        "width": 4400,
+        "height": 2935
+      },
+      "url": "https://rwmanukau.co.nz/MKU36231",
+      "office": "manukau"
+    },
+    {
+      "id": 10620770,
+      "address": "10 Harania Avenue",
+      "suburb": "Favona",
+      "salePrice": 1105000,
+      "settlementDate": "2023-08-04",
+      "bed": 5,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/57663995__1659652171-26611-001Open2viewID541536-10HaraniaAve.jpg",
+        "width": 4968,
+        "height": 3312
+      },
+      "url": "https://rwmanukau.co.nz/MKU30581",
+      "office": "manukau"
+    },
+    {
+      "id": 18746642,
+      "address": "4 Grant Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 802000,
+      "settlementDate": "2023-08-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/64129471__1678601520-20586-001Open2viewID554033-4GrantAvenue.jpg",
+        "width": 5028,
+        "height": 3352
+      },
+      "url": "https://rwmanukau.co.nz/MKU34977",
+      "office": "manukau"
+    },
+    {
+      "id": 19389752,
+      "address": "75 Calthorp Close",
+      "suburb": "Favona",
+      "salePrice": 639000,
+      "settlementDate": "2023-07-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU35403",
+      "office": "manukau"
+    },
+    {
+      "id": 17219801,
+      "address": "5A Lipscombe Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 690000,
+      "settlementDate": "2023-07-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/64081311__1678395829-18914-001Open2viewID553958-5aLipscombeAvenue.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU34930",
+      "office": "manukau"
+    },
+    {
+      "id": 19077298,
+      "address": "35 Waimate Street",
+      "suburb": "Ōtara",
+      "salePrice": 591000,
+      "settlementDate": "2023-06-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/65210818__1682497277-19176-001Open2viewID556460-35WaimateStreet.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU35226",
+      "office": "manukau"
+    },
+    {
+      "id": 15756886,
+      "address": "19 Murray Road",
+      "suburb": "Otara, Manukau City",
+      "salePrice": 740000,
+      "settlementDate": "2023-05-05",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/54110283__1649894751-21089-001Open2viewID534767-19MurrayRoad.jpg",
+        "width": 3564,
+        "height": 2376
+      },
+      "url": "https://rwmanukau.co.nz/MKU32761",
+      "office": "manukau"
+    },
+    {
+      "id": 16855492,
+      "address": "9 Dunstan Place",
+      "suburb": "Ōtara",
+      "salePrice": 655000,
+      "settlementDate": "2023-03-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/59541879__1664421489-31704-001Open2viewID544668-9DunstanPlace.jpg",
+        "width": 4775,
+        "height": 3183
+      },
+      "url": "https://rwmanukau.co.nz/MKU34073",
+      "office": "manukau"
+    },
+    {
+      "id": 17829286,
+      "address": "110 Palmers Road",
+      "suburb": "Clendon Park",
+      "salePrice": 510000,
+      "settlementDate": "2023-02-24",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/60834462__1667934474-20787-007Open2viewID547356-110PalmersRoad.jpg",
+        "width": 4774,
+        "height": 3183
+      },
+      "url": "https://rwmanukau.co.nz/MKU34507",
+      "office": "manukau"
+    },
+    {
+      "id": 15698363,
+      "address": "8 Doughty Place",
+      "suburb": "Ōtara",
+      "salePrice": 685000,
+      "settlementDate": "2023-02-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/54726177__1651966211-26028-004Open2viewID536287-8Daughtyplace.jpg",
+        "width": 1600,
+        "height": 1067
+      },
+      "url": "https://rwmanukau.co.nz/MKU32737",
+      "office": "manukau"
+    },
+    {
+      "id": 17829300,
+      "address": "69 Marne Road",
+      "suburb": "Papakura",
+      "salePrice": 504347,
+      "settlementDate": "2023-02-17",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/60675787__1667421040-2498-001Open2viewID547116-69MarneRoad.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU34508",
+      "office": "manukau"
+    },
+    {
+      "id": 10729946,
+      "address": "7 Princess Street",
+      "suburb": "Takanini",
+      "salePrice": 1149000,
+      "settlementDate": "2023-02-14",
+      "bed": 7,
+      "bath": 3,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/55230724__1653445748-4092-001Open2viewID537199-7PrincessStreet.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU30026",
+      "office": "manukau"
+    },
+    {
+      "id": 10602383,
+      "address": "6 Dennis Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 815000,
+      "settlementDate": "2022-12-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/60050191__1665514145-29682-001Open2viewID545493-6DennisRoad.jpg",
+        "width": 5169,
+        "height": 3446
+      },
+      "url": "https://rwmanukau.co.nz/MKU33430",
+      "office": "manukau"
+    },
+    {
+      "id": 13335408,
+      "address": "89 Friedlanders Road",
+      "suburb": "Manurewa",
+      "salePrice": 641000,
+      "settlementDate": "2022-11-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/57654133__1659588596-11429-89FriedlandersF8SERVICES.jpg",
+        "width": 4000,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU33938",
+      "office": "manukau"
+    },
+    {
+      "id": 17179277,
+      "address": "90 Fitzroy Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 660000,
+      "settlementDate": "2022-11-08",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/59280820__1663870857-23251-001Open2viewID544520-90FitzroyStreet.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU34247",
+      "office": "manukau"
+    },
+    {
+      "id": 15227259,
+      "address": "53 Gadsby Road",
+      "suburb": "Favona",
+      "salePrice": 772500,
+      "settlementDate": "2022-09-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/55494257__1654477800-20404-001Open2viewID537972-53GadsbyRoad.jpg",
+        "width": 4903,
+        "height": 3269
+      },
+      "url": "https://rwmanukau.co.nz/MKU32688",
+      "office": "manukau"
+    },
+    {
+      "id": 10620873,
+      "address": "499 Great South Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1511111,
+      "settlementDate": "2022-08-10",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/54589830__1651565930-32530-WhatsAppImage2021-08-27at11.28.01AM2.jpeg",
+        "width": 2000,
+        "height": 1500
+      },
+      "url": "https://rwmanukau.co.nz/MKU32834",
+      "office": "manukau"
+    },
+    {
+      "id": 12983118,
+      "address": "13 Sesame Grove",
+      "suburb": "Goodwood Heights",
+      "salePrice": 1380000,
+      "settlementDate": "2022-05-26",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/45080573__1634775228-26191-013Open2viewID519429-13SesameGroveGoodwoodHeights.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU31689",
+      "office": "manukau"
+    },
+    {
+      "id": 13859044,
+      "address": "42 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 1500000,
+      "settlementDate": "2022-05-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/47023216__1638226032-5674-008Open2viewID524320-42YatesRoad.jpg",
+        "width": 3749,
+        "height": 2499
+      },
+      "url": "https://rwmanukau.co.nz/MKU32055",
+      "office": "manukau"
+    },
+    {
+      "id": 13858863,
+      "address": "2 Royton Avenue",
+      "suburb": "Māngere East",
+      "salePrice": 1500000,
+      "settlementDate": "2022-05-26",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/47023335__1638226238-7099-008Open2viewID524320-42YatesRoad.jpg",
+        "width": 3749,
+        "height": 2499
+      },
+      "url": "https://rwmanukau.co.nz/MKU32053",
+      "office": "manukau"
+    },
+    {
+      "id": 14401839,
+      "address": "6 Dame Nganeko Drive",
+      "suburb": "Glenbrook",
+      "salePrice": 360000,
+      "settlementDate": "2022-04-29",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/48579686__1643745600-11110-6DameNganekodr.jpg",
+        "width": 4000,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU32403",
+      "office": "manukau"
+    },
+    {
+      "id": 13300477,
+      "address": "24 Abiru Crescent",
+      "suburb": "Favona",
+      "salePrice": 950000,
+      "settlementDate": "2022-03-23",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/46572547__1637178565-4766-002Open2viewID523168-24AbiruCrescent.jpg",
+        "width": 5444,
+        "height": 3630
+      },
+      "url": "https://rwmanukau.co.nz/MKU31810",
+      "office": "manukau"
+    },
+    {
+      "id": 14707559,
+      "address": "25 Crawford Avenue",
+      "suburb": "Māngere Bridge",
+      "salePrice": 1450000,
+      "settlementDate": "2022-01-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU32454",
+      "office": "manukau"
+    },
+    {
+      "id": 12836212,
+      "address": "32 Richardson Avenue",
+      "suburb": "Pukekohe",
+      "salePrice": 885000,
+      "settlementDate": "2022-01-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/46035461__1635902503-13759-2494689646115502033497103066858176902750003n.jpg",
+        "width": 960,
+        "height": 720
+      },
+      "url": "https://rwmanukau.co.nz/MKU31608",
+      "office": "manukau"
+    },
+    {
+      "id": 10606171,
+      "address": "60 Johnstones Road",
+      "suburb": "Ōtara",
+      "salePrice": 1100000,
+      "settlementDate": "2022-01-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/46092710__1636060237-21403-009Open2viewID521809-60JohnstoneRoad.jpg",
+        "width": 4000,
+        "height": 2666
+      },
+      "url": "https://rwmanukau.co.nz/MKU27977",
+      "office": "manukau"
+    },
+    {
+      "id": 13706904,
+      "address": "25 Margan Place",
+      "suburb": "Red Hill",
+      "salePrice": 1111000,
+      "settlementDate": "2021-12-22",
+      "bed": 6,
+      "bath": 3,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/46471348__1637015870-20538-034Open2viewID522378-25MarganPlace.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU31958",
+      "office": "manukau"
+    },
+    {
+      "id": 10707183,
+      "address": "1/52 Marr Road",
+      "suburb": "Manurewa",
+      "salePrice": 700000,
+      "settlementDate": "2021-12-03",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/38085360__1628122398-28985-PRINTDJI0891A.jpg",
+        "width": 5464,
+        "height": 3070
+      },
+      "url": "https://rwmanukau.co.nz/MKU30016",
+      "office": "manukau"
+    },
+    {
+      "id": 13335408,
+      "address": "89 Friedlanders Road",
+      "suburb": "Manurewa",
+      "salePrice": 1349000,
+      "settlementDate": "2021-11-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/57654133__1659588596-11429-89FriedlandersF8SERVICES.jpg",
+        "width": 4000,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU31844",
+      "office": "manukau"
+    },
+    {
+      "id": 13900711,
+      "address": "25 Claude Road",
+      "suburb": "Manurewa",
+      "salePrice": 1400000,
+      "settlementDate": "2021-11-19",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU32101",
+      "office": "manukau"
+    },
+    {
+      "id": 12840143,
+      "address": "54 Barrack Road",
+      "suburb": "Mount Wellington",
+      "salePrice": 2160000,
+      "settlementDate": "2021-11-12",
+      "bed": 5,
+      "bath": 3,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/43708076__1633532740-8934-013Open2viewID519078-54BarrackRoadMtWellington.jpg",
+        "width": 3612,
+        "height": 2408
+      },
+      "url": "https://rwmanukau.co.nz/MKU31614",
+      "office": "manukau"
+    },
+    {
+      "id": 12986728,
+      "address": "11 Derryveagh Lane",
+      "suburb": "Weymouth",
+      "salePrice": 1075000,
+      "settlementDate": "2021-11-12",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/43734481__1633587974-1897-001Open2viewID519192-11DerryveaghLaneWeymouth.jpg",
+        "width": 5262,
+        "height": 3508
+      },
+      "url": "https://rwmanukau.co.nz/MKU31701",
+      "office": "manukau"
+    },
+    {
+      "id": 10585406,
+      "address": "266 Bairds Road",
+      "suburb": "Totara Vale",
+      "salePrice": 1065000,
+      "settlementDate": "2021-11-12",
+      "bed": 6,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/71902207__1695200774-5261-fa260ee4-fa06-ed11-ab22-06f9814e2bd6.jpg",
+        "width": 900,
+        "height": 600
+      },
+      "url": "https://rwmanukau.co.nz/MKU31685",
+      "office": "manukau"
+    },
+    {
+      "id": 10621441,
+      "address": "43 Cardwell Street",
+      "suburb": "Onehunga",
+      "salePrice": 1685000,
+      "settlementDate": "2021-10-29",
+      "bed": 2,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/40601965__1630283414-28482-WhatsAppImage2021-08-27at7.29.22PM1copy.jpg",
+        "width": 2000,
+        "height": 1500
+      },
+      "url": "https://rwmanukau.co.nz/MKU31230",
+      "office": "manukau"
+    },
+    {
+      "id": 13256873,
+      "address": "2 Brady Road",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 3150000,
+      "settlementDate": "2021-10-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU31792",
+      "office": "manukau"
+    },
+    {
+      "id": 10616793,
+      "address": "31 Ashton Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 1222000,
+      "settlementDate": "2021-09-15",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/39175273__1629150061-9682-001Open2viewID516300-31AshtonAveOtara.jpg",
+        "width": 4842,
+        "height": 3228
+      },
+      "url": "https://rwmanukau.co.nz/MKU30041",
+      "office": "manukau"
+    },
+    {
+      "id": 10622198,
+      "address": "18 Mcannalley Street",
+      "suburb": "Manurewa East",
+      "salePrice": 1201000,
+      "settlementDate": "2021-09-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291495-hires.3168-001Open2viewID514255-18McAnnallyAveManurewa.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30952",
+      "office": "manukau"
+    },
+    {
+      "id": 10622062,
+      "address": "105A Luke Street",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 1200000,
+      "settlementDate": "2021-08-26",
+      "bed": 4,
+      "bath": 2,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291961-hires.2411-020Open2viewID513502-LukeStE105A.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30896",
+      "office": "manukau"
+    },
+    {
+      "id": 10621984,
+      "address": "14a Ronwood Avenue",
+      "suburb": "Manukau",
+      "salePrice": 393000,
+      "settlementDate": "2021-08-17",
+      "bed": 1,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291495-hires.24464-Photo-9.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30871",
+      "office": "manukau"
+    },
+    {
+      "id": 10621434,
+      "address": "7 Cliff Lane",
+      "suburb": "Glenbrook",
+      "salePrice": 810000,
+      "settlementDate": "2021-07-26",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.14824-Aerial7cliff1-2-Editx.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30734",
+      "office": "manukau"
+    },
+    {
+      "id": 10621387,
+      "address": "9B Carlie Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 840000,
+      "settlementDate": "2021-07-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.30313-001Open2viewID511088-9bCarlieStreetPapatoetoe.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30737",
+      "office": "manukau"
+    },
+    {
+      "id": 10621444,
+      "address": "3 Kepler Place",
+      "suburb": "Clover Park",
+      "salePrice": 845000,
+      "settlementDate": "2021-07-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.20427-001Open2viewID510858-3KeplerPlaceCloverPark.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30744",
+      "office": "manukau"
+    },
+    {
+      "id": 10611987,
+      "address": "9C Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 8300000,
+      "settlementDate": "2021-07-01",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.14460-Photo.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29050",
+      "office": "manukau"
+    },
+    {
+      "id": 10620924,
+      "address": "9 Rakaia Rise",
+      "suburb": "Clover Park",
+      "salePrice": 1265000,
+      "settlementDate": "2021-06-22",
+      "bed": 4,
+      "bath": 2,
+      "car": 5,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.28528-014Open2viewID509767-RakaiaRiseCloverPark.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30615",
+      "office": "manukau"
+    },
+    {
+      "id": 10620413,
+      "address": "229 Great South Road",
+      "suburb": "Manurewa",
+      "salePrice": 1901000,
+      "settlementDate": "2021-06-04",
+      "bed": 6,
+      "bath": 3,
+      "car": 5,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.4379-018Open2viewID508780-229GreatSouthRoadManurewa1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30507",
+      "office": "manukau"
+    },
+    {
+      "id": 10620553,
+      "address": "10 Kent Road",
+      "suburb": "Manurewa",
+      "salePrice": 1205000,
+      "settlementDate": "2021-06-04",
+      "bed": 7,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.19518-hires.26014-10kentrd2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30562",
+      "office": "manukau"
+    },
+    {
+      "id": 10620560,
+      "address": "70 Hollyford Drive",
+      "suburb": "Clover Park",
+      "salePrice": 840000,
+      "settlementDate": "2021-05-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.3493-001Open2viewID506975-70HollyfordDriveCloverPark.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30536",
+      "office": "manukau"
+    },
+    {
+      "id": 10620648,
+      "address": "19A Clayton Avenue",
+      "suburb": "Totara Vale",
+      "salePrice": 785000,
+      "settlementDate": "2021-05-20",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291494-hires.17430-006Open2viewID506976-19aClaytonAveOtara.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30544",
+      "office": "manukau"
+    },
+    {
+      "id": 10618280,
+      "address": "8 Lavas Place",
+      "suburb": "Mount Wellington",
+      "salePrice": 980000,
+      "settlementDate": "2021-05-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291492-hires.13489-8.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30035",
+      "office": "manukau"
+    },
+    {
+      "id": 10617393,
+      "address": "12 Butler Ave",
+      "suburb": "Papatoetoe",
+      "salePrice": 1200000,
+      "settlementDate": "2021-04-20",
+      "bed": 4,
+      "bath": 1,
+      "car": 5,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291491-hires.5230-WEBWITHLOGOIMG9943.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30383",
+      "office": "manukau"
+    },
+    {
+      "id": 10601849,
+      "address": "18 Ballance Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 965100,
+      "settlementDate": "2021-04-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/78401012__1702605102-9506-mydimport-1627291484-hires.4998-WEBWITHLOGOIMG0017.jpg",
+        "width": 800,
+        "height": 533
+      },
+      "url": "https://rwmanukau.co.nz/MKU30363",
+      "office": "manukau"
+    },
+    {
+      "id": 10617115,
+      "address": "10 Knox Road",
+      "suburb": "Hillpark",
+      "salePrice": 940000,
+      "settlementDate": "2021-03-31",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291491-hires.7994-DJI0553-V2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30286",
+      "office": "manukau"
+    },
+    {
+      "id": 10619625,
+      "address": "44 Tarata Crescent",
+      "suburb": "Māngere Bridge",
+      "salePrice": 1340000,
+      "settlementDate": "2021-03-31",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291493-hires.25434-WEBWITHLOGOIMG9920.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30347",
+      "office": "manukau"
+    },
+    {
+      "id": 10618518,
+      "address": "4 Frank Grey Place",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 870000,
+      "settlementDate": "2021-03-05",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291492-hires.5105-4frank.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30091",
+      "office": "manukau"
+    },
+    {
+      "id": 10594216,
+      "address": "28D Stratford Road",
+      "suburb": "Alfriston",
+      "salePrice": 880000,
+      "settlementDate": "2021-03-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/184142892__1769464926-14041-JSP5035-.jpg",
+        "width": 4500,
+        "height": 2796
+      },
+      "url": "https://rwmanukau.co.nz/MKU30227",
+      "office": "manukau"
+    },
+    {
+      "id": 10617173,
+      "address": "14 Butler Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 1510000,
+      "settlementDate": "2020-12-01",
+      "bed": 6,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291491-hires.22813-DJI0264copy.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29755",
+      "office": "manukau"
+    },
+    {
+      "id": 10613684,
+      "address": "29 Beatty Road",
+      "suburb": "Pukekohe",
+      "salePrice": 640000,
+      "settlementDate": "2020-11-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.23979-DJI0672-V2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29493",
+      "office": "manukau"
+    },
+    {
+      "id": 10616635,
+      "address": "1b Miller Road",
+      "suburb": "Māngere Bridge",
+      "salePrice": 830000,
+      "settlementDate": "2020-11-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291491-hires.32538-2G1C5676.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29612",
+      "office": "manukau"
+    },
+    {
+      "id": 10611421,
+      "address": "91C East Tamaki Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 776000,
+      "settlementDate": "2020-10-28",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.8854-SmartSelect20200305-093221Gallery1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28893",
+      "office": "manukau"
+    },
+    {
+      "id": 10616686,
+      "address": "7B Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 956000,
+      "settlementDate": "2020-10-16",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291491-hires.7372-0V4A8777.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29628",
+      "office": "manukau"
+    },
+    {
+      "id": 10616588,
+      "address": "11 Cornwall Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1001000,
+      "settlementDate": "2020-10-13",
+      "bed": 4,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291490-hires.8874-911cornwall.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29584",
+      "office": "manukau"
+    },
+    {
+      "id": 10616593,
+      "address": "9A Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 1005000,
+      "settlementDate": "2020-10-13",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291490-hires.21068-DSC06036.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29591",
+      "office": "manukau"
+    },
+    {
+      "id": 10602178,
+      "address": "11 Mervan Street",
+      "suburb": "Māngere East",
+      "salePrice": 770000,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291484-hires.5988-1184350919145425457014206402429513396126404n.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29586",
+      "office": "manukau"
+    },
+    {
+      "id": 10608268,
+      "address": "6A Dennis Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 627500,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291487-hires.4385-WEBIMG6801.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29492",
+      "office": "manukau"
+    },
+    {
+      "id": 10609765,
+      "address": "1/10 Grantham Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 520000,
+      "settlementDate": "2020-09-29",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291487-hires.30886-IMG5302.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28700",
+      "office": "manukau"
+    },
+    {
+      "id": 10613091,
+      "address": "8 Oakland Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 1320000,
+      "settlementDate": "2020-09-29",
+      "bed": 5,
+      "bath": 2,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.25335-DJI0518.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29331",
+      "office": "manukau"
+    },
+    {
+      "id": 10613245,
+      "address": "4 Blake Road",
+      "suburb": "Māngere East",
+      "salePrice": 638000,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.3205-WEBSNP9181.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29400",
+      "office": "manukau"
+    },
+    {
+      "id": 10613421,
+      "address": "39 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 653000,
+      "settlementDate": "2020-08-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.18254-WEBIMG3262.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29442",
+      "office": "manukau"
+    },
+    {
+      "id": 10612512,
+      "address": "2 Bowers Road",
+      "suburb": "Glen Eden",
+      "salePrice": 710000,
+      "settlementDate": "2020-08-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.31334-WEBSNP7717.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29248",
+      "office": "manukau"
+    },
+    {
+      "id": 10612511,
+      "address": "10 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 666000,
+      "settlementDate": "2020-07-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.25676-hires.26510-driveway.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29247",
+      "office": "manukau"
+    },
+    {
+      "id": 10613199,
+      "address": "43 Great South Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1285000,
+      "settlementDate": "2020-06-30",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU29361",
+      "office": "manukau"
+    },
+    {
+      "id": 10554914,
+      "address": "43 Great South Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1285000,
+      "settlementDate": "2020-06-30",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289839-hires.21757-DSC002781.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN25937",
+      "office": "manurewa"
+    },
+    {
+      "id": 10602357,
+      "address": "43 Allenby Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1116750,
+      "settlementDate": "2020-06-12",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291484-hires.21748-WEBIMG6724-2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29069",
+      "office": "manukau"
+    },
+    {
+      "id": 10602241,
+      "address": "13 Asics Drive",
+      "suburb": "Favona",
+      "salePrice": 735000,
+      "settlementDate": "2020-06-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291484-hires.3212-WEBIMG7222.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28756",
+      "office": "manukau"
+    },
+    {
+      "id": 10611547,
+      "address": "69 Beatty Road",
+      "suburb": "Pukekohe",
+      "salePrice": 730000,
+      "settlementDate": "2020-05-21",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.31319-WEBIMG1568SSR.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28908",
+      "office": "manukau"
+    },
+    {
+      "id": 10610735,
+      "address": "23 Asics Drive",
+      "suburb": "Favona",
+      "salePrice": 640000,
+      "settlementDate": "2020-05-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291487-hires.7666-WEBIMG7225.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28757",
+      "office": "manukau"
+    },
+    {
+      "id": 10611546,
+      "address": "71 Beatty Road",
+      "suburb": "Pukekohe",
+      "salePrice": 750000,
+      "settlementDate": "2020-04-24",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.1167-WEBIMG1568SSR.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28907",
+      "office": "manukau"
+    },
+    {
+      "id": 10610238,
+      "address": "20 Buckingham Crescent",
+      "suburb": "Papatoetoe",
+      "salePrice": 740000,
+      "settlementDate": "2020-03-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291487-hires.28517-WEBIMG7451.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28732",
+      "office": "manukau"
+    },
+    {
+      "id": 10611310,
+      "address": "5/64 Park Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 530000,
+      "settlementDate": "2020-02-25",
+      "bed": 2,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.15741-WEBIMG7697.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28810",
+      "office": "manukau"
+    },
+    {
+      "id": 10597311,
+      "address": "503A Oruarangi Road",
+      "suburb": "Māngere East",
+      "salePrice": 705000,
+      "settlementDate": "2020-01-24",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291480-hires.23323-WEBDJI0610B.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28328",
+      "office": "manukau"
+    },
+    {
+      "id": 10600069,
+      "address": "9c Tomes Lane",
+      "suburb": "Māngere",
+      "salePrice": 343480,
+      "settlementDate": "2020-01-17",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291482-hires.10265-tomeslane.pdf.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27467",
+      "office": "manukau"
+    },
+    {
+      "id": 10597357,
+      "address": "7B Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 343478,
+      "settlementDate": "2020-01-13",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291480-hires.6602-Amrita-Express-Render-1-Main.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28752",
+      "office": "manukau"
+    },
+    {
+      "id": 10597538,
+      "address": "9a Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 349565,
+      "settlementDate": "2020-01-13",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291481-hires.26398-1039266659.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28751",
+      "office": "manukau"
+    },
+    {
+      "id": 10608791,
+      "address": "15 Gray Avenue",
+      "suburb": "Māngere East",
+      "salePrice": 775000,
+      "settlementDate": "2019-12-19",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU28545",
+      "office": "manukau"
+    },
+    {
+      "id": 10608326,
+      "address": "22 Friesian Drive",
+      "suburb": "Māngere",
+      "salePrice": 700000,
+      "settlementDate": "2019-11-08",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291487-hires.1514-WEBIMG1073.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28342",
+      "office": "manukau"
+    },
+    {
+      "id": 10605795,
+      "address": "44 Sunnyside Crescent",
+      "suburb": "Papatoetoe",
+      "salePrice": 740000,
+      "settlementDate": "2019-10-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291486-hires.26471-DSC01033.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27905",
+      "office": "manukau"
+    },
+    {
+      "id": 10607962,
+      "address": "6 Beihlers Road",
+      "suburb": "Weymouth",
+      "salePrice": 675000,
+      "settlementDate": "2019-10-03",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/63617428__1676939800-11047-001Open2viewID552609-6BeihlersRoad.jpg",
+        "width": 4572,
+        "height": 3048
+      },
+      "url": "https://rwmanukau.co.nz/MKU28417",
+      "office": "manukau"
+    },
+    {
+      "id": 10606901,
+      "address": "19 Gifford Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 790000,
+      "settlementDate": "2019-09-18",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291486-hires.2856-219-TTM190206-Manukau-City.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28127",
+      "office": "manukau"
+    },
+    {
+      "id": 10608021,
+      "address": "2b Waterview Road",
+      "suburb": "Favona",
+      "salePrice": 875000,
+      "settlementDate": "2019-09-16",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU28264",
+      "office": "manukau"
+    },
+    {
+      "id": 10606290,
+      "address": "3 Caspar Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 900000,
+      "settlementDate": "2019-09-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291486-hires.21412-3casparroadPapa.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28002",
+      "office": "manukau"
+    },
+    {
+      "id": 10597020,
+      "address": "43 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 1550000,
+      "settlementDate": "2019-08-23",
+      "bed": 4,
+      "bath": 3,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291479-hires.5056-yatesroadfavonainfopack.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27463",
+      "office": "manukau"
+    },
+    {
+      "id": 10597244,
+      "address": "7A Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 390000,
+      "settlementDate": "2019-07-30",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291480-hires.3439-Amrita-Express-Render-1-Main.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27464",
+      "office": "manukau"
+    },
+    {
+      "id": 10600965,
+      "address": "96 Naylors Drive",
+      "suburb": "Māngere",
+      "salePrice": 650000,
+      "settlementDate": "2019-06-10",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291483-hires.23032-DSC03877.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27121",
+      "office": "manukau"
+    },
+    {
+      "id": 10600869,
+      "address": "27 Naylors Drive",
+      "suburb": "Māngere",
+      "salePrice": 720000,
+      "settlementDate": "2019-04-17",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291483-hires.1395-20190205111329.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27107",
+      "office": "manukau"
+    },
+    {
+      "id": 10601297,
+      "address": "1/41 & 2/41 Opawa Crescent",
+      "suburb": "Favona",
+      "salePrice": 1320000,
+      "settlementDate": "2019-03-18",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU27302",
+      "office": "manukau"
+    },
+    {
+      "id": 10597746,
+      "address": "8 Julian Place",
+      "suburb": "Ōtara",
+      "salePrice": 481000,
+      "settlementDate": "2019-01-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291481-hires.11371-ca506f644964245d74ec5d721eb831241.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU30278",
+      "office": "manukau"
+    },
+    {
+      "id": 10600974,
+      "address": "4, 5 & 7/41 Opawa Crescent",
+      "suburb": "Favona",
+      "salePrice": 1980000,
+      "settlementDate": "2019-01-07",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU27125",
+      "office": "manukau"
+    },
+    {
+      "id": 10597586,
+      "address": "12 Manston Road",
+      "suburb": "Māngere",
+      "salePrice": 665000,
+      "settlementDate": "2019-01-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU26579",
+      "office": "manukau"
+    },
+    {
+      "id": 10600204,
+      "address": "3/41 & 6/41 Opawa Crescent",
+      "suburb": "Favona",
+      "salePrice": 1300000,
+      "settlementDate": "2018-11-29",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU27047",
+      "office": "manukau"
+    },
+    {
+      "id": 10597604,
+      "address": "9b Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 402000,
+      "settlementDate": "2018-11-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291481-hires.28637-livinganddiningVF.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26599",
+      "office": "manukau"
+    },
+    {
+      "id": 10597939,
+      "address": "7C Tomes Lane",
+      "suburb": "Favona",
+      "salePrice": 415000,
+      "settlementDate": "2018-11-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291482-hires.18297-tomes1.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26919",
+      "office": "manukau"
+    },
+    {
+      "id": 10594866,
+      "address": "4 Raki Street",
+      "suburb": "Pukekohe",
+      "salePrice": 650000,
+      "settlementDate": "2018-09-12",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291476-hires.1617-4J2A4740.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25197",
+      "office": "manukau"
+    },
+    {
+      "id": 10597018,
+      "address": "27 Lappington Road",
+      "suburb": "Ōtara",
+      "salePrice": 535000,
+      "settlementDate": "2018-09-05",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291479-hires.20332-4J2A9198.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26171",
+      "office": "manukau"
+    },
+    {
+      "id": 10597197,
+      "address": "7 Borlase Lane",
+      "suburb": "Favona",
+      "salePrice": 710000,
+      "settlementDate": "2018-08-13",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291479-hires.30172-7borlaselane.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26296",
+      "office": "manukau"
+    },
+    {
+      "id": 10596925,
+      "address": "20 Rimu Road",
+      "suburb": "Māngere Bridge",
+      "salePrice": 750000,
+      "settlementDate": "2018-07-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291479-hires.22184-hires.13699-XN5A1755-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26108",
+      "office": "manukau"
+    },
+    {
+      "id": 10582324,
+      "address": "14 Julian Place",
+      "suburb": "Ōtara",
+      "salePrice": 465000,
+      "settlementDate": "2018-06-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291431-hires.28532-DJI0123.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24843",
+      "office": "manukau"
+    },
+    {
+      "id": 10597028,
+      "address": "2/160 Robertson Road",
+      "suburb": "Māngere",
+      "salePrice": 866000,
+      "settlementDate": "2018-04-27",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU26180",
+      "office": "manukau"
+    },
+    {
+      "id": 10594737,
+      "address": "Lot 1, 160 Robertson Road",
+      "suburb": "Māngere",
+      "salePrice": 865000,
+      "settlementDate": "2018-04-27",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291475-hires.3922-XN5A8919-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25216",
+      "office": "manukau"
+    },
+    {
+      "id": 10596849,
+      "address": "29 Lappington Road",
+      "suburb": "Ōtara",
+      "salePrice": 533000,
+      "settlementDate": "2018-04-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291479-hires.19316-20180319102427001.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU26030",
+      "office": "manukau"
+    },
+    {
+      "id": 10596473,
+      "address": "46A Thomas Road",
+      "suburb": "Māngere",
+      "salePrice": 638000,
+      "settlementDate": "2018-03-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291478-hires.3047-46thomas0.jpeg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25824",
+      "office": "manukau"
+    },
+    {
+      "id": 10594910,
+      "address": "5 Novak Place",
+      "suburb": "Māngere East",
+      "salePrice": 650000,
+      "settlementDate": "2018-02-22",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291476-hires.9664-20171024214151.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25337",
+      "office": "manukau"
+    },
+    {
+      "id": 10596090,
+      "address": "2 Caserta place",
+      "suburb": "Clover Park",
+      "salePrice": 841977,
+      "settlementDate": "2018-02-16",
+      "bed": 6,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291477-hires.528-DJI0122-Edit-2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25627",
+      "office": "manukau"
+    },
+    {
+      "id": 10595452,
+      "address": "84 Glenveagh Park Drive",
+      "suburb": "Weymouth",
+      "salePrice": 670000,
+      "settlementDate": "2017-12-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU25378",
+      "office": "manukau"
+    },
+    {
+      "id": 10594005,
+      "address": "14a Charntay Avenue",
+      "suburb": "Clover Park",
+      "salePrice": 437000,
+      "settlementDate": "2017-11-30",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.16909-20161121124747.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24595",
+      "office": "manukau"
+    },
+    {
+      "id": 10594766,
+      "address": "48 Allenby Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 740000,
+      "settlementDate": "2017-11-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291476-hires.792-20170814123842.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25107",
+      "office": "manukau"
+    },
+    {
+      "id": 10594748,
+      "address": "19 Caringbah Drive",
+      "suburb": "Papatoetoe",
+      "salePrice": 636000,
+      "settlementDate": "2017-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291476-hires.16075-XN5A0122-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU25088",
+      "office": "manukau"
+    },
+    {
+      "id": 10594187,
+      "address": "128a Gowing Drive",
+      "suburb": "Meadowbank",
+      "salePrice": 1060000,
+      "settlementDate": "2017-09-20",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291474-hires.2265-584446A.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24652",
+      "office": "manukau"
+    },
+    {
+      "id": 10594293,
+      "address": "5/28 Princes Street",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 373000,
+      "settlementDate": "2017-08-10",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/83123624__1708984413-23295-Final-7.jpg",
+        "width": 4500,
+        "height": 3002
+      },
+      "url": "https://rwmanukau.co.nz/MKU24767",
+      "office": "manukau"
+    },
+    {
+      "id": 10594584,
+      "address": "25 The Enclave",
+      "suburb": "Totara Heights",
+      "salePrice": 1120000,
+      "settlementDate": "2017-07-18",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU24941",
+      "office": "manukau"
+    },
+    {
+      "id": 10594440,
+      "address": "11 Mervan Street",
+      "suburb": "Māngere",
+      "salePrice": 640000,
+      "settlementDate": "2017-06-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU24840",
+      "office": "manukau"
+    },
+    {
+      "id": 10593852,
+      "address": "62 Pah Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 800000,
+      "settlementDate": "2017-06-21",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.20166-20160908103243.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24312",
+      "office": "manukau"
+    },
+    {
+      "id": 10594438,
+      "address": "63 Allenby Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 950000,
+      "settlementDate": "2017-06-20",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291474-hires.15862-20170501121842.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24839",
+      "office": "manukau"
+    },
+    {
+      "id": 10594309,
+      "address": "9A Foxlaw Street",
+      "suburb": "Randwick Park",
+      "salePrice": 463000,
+      "settlementDate": "2017-05-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291474-hires.21818-10.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24775",
+      "office": "manukau"
+    },
+    {
+      "id": 10594442,
+      "address": "28A Driver Road",
+      "suburb": "Māngere East",
+      "salePrice": 780000,
+      "settlementDate": "2017-04-27",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU24841",
+      "office": "manukau"
+    },
+    {
+      "id": 10594234,
+      "address": "13A Jutland Road",
+      "suburb": "Manurewa",
+      "salePrice": 507000,
+      "settlementDate": "2017-04-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291474-hires.6435-IMG0612.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24702",
+      "office": "manukau"
+    },
+    {
+      "id": 10594224,
+      "address": "78 Woolfield Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 683000,
+      "settlementDate": "2017-04-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291474-hires.17943-IMG0481.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24691",
+      "office": "manukau"
+    },
+    {
+      "id": 10594124,
+      "address": "1 Chayward Place",
+      "suburb": "Māngere",
+      "salePrice": 710000,
+      "settlementDate": "2017-03-23",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291473-hires.30520-DJI0311-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24587",
+      "office": "manukau"
+    },
+    {
+      "id": 10594158,
+      "address": "601 Massey Road",
+      "suburb": "Māngere",
+      "salePrice": 601000,
+      "settlementDate": "2017-02-24",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU24623",
+      "office": "manukau"
+    },
+    {
+      "id": 10594003,
+      "address": "196 Hillside Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 700000,
+      "settlementDate": "2017-02-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.16693-hillside051.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24575",
+      "office": "manukau"
+    },
+    {
+      "id": 10594053,
+      "address": "2/1 Thomas Road",
+      "suburb": "Flat Bush",
+      "salePrice": 742000,
+      "settlementDate": "2017-02-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291473-hires.10418-IMG2033.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24510",
+      "office": "manukau"
+    },
+    {
+      "id": 10594080,
+      "address": "165 Hillside Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 818000,
+      "settlementDate": "2017-02-10",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291473-hires.18139-AH4I7005.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28529",
+      "office": "manukau"
+    },
+    {
+      "id": 10593946,
+      "address": "22 Mataoho Lane",
+      "suburb": "Māngere East",
+      "salePrice": 809000,
+      "settlementDate": "2017-02-03",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.20514-XN5A8854-Edit1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24399",
+      "office": "manukau"
+    },
+    {
+      "id": 10593934,
+      "address": "6 Manning Rise",
+      "suburb": "Flat Bush",
+      "salePrice": 1130000,
+      "settlementDate": "2017-01-12",
+      "bed": 5,
+      "bath": 3,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.4951-010Open2viewID380680-6ManningRise1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24386",
+      "office": "manukau"
+    },
+    {
+      "id": 10593814,
+      "address": "18 Mataoho Lane,",
+      "suburb": "Māngere",
+      "salePrice": 785000,
+      "settlementDate": "2016-12-16",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.21222-1234.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24279",
+      "office": "manukau"
+    },
+    {
+      "id": 10593947,
+      "address": "19 Mataoho Lane",
+      "suburb": "Māngere",
+      "salePrice": 445000,
+      "settlementDate": "2016-12-16",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.17023-764112I.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU27061",
+      "office": "manukau"
+    },
+    {
+      "id": 10593885,
+      "address": "196 Hillside Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 638800,
+      "settlementDate": "2016-11-11",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291472-hires.10546-1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24344",
+      "office": "manukau"
+    },
+    {
+      "id": 10592962,
+      "address": "1/434 Old Te Atatu Road",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 775000,
+      "settlementDate": "2016-11-09",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.15731-AH4I47521.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24357",
+      "office": "manukau"
+    },
+    {
+      "id": 10593769,
+      "address": "10 Umu Place",
+      "suburb": "Māngere",
+      "salePrice": 600000,
+      "settlementDate": "2016-09-29",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/68448387__1690323700-26425-004Open2viewID560252-10UmuPlace.jpg",
+        "width": 5133,
+        "height": 3422
+      },
+      "url": "https://rwmanukau.co.nz/MKU24236",
+      "office": "manukau"
+    },
+    {
+      "id": 10593219,
+      "address": "30 Gilbert Road",
+      "suburb": "Ōtara",
+      "salePrice": 620000,
+      "settlementDate": "2016-08-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.9333-IMG9049-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24093",
+      "office": "manukau"
+    },
+    {
+      "id": 10593683,
+      "address": "29 Derrimore Heights",
+      "suburb": "Clover Park",
+      "salePrice": 815000,
+      "settlementDate": "2016-08-19",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291471-hires.1443654614-5567-XN5A6969.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24155",
+      "office": "manukau"
+    },
+    {
+      "id": 10593275,
+      "address": "47 Carruth Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1050000,
+      "settlementDate": "2016-08-18",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291471-hires.30514-DJI0132-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24146",
+      "office": "manukau"
+    },
+    {
+      "id": 10593148,
+      "address": "4 Esperanto Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 695000,
+      "settlementDate": "2016-08-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.20785-IMG8036.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24023",
+      "office": "manukau"
+    },
+    {
+      "id": 10593179,
+      "address": "1/63 Great South Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 750000,
+      "settlementDate": "2016-07-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.32086-XN5A9386-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24056",
+      "office": "manukau"
+    },
+    {
+      "id": 10593110,
+      "address": "40 Killington Crescent",
+      "suburb": "Māngere",
+      "salePrice": 570000,
+      "settlementDate": "2016-06-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1610-IMG5904-Edit-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23997",
+      "office": "manukau"
+    },
+    {
+      "id": 10593147,
+      "address": "44 Allenby  Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1030000,
+      "settlementDate": "2016-05-27",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.5794-allenbyaerialview.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU24022",
+      "office": "manukau"
+    },
+    {
+      "id": 10589990,
+      "address": "Lots 1 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 649000,
+      "settlementDate": "2016-04-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1431037498-10498-47YatesRoad_hi-res_art.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23441",
+      "office": "manukau"
+    },
+    {
+      "id": 10589887,
+      "address": "Lot 11 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 370000,
+      "settlementDate": "2016-04-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291692-hires.1454624667-4625-TheIslandExpress.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23333",
+      "office": "manukau"
+    },
+    {
+      "id": 10591670,
+      "address": "Lot 2/47 Yates Road",
+      "suburb": "Māngere",
+      "salePrice": 670000,
+      "settlementDate": "2016-04-08",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1447888806-6062-XN5A0489.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23784",
+      "office": "manukau"
+    },
+    {
+      "id": 10590005,
+      "address": "Lot 2 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 649000,
+      "settlementDate": "2016-03-31",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23445",
+      "office": "manukau"
+    },
+    {
+      "id": 10591714,
+      "address": "Lot3/47 Yates Road",
+      "suburb": "Māngere",
+      "salePrice": 335000,
+      "settlementDate": "2016-03-04",
+      "bed": 1,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU23805",
+      "office": "manukau"
+    },
+    {
+      "id": 10589708,
+      "address": "Lot 8 Mataoho Lane",
+      "suburb": "Māngere East",
+      "salePrice": 337000,
+      "settlementDate": "2016-01-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-Original18180997.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23126",
+      "office": "manukau"
+    },
+    {
+      "id": 10591718,
+      "address": "21 Cyclamen Road",
+      "suburb": "Māngere",
+      "salePrice": 575000,
+      "settlementDate": "2016-01-15",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1448832524-28364-XN5A0969-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23810",
+      "office": "manukau"
+    },
+    {
+      "id": 10591733,
+      "address": "24 Piper Place",
+      "suburb": "Goodwood Heights",
+      "salePrice": 753500,
+      "settlementDate": "2016-01-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1450212824-4220-XN5A8221-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23827",
+      "office": "manukau"
+    },
+    {
+      "id": 10589705,
+      "address": "Lot 17 Mataoho Lane",
+      "suburb": "Māngere",
+      "salePrice": 337000,
+      "settlementDate": "2016-01-14",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-hires.Original18180472.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23123",
+      "office": "manukau"
+    },
+    {
+      "id": 10589683,
+      "address": "Lot 5, Mataoho Lane",
+      "suburb": "Māngere",
+      "salePrice": 340000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-Original18027979.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23098",
+      "office": "manukau"
+    },
+    {
+      "id": 10589684,
+      "address": "Lot 12 Mataoho Lane",
+      "suburb": "Māngere East",
+      "salePrice": 334000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-Original18043462.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23099",
+      "office": "manukau"
+    },
+    {
+      "id": 10589706,
+      "address": "Lot 10 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 337000,
+      "settlementDate": "2016-01-11",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-Original18027979.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23124",
+      "office": "manukau"
+    },
+    {
+      "id": 10589707,
+      "address": "Lot 6 47 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 327925,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23125",
+      "office": "manukau"
+    },
+    {
+      "id": 10589884,
+      "address": "Lot 16 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 340000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23330",
+      "office": "manukau"
+    },
+    {
+      "id": 10589886,
+      "address": "Lot 13 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 340000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291467-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23332",
+      "office": "manukau"
+    },
+    {
+      "id": 10589913,
+      "address": "Lot 9 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 337000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23357",
+      "office": "manukau"
+    },
+    {
+      "id": 10589914,
+      "address": "Lot 7 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 340000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23358",
+      "office": "manukau"
+    },
+    {
+      "id": 10589916,
+      "address": "Lot 14 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 340000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18180472.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23360",
+      "office": "manukau"
+    },
+    {
+      "id": 10589941,
+      "address": "Lot 15 47 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 325000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23383",
+      "office": "manukau"
+    },
+    {
+      "id": 10589942,
+      "address": "Lot 4 Yates Road",
+      "suburb": "Māngere East",
+      "salePrice": 335000,
+      "settlementDate": "2016-01-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.Original18181382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23384",
+      "office": "manukau"
+    },
+    {
+      "id": 10591554,
+      "address": "4 Bruce Place",
+      "suburb": "Papatoetoe",
+      "salePrice": 693000,
+      "settlementDate": "2015-12-18",
+      "bed": 5,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291469-hires.1444250982-31280-XN5A7407.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23665",
+      "office": "manukau"
+    },
+    {
+      "id": 10591712,
+      "address": "92 Glenveagh Park Drive",
+      "suburb": "Weymouth",
+      "salePrice": 553990,
+      "settlementDate": "2015-12-11",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU23802",
+      "office": "manukau"
+    },
+    {
+      "id": 10591665,
+      "address": "2/194 Shirley Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 780000,
+      "settlementDate": "2015-12-11",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1446600685-16628-551937A.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23778",
+      "office": "manukau"
+    },
+    {
+      "id": 10591669,
+      "address": "10 Deborah Place",
+      "suburb": "Māngere",
+      "salePrice": 499000,
+      "settlementDate": "2015-11-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291470-hires.1446681428-10801-10deb2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23782",
+      "office": "manukau"
+    },
+    {
+      "id": 10591363,
+      "address": "43 Candia Road",
+      "suburb": "Swanson",
+      "salePrice": 1480000,
+      "settlementDate": "2015-10-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291469-hires.1440454718-23743-DJI_0101-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23581",
+      "office": "manukau"
+    },
+    {
+      "id": 10590006,
+      "address": "44A Blanes Road",
+      "suburb": "Weymouth",
+      "salePrice": 640000,
+      "settlementDate": "2015-10-13",
+      "bed": 5,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1440023488-28307-DJI_0094-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23446",
+      "office": "manukau"
+    },
+    {
+      "id": 10591345,
+      "address": "9 Pembroke Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 696000,
+      "settlementDate": "2015-08-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291469-hires.1437686422-32342-DJI_0101-Edit.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23561",
+      "office": "manukau"
+    },
+    {
+      "id": 10590003,
+      "address": "15 Cleek Road",
+      "suburb": "Māngere East",
+      "salePrice": 339130,
+      "settlementDate": "2015-06-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU23444",
+      "office": "manukau"
+    },
+    {
+      "id": 10589898,
+      "address": "1/2 Senecio Place",
+      "suburb": "Weymouth",
+      "salePrice": 339130,
+      "settlementDate": "2015-06-18",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1427832767-3969-001_Open2view_ID339287-1_2_Senecio_PLace_Manurewa.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23343",
+      "office": "manukau"
+    },
+    {
+      "id": 10590029,
+      "address": "1/6 Silver Creek Road",
+      "suburb": "Weymouth",
+      "salePrice": 375000,
+      "settlementDate": "2015-06-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU23472",
+      "office": "manukau"
+    },
+    {
+      "id": 10589901,
+      "address": "27 Kivell Close",
+      "suburb": "Māngere",
+      "salePrice": 485000,
+      "settlementDate": "2015-05-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1427847357-25467-001_Open2view_ID339288-27_Kivell_Close_Mangere.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23346",
+      "office": "manukau"
+    },
+    {
+      "id": 10589967,
+      "address": "46 Kingsclere Place",
+      "suburb": "Goodwood Heights",
+      "salePrice": 665000,
+      "settlementDate": "2015-05-22",
+      "bed": 5,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1430440170-9145-O2V_0350.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23411",
+      "office": "manukau"
+    },
+    {
+      "id": 10589917,
+      "address": "13 Elsted Place",
+      "suburb": "Goodwood Heights",
+      "salePrice": 865500,
+      "settlementDate": "2015-05-14",
+      "bed": 5,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291468-hires.1428629042-4420-1a.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU23362",
+      "office": "manukau"
+    },
+    {
+      "id": 10586704,
+      "address": "60 and 60A Henwood Road",
+      "suburb": "Māngere",
+      "salePrice": 410000,
+      "settlementDate": "2012-04-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original8071942.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20006",
+      "office": "manukau"
+    },
+    {
+      "id": 10587015,
+      "address": "13 Stardon Place",
+      "suburb": "Favona",
+      "salePrice": 370000,
+      "settlementDate": "2012-02-24",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291452-Original8822590.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20335",
+      "office": "manukau"
+    },
+    {
+      "id": 10587235,
+      "address": "31 Huia Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 455000,
+      "settlementDate": "2012-02-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291452-Original9133610.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20382",
+      "office": "manukau"
+    },
+    {
+      "id": 10586768,
+      "address": "20 Coates Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 470000,
+      "settlementDate": "2012-02-14",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original9006082.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20370",
+      "office": "manukau"
+    },
+    {
+      "id": 10587011,
+      "address": "16 Lolim Place",
+      "suburb": "Favona",
+      "salePrice": 380000,
+      "settlementDate": "2012-01-16",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291452-Original8567538.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20332",
+      "office": "manukau"
+    },
+    {
+      "id": 10587243,
+      "address": "56 Convair Crescent",
+      "suburb": "Māngere",
+      "salePrice": 369000,
+      "settlementDate": "2011-12-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291452-Original9219247.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20385",
+      "office": "manukau"
+    },
+    {
+      "id": 10587022,
+      "address": "1/16 Walter Street",
+      "suburb": "Māngere",
+      "salePrice": 292500,
+      "settlementDate": "2011-11-11",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291452-Original8754796.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20342",
+      "office": "manukau"
+    },
+    {
+      "id": 10586958,
+      "address": "40 Killington Crescent",
+      "suburb": "Māngere",
+      "salePrice": 347000,
+      "settlementDate": "2011-08-02",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU20291",
+      "office": "manukau"
+    },
+    {
+      "id": 10586533,
+      "address": "117 Palmers Road",
+      "suburb": "Clendon",
+      "salePrice": 311000,
+      "settlementDate": "2011-07-20",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original7020902.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20208",
+      "office": "manukau"
+    },
+    {
+      "id": 10586725,
+      "address": "49 Hutton Street",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 333000,
+      "settlementDate": "2011-06-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original7634353.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20215",
+      "office": "manukau"
+    },
+    {
+      "id": 10586716,
+      "address": "8 Montmere Avenue",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 439000,
+      "settlementDate": "2011-06-07",
+      "bed": 7,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original7584026.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20202",
+      "office": "manukau"
+    },
+    {
+      "id": 10586701,
+      "address": "10 Vimy Place",
+      "suburb": "Māngere",
+      "salePrice": 240000,
+      "settlementDate": "2011-05-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanukau.co.nz/MKU20002",
+      "office": "manukau"
+    },
+    {
+      "id": 10586717,
+      "address": "353 Roscommon Road",
+      "suburb": "Clendon Park",
+      "salePrice": 210000,
+      "settlementDate": "2011-05-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original7547718.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU20203",
+      "office": "manukau"
+    },
+    {
+      "id": 10586610,
+      "address": "13 Chelburn Cresent",
+      "suburb": "Māngere",
+      "salePrice": 246000,
+      "settlementDate": "2011-03-04",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291451-Original7185021.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586510,
+      "address": "3 Lawford Place",
+      "suburb": "Manukau",
+      "salePrice": 325000,
+      "settlementDate": "2011-01-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291450-Original6935882.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586432,
+      "address": "14 Sutton Avenue",
+      "suburb": "Māngere",
+      "salePrice": 285000,
+      "settlementDate": "2010-12-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586451,
+      "address": "19 Surrey Street",
+      "suburb": "Manukau",
+      "salePrice": 283000,
+      "settlementDate": "2010-12-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586466,
+      "address": "11 Pawa Place",
+      "suburb": "Manurewa",
+      "salePrice": 255000,
+      "settlementDate": "2010-12-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583264,
+      "address": "3 Harriet Place",
+      "suburb": "Māngere",
+      "salePrice": 303200,
+      "settlementDate": "2010-12-14",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291434-Original4284038.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586415,
+      "address": "13 Brent Pl",
+      "suburb": "Manurewa",
+      "salePrice": 265000,
+      "settlementDate": "2010-12-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586313,
+      "address": "9 Von Sturmer Street",
+      "suburb": "Māngere East",
+      "salePrice": 355000,
+      "settlementDate": "2010-12-01",
+      "bed": 5,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291450-Original6422943.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585862,
+      "address": "19 Nicola Place",
+      "suburb": "Māngere",
+      "salePrice": 280000,
+      "settlementDate": "2010-11-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291447-Original5433277.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586069,
+      "address": "49 Nicholas Gibbons Drive",
+      "suburb": "Manurewa",
+      "salePrice": 365000,
+      "settlementDate": "2010-09-27",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291448-Original5909062.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586105,
+      "address": "11 Pawa Place",
+      "suburb": "Manurewa",
+      "salePrice": 197000,
+      "settlementDate": "2010-09-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291448-Original6014146.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585202,
+      "address": "21 Gloria Avenue",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 390000,
+      "settlementDate": "2010-09-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291444-Original4536734.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585797,
+      "address": "11 Ransom Smyth Drive",
+      "suburb": "Goodwood Heights",
+      "salePrice": 355000,
+      "settlementDate": "2010-09-01",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291447-Original5339112.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586076,
+      "address": "14 Hobart Crescent",
+      "suburb": "Manurewa",
+      "salePrice": 180000,
+      "settlementDate": "2010-08-31",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585386,
+      "address": "51 Wymondley Road",
+      "suburb": "Ōtara",
+      "salePrice": 230000,
+      "settlementDate": "2010-08-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4814289.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586075,
+      "address": "45 Castlefinn Road",
+      "suburb": "Weymouth",
+      "salePrice": 325000,
+      "settlementDate": "2010-08-23",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291448-Original5929002.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584813,
+      "address": "66 and 66A Hillside Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 390000,
+      "settlementDate": "2010-08-13",
+      "bed": 6,
+      "bath": 3,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291442-Original4014009.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585969,
+      "address": "6 Kaumatua Place",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 422000,
+      "settlementDate": "2010-08-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291448-Original5711392.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585860,
+      "address": "12 Hakea Place",
+      "suburb": "Totara Heights",
+      "salePrice": 440000,
+      "settlementDate": "2010-07-30",
+      "bed": 4,
+      "bath": 2,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291447-Original5431007.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585679,
+      "address": "6A Dosina Place",
+      "suburb": "Flat Bush",
+      "salePrice": 235000,
+      "settlementDate": "2010-07-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291446-Original5145540.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10586032,
+      "address": "1-14 Hobart Crescent",
+      "suburb": "Wattle Downs",
+      "salePrice": 159000,
+      "settlementDate": "2010-07-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291448-Original5829707.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585863,
+      "address": "2-735 Massey  Road",
+      "suburb": "Māngere",
+      "salePrice": 189000,
+      "settlementDate": "2010-06-29",
+      "bed": 2,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291447-Original5440495.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585731,
+      "address": "9 Tranent Road",
+      "suburb": "Māngere",
+      "salePrice": 241000,
+      "settlementDate": "2010-06-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291446-Original5201005.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585540,
+      "address": "8 Garth Place",
+      "suburb": "Clendon Park",
+      "salePrice": 210000,
+      "settlementDate": "2010-06-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291446-Original5015732.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585404,
+      "address": "351 Roscommon Road",
+      "suburb": "Clendon",
+      "salePrice": 230000,
+      "settlementDate": "2010-06-17",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583329,
+      "address": "13 Gubb Place",
+      "suburb": "Ōtara",
+      "salePrice": 300000,
+      "settlementDate": "2010-06-10",
+      "bed": 4,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291435-Original3564019.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585805,
+      "address": "14 Hunua Road",
+      "suburb": "Papakura",
+      "salePrice": 750000,
+      "settlementDate": "2010-05-14",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585455,
+      "address": "5 Harriet Street",
+      "suburb": "Māngere",
+      "salePrice": 239000,
+      "settlementDate": "2010-04-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4931223.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585124,
+      "address": "14 Waipapa",
+      "suburb": "Manukau",
+      "salePrice": 190000,
+      "settlementDate": "2010-04-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291444-Original4391910.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585383,
+      "address": "2 Brennan Ave",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 300000,
+      "settlementDate": "2010-04-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4810533.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585674,
+      "address": "6 Quintal Place",
+      "suburb": "Papatoetoe",
+      "salePrice": 285000,
+      "settlementDate": "2010-03-31",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585416,
+      "address": "23 Tyrone Street",
+      "suburb": "Ōtara",
+      "salePrice": 232000,
+      "settlementDate": "2010-03-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4892853.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585376,
+      "address": "52 Greenmeadows Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 270000,
+      "settlementDate": "2010-03-03",
+      "bed": 4,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4806301.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585399,
+      "address": "30 Williams Cres",
+      "suburb": "Ōtara",
+      "salePrice": 210000,
+      "settlementDate": "2010-03-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291445-Original4824846.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585112,
+      "address": "260 Shirley Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 700000,
+      "settlementDate": "2010-02-10",
+      "bed": 6,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291444-Original4403530.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585110,
+      "address": "258 Shirley Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 400000,
+      "settlementDate": "2010-01-19",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291444-Original4401897.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584111,
+      "address": "92 Kolmar Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 330000,
+      "settlementDate": "2010-01-14",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original3106016.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10582344,
+      "address": "202 Preston Road",
+      "suburb": "Ōtara",
+      "salePrice": 227500,
+      "settlementDate": "2009-12-18",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291431-Original4278024.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584330,
+      "address": "18 Jellicoe Rd",
+      "suburb": "Manurewa",
+      "salePrice": 320000,
+      "settlementDate": "2009-12-04",
+      "bed": 5,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291440-Original3371439.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583540,
+      "address": "1 Gambare Place",
+      "suburb": "Manurewa",
+      "salePrice": 230000,
+      "settlementDate": "2009-11-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584414,
+      "address": "8 Dunstan Place",
+      "suburb": "Clover Park",
+      "salePrice": 230000,
+      "settlementDate": "2009-11-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583264,
+      "address": "3 Harriet Place",
+      "suburb": "Māngere",
+      "salePrice": 220000,
+      "settlementDate": "2009-11-23",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291434-Original4284038.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10582513,
+      "address": "1 Fellbrook Street",
+      "suburb": "Manurewa",
+      "salePrice": 232000,
+      "settlementDate": "2009-11-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291432-MNK14038.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585034,
+      "address": "1 Hobman Place",
+      "suburb": "Manurewa",
+      "salePrice": 222000,
+      "settlementDate": "2009-11-02",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10585037,
+      "address": "28 Gloria Ave",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 432000,
+      "settlementDate": "2009-10-12",
+      "bed": 7,
+      "bath": 3,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291443-Original4283489.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584844,
+      "address": "49 Jane Cowie Avenue",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 429000,
+      "settlementDate": "2009-10-05",
+      "bed": 2,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583537,
+      "address": "24 Swaffield Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 372000,
+      "settlementDate": "2009-09-25",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291436-Original3889926.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584163,
+      "address": "86 Franklyne Road",
+      "suburb": "Ōtara",
+      "salePrice": 285000,
+      "settlementDate": "2009-09-18",
+      "bed": 6,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original3161157.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584666,
+      "address": "78 Porchester Road",
+      "suburb": "Papakura",
+      "salePrice": 180000,
+      "settlementDate": "2009-09-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291441-Original3865941.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584596,
+      "address": "4 Rush Place",
+      "suburb": "Māngere",
+      "salePrice": 320000,
+      "settlementDate": "2009-08-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291441-Original3739863.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584511,
+      "address": "30 Rewarewa Road",
+      "suburb": "Te Atatu Peninsula",
+      "salePrice": 390000,
+      "settlementDate": "2009-08-10",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291440-Original3633302.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584598,
+      "address": "62 Tudor Road",
+      "suburb": "Henderson",
+      "salePrice": 263000,
+      "settlementDate": "2009-08-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291441-Original3739880.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583991,
+      "address": "55 Point View Drive",
+      "suburb": "Dannemora",
+      "salePrice": 1400000,
+      "settlementDate": "2009-07-09",
+      "bed": 5,
+      "bath": 2,
+      "car": 6,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original3017071.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584395,
+      "address": "37 Dagenham Street",
+      "suburb": "Manurewa",
+      "salePrice": 225000,
+      "settlementDate": "2009-06-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291440-Original3472505.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584503,
+      "address": "3 Imrie Street",
+      "suburb": "Māngere",
+      "salePrice": 221000,
+      "settlementDate": "2009-06-25",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291440-Original3626309.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584302,
+      "address": "13 Gee Place",
+      "suburb": "Māngere East",
+      "salePrice": 382000,
+      "settlementDate": "2009-06-08",
+      "bed": 6,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291439-Original3350912.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584440,
+      "address": "107 Maplesden Drive",
+      "suburb": "Clendon Park",
+      "salePrice": 230000,
+      "settlementDate": "2009-05-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291440-Original3537224.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584112,
+      "address": "10 Elsted Place",
+      "suburb": "Goodwood Heights",
+      "salePrice": 450000,
+      "settlementDate": "2009-04-08",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original3110970.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10582338,
+      "address": "27 Tyrone Street",
+      "suburb": "Ōtara",
+      "salePrice": 284000,
+      "settlementDate": "2009-01-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291431-MNK13369.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10584000,
+      "address": "32 Seddon Avenue",
+      "suburb": "Papatoetoe",
+      "salePrice": 312000,
+      "settlementDate": "2009-01-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original3022744.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583961,
+      "address": "19 Tutere Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 365000,
+      "settlementDate": "2009-01-22",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291438-Original2966382.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    },
+    {
+      "id": 10583717,
+      "address": "167 Motatau Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 401000,
+      "settlementDate": "2008-11-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291437-12226601380665.Open2view_ID190764_-_167_Motatau_Road_Papatoetoe_-_025.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": null,
+      "office": "manukau"
+    }
+  ],
+  "soldTotal": 301,
+  "offices": [
+    {
+      "office": "manukau",
+      "vaultreId": 132699
+    },
+    {
+      "office": "manurewa",
+      "vaultreId": 132617
+    }
+  ]
+}

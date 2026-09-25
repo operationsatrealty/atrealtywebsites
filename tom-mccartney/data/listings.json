@@ -1,0 +1,3578 @@
+{
+  "email": "tom.mccartney@raywhite.com",
+  "current": [
+    {
+      "id": 36282665,
+      "address": "11A Rowandale Avenue",
+      "suburb": "Manurewa",
+      "displayPrice": "Asking Price $775,000",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/207899704__1782873015-67158-137967082-328-17photoprintedit.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36565",
+      "modified": "2026-08-27T05:00:23+00:00",
+      "office": "manurewa"
+    },
+    {
+      "id": 37122598,
+      "address": "12 Desmond Place",
+      "suburb": "Ōtara",
+      "displayPrice": "Price by negotiation",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/216155517__1787690737-198440-1386374321-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36825",
+      "modified": "2026-08-27T03:58:59+00:00",
+      "office": "manurewa"
+    },
+    {
+      "id": 36663466,
+      "address": "9 Kurnell Drive",
+      "suburb": "Botany Downs",
+      "displayPrice": "Asking Price $1,488,000",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "status": "listing",
+      "method": {
+        "id": 1,
+        "name": "Private Treaty"
+      },
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/210579566__1784668030-205819-1382250429-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36706",
+      "modified": "2026-08-27T01:02:06+00:00",
+      "office": "manurewa"
+    }
+  ],
+  "sold": [
+    {
+      "id": 34071933,
+      "address": "34 Antrim Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 830000,
+      "settlementDate": "2026-08-28",
+      "bed": 5,
+      "bath": 3,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/207237964__1782352866-48337-137915572-328-17photoprintV3.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35737",
+      "office": "manurewa"
+    },
+    {
+      "id": 19660624,
+      "address": "1/150 Bradbury Road",
+      "suburb": "Botany Downs",
+      "salePrice": 1040000,
+      "settlementDate": "2026-08-20",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/198763699__1777418039-34064-137025386-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31925",
+      "office": "manurewa"
+    },
+    {
+      "id": 35846246,
+      "address": "11 Darnell Crescent",
+      "suburb": "Clover Park",
+      "salePrice": 1180000,
+      "settlementDate": "2026-08-14",
+      "bed": 7,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/206888084__1782186333-77757-137778215-328-17photoprintedit.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36394",
+      "office": "manurewa"
+    },
+    {
+      "id": 22471648,
+      "address": "54B Myers Road",
+      "suburb": "Manurewa East",
+      "salePrice": 670000,
+      "settlementDate": "2026-08-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/193487349__1774234722-77432-080A8084.jpg",
+        "width": 6725,
+        "height": 4480
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35990",
+      "office": "manurewa"
+    },
+    {
+      "id": 35931163,
+      "address": "7 Hope Place",
+      "suburb": "Ōtara",
+      "salePrice": 830000,
+      "settlementDate": "2026-07-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/204961052__1780962227-27195-width1024.jfif",
+        "width": 1024,
+        "height": 682
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36438",
+      "office": "manurewa"
+    },
+    {
+      "id": 34724516,
+      "address": "4 Mckean Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 924000,
+      "settlementDate": "2026-06-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/193823780__1774390130-26951-136565916-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35939",
+      "office": "manurewa"
+    },
+    {
+      "id": 35766904,
+      "address": "2/107 Porchester Road",
+      "suburb": "Papakura",
+      "salePrice": 544000,
+      "settlementDate": "2026-06-19",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN36363",
+      "office": "manurewa"
+    },
+    {
+      "id": 35030891,
+      "address": "5 De Bloge Place",
+      "suburb": "Clendon Park",
+      "salePrice": 670000,
+      "settlementDate": "2026-06-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/198198072__1776981771-24569-1369181818-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36054",
+      "office": "manurewa"
+    },
+    {
+      "id": 34965894,
+      "address": "18 Kopara Place",
+      "suburb": "Clendon Park",
+      "salePrice": 820000,
+      "settlementDate": "2026-05-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/196163773__1775774270-28051-136746209-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36036",
+      "office": "manurewa"
+    },
+    {
+      "id": 22471665,
+      "address": "54A Myers Road",
+      "suburb": "Manurewa East",
+      "salePrice": 622000,
+      "settlementDate": "2026-05-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/194740292__1774915443-47071-1365339018-328-17photoprintedit.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35989",
+      "office": "manurewa"
+    },
+    {
+      "id": 21592756,
+      "address": "5 Mail Avenue",
+      "suburb": "Weymouth",
+      "salePrice": 979000,
+      "settlementDate": "2026-05-14",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/168227033__1760575854-53201-134780603-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35281",
+      "office": "manurewa"
+    },
+    {
+      "id": 34943016,
+      "address": "29 Lappington Road",
+      "suburb": "Ōtara",
+      "salePrice": 815000,
+      "settlementDate": "2026-05-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/195147739__1775082832-17480-136657482-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN36018",
+      "office": "manurewa"
+    },
+    {
+      "id": 34302892,
+      "address": "29 Lappington Road",
+      "suburb": "Ōtara",
+      "salePrice": 610000,
+      "settlementDate": "2026-04-23",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN35799",
+      "office": "manurewa"
+    },
+    {
+      "id": 33778105,
+      "address": "12 Capella Place",
+      "suburb": "Manurewa",
+      "salePrice": 775000,
+      "settlementDate": "2026-04-14",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/181228813__1767051542-21639-135522182-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35662",
+      "office": "manurewa"
+    },
+    {
+      "id": 32850925,
+      "address": "10 Rathmar Drive",
+      "suburb": "Alfriston",
+      "salePrice": 845000,
+      "settlementDate": "2026-04-01",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/190521678__1772738083-6997-GameDayLogo202636.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35884",
+      "office": "manurewa"
+    },
+    {
+      "id": 21574380,
+      "address": "54 Clayden Shuttleworth Street",
+      "suburb": "Papakura",
+      "salePrice": 868000,
+      "settlementDate": "2026-03-27",
+      "bed": 5,
+      "bath": 3,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/182529906__1768421974-14106-135640262-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35674",
+      "office": "manurewa"
+    },
+    {
+      "id": 20385921,
+      "address": "15 McInnes Road",
+      "suburb": "Weymouth",
+      "salePrice": 695000,
+      "settlementDate": "2026-03-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/177973855__1764722557-38645-135319275-328-17photoprintV3.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35562",
+      "office": "manurewa"
+    },
+    {
+      "id": 33451130,
+      "address": "14 Richardson Avenue",
+      "suburb": "Pukekohe",
+      "salePrice": 715000,
+      "settlementDate": "2026-02-18",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/181098113__1766453438-51621-TheDayPhotoswithLogo-OneSummerDay31.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35644",
+      "office": "manurewa"
+    },
+    {
+      "id": 33087749,
+      "address": "1 Eloise Place",
+      "suburb": "Clendon Park",
+      "salePrice": 655000,
+      "settlementDate": "2026-02-09",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/180008650__1765767383-61839-1EloisePlaceClendonPark.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35629",
+      "office": "manurewa"
+    },
+    {
+      "id": 10709086,
+      "address": "5 Hutt Road",
+      "suburb": "Manurewa",
+      "salePrice": 810000,
+      "settlementDate": "2026-01-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/174323212__1762895283-20049-135054718-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30009",
+      "office": "manurewa"
+    },
+    {
+      "id": 14403669,
+      "address": "7 Hope street",
+      "suburb": "Ōtara",
+      "salePrice": 683000,
+      "settlementDate": "2026-01-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/175850009__1763595690-42175-56BOrion2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30490",
+      "office": "manurewa"
+    },
+    {
+      "id": 32781744,
+      "address": "18 Dairy Road",
+      "suburb": "Ōtara",
+      "salePrice": 1235000,
+      "settlementDate": "2025-12-19",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN35513",
+      "office": "manurewa"
+    },
+    {
+      "id": 32560520,
+      "address": "8 Kohukohunui Lane",
+      "suburb": "Ramarama",
+      "salePrice": 799000,
+      "settlementDate": "2025-12-11",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/172687560__1762206680-25597-135009455-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35395",
+      "office": "manurewa"
+    },
+    {
+      "id": 23600450,
+      "address": "36 Frangipani Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 850000,
+      "settlementDate": "2025-11-28",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/165346356__1758875840-99917-1344944222-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MGR33028",
+      "office": "manukau"
+    },
+    {
+      "id": 32598719,
+      "address": "36 Frangipani Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 850000,
+      "settlementDate": "2025-11-21",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN35405",
+      "office": "manurewa"
+    },
+    {
+      "id": 13926594,
+      "address": "13, 15, 17 Hollinbrigg Place",
+      "suburb": "Manurewa",
+      "salePrice": 3265500,
+      "settlementDate": "2025-11-20",
+      "bed": 9,
+      "bath": 3,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/143711644__1744330717-26934-TheDay9.0-PropertywithLogo.png",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30408",
+      "office": "manurewa"
+    },
+    {
+      "id": 31512086,
+      "address": "2/12 Kopu Place",
+      "suburb": "Clendon Park",
+      "salePrice": 640000,
+      "settlementDate": "2025-10-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/162823167__1757459580-22297-134297941-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN35013",
+      "office": "manurewa"
+    },
+    {
+      "id": 30789528,
+      "address": "2/41 Gloucester Road",
+      "suburb": "Manurewa",
+      "salePrice": 1160000,
+      "settlementDate": "2025-10-17",
+      "bed": 5,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/154875359__1752098345-19646-1335451221-328-17photoprintedit21.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34716",
+      "office": "manurewa"
+    },
+    {
+      "id": 31157181,
+      "address": "1 Nield Road",
+      "suburb": "Manurewa",
+      "salePrice": 740000,
+      "settlementDate": "2025-10-13",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN34837",
+      "office": "manurewa"
+    },
+    {
+      "id": 31237761,
+      "address": "1 Nield Road",
+      "suburb": "Manurewa",
+      "salePrice": 760000,
+      "settlementDate": "2025-10-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/162168551__1757019542-5756-Untitled5272X3948Px-3-Edited-min.png",
+        "width": 866,
+        "height": 649
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34850",
+      "office": "manurewa"
+    },
+    {
+      "id": 29809969,
+      "address": "49 Victoria Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1258000,
+      "settlementDate": "2025-10-10",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/148815764__1747886390-58401-132900022-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34339",
+      "office": "manurewa"
+    },
+    {
+      "id": 30063277,
+      "address": "1&2 /59 Swaffield Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1300000,
+      "settlementDate": "2025-10-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/149411995__1748384988-22486-1329893224-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34450",
+      "office": "manurewa"
+    },
+    {
+      "id": 30798602,
+      "address": "1/41 Gloucester Road",
+      "suburb": "Manurewa",
+      "salePrice": 704700,
+      "settlementDate": "2025-10-01",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/154749045__1752018759-24007-DJI202506051534030219D-HDR.jpg",
+        "width": 4088,
+        "height": 3066
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34718",
+      "office": "manurewa"
+    },
+    {
+      "id": 31069500,
+      "address": "31 Gainsborough Street",
+      "suburb": "Manurewa",
+      "salePrice": 800000,
+      "settlementDate": "2025-09-12",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/156663893__1753330629-68048-DSC20691.jpg",
+        "width": 3965,
+        "height": 2643
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34799",
+      "office": "manurewa"
+    },
+    {
+      "id": 29307981,
+      "address": "109 Victoria Street West",
+      "suburb": "Pukekohe",
+      "salePrice": 709000,
+      "settlementDate": "2025-08-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/144098700__1744678964-45131-132318785-328-17photoprint2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34207",
+      "office": "manurewa"
+    },
+    {
+      "id": 30658333,
+      "address": "14 Arawai Terrace",
+      "suburb": "Papakura",
+      "salePrice": 1054000,
+      "settlementDate": "2025-08-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/154012279__1751494512-20753-133478342-328-17photoprintedit.jpg",
+        "width": 4430,
+        "height": 2953
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34668",
+      "office": "manurewa"
+    },
+    {
+      "id": 29471145,
+      "address": "39 Sheriff Place",
+      "suburb": "Randwick Park",
+      "salePrice": 850000,
+      "settlementDate": "2025-08-07",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/145266093__1745790148-9362-1324497520-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34245",
+      "office": "manurewa"
+    },
+    {
+      "id": 21859286,
+      "address": "13 Pallant Street",
+      "suburb": "Manurewa",
+      "salePrice": 775000,
+      "settlementDate": "2025-08-04",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/150788846__1749502697-154266-133166096-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34180",
+      "office": "manurewa"
+    },
+    {
+      "id": 19132400,
+      "address": "11 Huia Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 878000,
+      "settlementDate": "2025-07-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/128867181__1734387517-110717-DSC03837edit.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31746",
+      "office": "manurewa"
+    },
+    {
+      "id": 10547674,
+      "address": "43 Takanini School Road",
+      "suburb": "Takanini",
+      "salePrice": 1000000,
+      "settlementDate": "2025-07-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/142144016__1743454585-16336-132103492-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34043",
+      "office": "manurewa"
+    },
+    {
+      "id": 27007807,
+      "address": "5 McGreal Place",
+      "suburb": "Manurewa",
+      "salePrice": 860000,
+      "settlementDate": "2025-07-14",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/145264849__1745789916-18280-132453341-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33622",
+      "office": "manurewa"
+    },
+    {
+      "id": 29154311,
+      "address": "6 Tinkler Place",
+      "suburb": "Favona",
+      "salePrice": 741500,
+      "settlementDate": "2025-07-11",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN34168",
+      "office": "manurewa"
+    },
+    {
+      "id": 29678211,
+      "address": "6 Tinkler Place",
+      "suburb": "Favona",
+      "salePrice": 860000,
+      "settlementDate": "2025-07-11",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/146502271__1746495276-41442-1325997512-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34311",
+      "office": "manurewa"
+    },
+    {
+      "id": 21879340,
+      "address": "155 Boundary Road",
+      "suburb": "Clover Park",
+      "salePrice": 730000,
+      "settlementDate": "2025-07-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/139151989__1741729641-120541-DJI202503111037520174D.jpg",
+        "width": 4097,
+        "height": 3072
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33149",
+      "office": "manurewa"
+    },
+    {
+      "id": 21841404,
+      "address": "28 Leathem Crescent",
+      "suburb": "Pokeno",
+      "salePrice": 942000,
+      "settlementDate": "2025-07-10",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/144296701__1744768687-51797-TheDay9.0-PropertywithLogo21.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34211",
+      "office": "manurewa"
+    },
+    {
+      "id": 28316112,
+      "address": "6 Frangipani Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 747500,
+      "settlementDate": "2025-07-07",
+      "bed": 5,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/142150991__1743455800-18182-132101983-328-17photoprintV2.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33888",
+      "office": "manurewa"
+    },
+    {
+      "id": 21552660,
+      "address": "5 De Bloge Place",
+      "suburb": "Clendon Park",
+      "salePrice": 736000,
+      "settlementDate": "2025-06-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/131550512__1737404724-110373-DSC09597.jpg",
+        "width": 4243,
+        "height": 2844
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33313",
+      "office": "manurewa"
+    },
+    {
+      "id": 26617199,
+      "address": "5B Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 800000,
+      "settlementDate": "2025-06-26",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/125277033__1733445914-141666-GreaterConstruction-FieldsRoad-84.jpg",
+        "width": 6301,
+        "height": 4201
+      },
+      "url": "https://rwmanukau.co.nz/MGR32322",
+      "office": "manukau"
+    },
+    {
+      "id": 28449002,
+      "address": "2/5 Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 800000,
+      "settlementDate": "2025-06-26",
+      "bed": 0,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33951",
+      "office": "manurewa"
+    },
+    {
+      "id": 29519741,
+      "address": "34 Saralee Drive",
+      "suburb": "Manurewa",
+      "salePrice": 970000,
+      "settlementDate": "2025-06-23",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/147674467__1747170240-15037-1327492421-328-17photoprint.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN34258",
+      "office": "manurewa"
+    },
+    {
+      "id": 24704646,
+      "address": "1893 Hunua Road",
+      "suburb": "Hunua",
+      "salePrice": 1860000,
+      "settlementDate": "2025-06-19",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/135223180__1739322788-149217-DJI0545v2.jpg",
+        "width": 5272,
+        "height": 3948
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33914",
+      "office": "manurewa"
+    },
+    {
+      "id": 27793621,
+      "address": "44 Kirton Crescent",
+      "suburb": "Manurewa",
+      "salePrice": 811000,
+      "settlementDate": "2025-05-30",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/130877997__1736903613-138192-DJI202501140941350043DcopySERVICES.jpg",
+        "width": 4096,
+        "height": 3072
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33801",
+      "office": "manurewa"
+    },
+    {
+      "id": 22423346,
+      "address": "4B Whitley Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 575000,
+      "settlementDate": "2025-05-08",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/134631452__1738897900-166433-DSC02117.jpg",
+        "width": 4244,
+        "height": 2835
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33396",
+      "office": "manurewa"
+    },
+    {
+      "id": 21762623,
+      "address": "4A Whitley Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 675000,
+      "settlementDate": "2025-05-08",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/136938009__1740438269-130289-DJI202502240949090076D.jpg",
+        "width": 4099,
+        "height": 3074
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33143",
+      "office": "manurewa"
+    },
+    {
+      "id": 27416586,
+      "address": "38 Holland Street",
+      "suburb": "Pukekohe",
+      "salePrice": 564000,
+      "settlementDate": "2025-05-05",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/128270496__1733952209-115745-DSC03195.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33706",
+      "office": "manurewa"
+    },
+    {
+      "id": 26617198,
+      "address": "5A Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 800000,
+      "settlementDate": "2025-05-01",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/121423842__1731464267-159572-image50430209.JPG",
+        "width": 3928,
+        "height": 2630
+      },
+      "url": "https://rwmanukau.co.nz/MGR32204",
+      "office": "manukau"
+    },
+    {
+      "id": 27581452,
+      "address": "12 Valder Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 599000,
+      "settlementDate": "2025-04-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/128592701__1734251025-192707-001Open2viewID585834-12ValderAve.jpg",
+        "width": 5158,
+        "height": 3438
+      },
+      "url": "https://rwmanukau.co.nz/MKU42130",
+      "office": "manukau"
+    },
+    {
+      "id": 28379456,
+      "address": "12 Valder Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 599000,
+      "settlementDate": "2025-04-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33902",
+      "office": "manurewa"
+    },
+    {
+      "id": 26617202,
+      "address": "5D Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-04-17",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/115502011__1728867953-150510-GreaterConstruction-FieldsRoad-19.jpg",
+        "width": 7008,
+        "height": 4672
+      },
+      "url": "https://rwmanukau.co.nz/MGR32498",
+      "office": "manukau"
+    },
+    {
+      "id": 29349857,
+      "address": "5D Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-04-17",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN34222",
+      "office": "manurewa"
+    },
+    {
+      "id": 27898476,
+      "address": "129 Rowandale Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 842000,
+      "settlementDate": "2025-04-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/135928411__1739826457-103667-DJI0003.jpg",
+        "width": 5272,
+        "height": 3948
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33826",
+      "office": "manurewa"
+    },
+    {
+      "id": 26775606,
+      "address": "5G Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 630000,
+      "settlementDate": "2025-04-04",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/134414863__1738727304-162666-GreaterConstruction-FieldsRoad-32.jpg",
+        "width": 4265,
+        "height": 6398
+      },
+      "url": "https://rwmanukau.co.nz/MGR32270",
+      "office": "manukau"
+    },
+    {
+      "id": 28461320,
+      "address": "7/5 Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 630000,
+      "settlementDate": "2025-04-04",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33960",
+      "office": "manurewa"
+    },
+    {
+      "id": 26617205,
+      "address": "5F Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-04-02",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/115507573__1728868756-141118-GreaterConstruction-FieldsRoad-2.jpg",
+        "width": 7008,
+        "height": 4672
+      },
+      "url": "https://rwmanukau.co.nz/MGR32497",
+      "office": "manukau"
+    },
+    {
+      "id": 29220901,
+      "address": "5F Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-04-02",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN34187",
+      "office": "manurewa"
+    },
+    {
+      "id": 22753123,
+      "address": "1013 Tararu Road SH 25",
+      "suburb": "Thames",
+      "salePrice": 580000,
+      "settlementDate": "2025-03-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/1708987900-1-DJI0177V41.jpg",
+        "width": 5272,
+        "height": 3948
+      },
+      "url": "https://rwmanukau.co.nz/MKU37126",
+      "office": "manukau"
+    },
+    {
+      "id": 29045728,
+      "address": "3/5 Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 630000,
+      "settlementDate": "2025-03-27",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN34161",
+      "office": "manurewa"
+    },
+    {
+      "id": 28461843,
+      "address": "1/5 Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 800000,
+      "settlementDate": "2025-03-26",
+      "bed": 0,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33962",
+      "office": "manurewa"
+    },
+    {
+      "id": 26617200,
+      "address": "5C Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 630000,
+      "settlementDate": "2025-03-21",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/122126741__1731895352-161613-GreaterConstruction-FieldsRoad-20.jpg",
+        "width": 4672,
+        "height": 7008
+      },
+      "url": "https://rwmanukau.co.nz/MGR32205",
+      "office": "manukau"
+    },
+    {
+      "id": 26617203,
+      "address": "5E Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-03-03",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/115505885__1728868504-151844-GreaterConstruction-FieldsRoad-38.jpg",
+        "width": 8064,
+        "height": 4536
+      },
+      "url": "https://rwmanukau.co.nz/MGR32202",
+      "office": "manukau"
+    },
+    {
+      "id": 27835357,
+      "address": "5/5 Fields Road",
+      "suburb": "Manurewa",
+      "salePrice": 620000,
+      "settlementDate": "2025-02-28",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33806",
+      "office": "manurewa"
+    },
+    {
+      "id": 25774004,
+      "address": "5 Kirton Crescent",
+      "suburb": "Manurewa",
+      "salePrice": 1140000,
+      "settlementDate": "2025-02-26",
+      "bed": 5,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/128620149__1734294618-111193-DJI0026.jpg",
+        "width": 5465,
+        "height": 3641
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33198",
+      "office": "manurewa"
+    },
+    {
+      "id": 19750287,
+      "address": "21 Greenstone Place",
+      "suburb": "Clover Park",
+      "salePrice": 1020000,
+      "settlementDate": "2025-01-31",
+      "bed": 6,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/122236752__1731964070-114388-DJI0233.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31956",
+      "office": "manurewa"
+    },
+    {
+      "id": 25156294,
+      "address": "5 Corsair Crescent",
+      "suburb": "Māngere",
+      "salePrice": 865000,
+      "settlementDate": "2025-01-24",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/106140558__1724723695-48968-DSC04605edit.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33025",
+      "office": "manurewa"
+    },
+    {
+      "id": 25733553,
+      "address": "3 Corsair Crescent",
+      "suburb": "Māngere",
+      "salePrice": 776000,
+      "settlementDate": "2025-01-24",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/109312065__1726096173-20424-DSC05987.jpg",
+        "width": 6019,
+        "height": 4020
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33179",
+      "office": "manurewa"
+    },
+    {
+      "id": 19647573,
+      "address": "30 Gills Road",
+      "suburb": "Bucklands Beach",
+      "salePrice": 1370000,
+      "settlementDate": "2024-12-17",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/116251836__1729112219-100878-DJI0032D.jpg",
+        "width": 4000,
+        "height": 2296
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33509",
+      "office": "manurewa"
+    },
+    {
+      "id": 16423157,
+      "address": "3 Berrett Place",
+      "suburb": "Ōtara",
+      "salePrice": 600000,
+      "settlementDate": "2024-12-13",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/106555644__1724896160-45689-DSC01280edit.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30941",
+      "office": "manurewa"
+    },
+    {
+      "id": 25161853,
+      "address": "28 Claude Road",
+      "suburb": "Hillpark",
+      "salePrice": 1050000,
+      "settlementDate": "2024-11-29",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/104923126__1724109250-198443-DJI0399.jpg",
+        "width": 2000,
+        "height": 1332
+      },
+      "url": "https://rwmanurewa.co.nz/MAN33026",
+      "office": "manurewa"
+    },
+    {
+      "id": 24334413,
+      "address": "778 Chapel Road",
+      "suburb": "Northpark",
+      "salePrice": 1250000,
+      "settlementDate": "2024-11-15",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/95820973__1719186456-37144-DSC04568.jpg",
+        "width": 4246,
+        "height": 2837
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32891",
+      "office": "manurewa"
+    },
+    {
+      "id": 20741962,
+      "address": "5 Corsair Crescent",
+      "suburb": "Māngere East",
+      "salePrice": 750000,
+      "settlementDate": "2024-11-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/78546667__1702857482-18950-DSC03177.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32308",
+      "office": "manurewa"
+    },
+    {
+      "id": 16423143,
+      "address": "2 Berrett Place",
+      "suburb": "Ōtara",
+      "salePrice": 685000,
+      "settlementDate": "2024-10-31",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30937",
+      "office": "manurewa"
+    },
+    {
+      "id": 10707448,
+      "address": "5 Bowater Place",
+      "suburb": "Manurewa",
+      "salePrice": 782500,
+      "settlementDate": "2024-10-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/90410503__1715559678-33683-DJI202405101329480150D.jpg",
+        "width": 2000,
+        "height": 1125
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30008",
+      "office": "manurewa"
+    },
+    {
+      "id": 23757899,
+      "address": "28 Claude Road",
+      "suburb": "Hillpark",
+      "salePrice": 781000,
+      "settlementDate": "2024-09-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/90526135__1715658873-75463-DSC06027.jpg",
+        "width": 4247,
+        "height": 2840
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32751",
+      "office": "manurewa"
+    },
+    {
+      "id": 22299120,
+      "address": "56a Myers Road",
+      "suburb": "Manurewa East",
+      "salePrice": 608695,
+      "settlementDate": "2024-09-20",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/81029770__1707469369-118015-080A8343Edit.jpg",
+        "width": 6721,
+        "height": 4480
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32857",
+      "office": "manurewa"
+    },
+    {
+      "id": 23926773,
+      "address": "15 Leith Court",
+      "suburb": "Papatoetoe",
+      "salePrice": 785000,
+      "settlementDate": "2024-09-04",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/90597167__1715731137-38737-DSC02923.jpg",
+        "width": 6019,
+        "height": 4011
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32778",
+      "office": "manurewa"
+    },
+    {
+      "id": 24061856,
+      "address": "23 Richardson Road",
+      "suburb": "Mount Albert",
+      "salePrice": 1175000,
+      "settlementDate": "2024-09-03",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/100534665__1721771110-21756-DSC02377.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32810",
+      "office": "manurewa"
+    },
+    {
+      "id": 16423082,
+      "address": "268 Bairds Road",
+      "suburb": "Ōtara",
+      "salePrice": 635000,
+      "settlementDate": "2024-08-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/90286920__1715217462-42184-DSC01747.jpg",
+        "width": 6005,
+        "height": 4002
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30929",
+      "office": "manurewa"
+    },
+    {
+      "id": 10550873,
+      "address": "3 Akeake Lane",
+      "suburb": "Manurewa",
+      "salePrice": 676200,
+      "settlementDate": "2024-08-02",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/89051714__1714427562-13542-PEM00512.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32720",
+      "office": "manurewa"
+    },
+    {
+      "id": 23926757,
+      "address": "2/63 Redcrest Avenue",
+      "suburb": "Red Hill",
+      "salePrice": 640000,
+      "settlementDate": "2024-08-02",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/91735571__1716256719-47237-DSC07658.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32777",
+      "office": "manurewa"
+    },
+    {
+      "id": 25047447,
+      "address": "3 Corsair Crescent",
+      "suburb": "Māngere",
+      "salePrice": 736000,
+      "settlementDate": "2024-07-26",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN33006",
+      "office": "manurewa"
+    },
+    {
+      "id": 23926785,
+      "address": "1/256 Porchester Road",
+      "suburb": "Takanini",
+      "salePrice": 610000,
+      "settlementDate": "2024-07-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/93333664__1717105644-11309-PEM05008.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32779",
+      "office": "manurewa"
+    },
+    {
+      "id": 20641751,
+      "address": "56 Myers Road",
+      "suburb": "Manurewa East",
+      "salePrice": 740000,
+      "settlementDate": "2024-07-05",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/81029725__1707469171-120130-080A8193Edit.jpg",
+        "width": 6724,
+        "height": 4482
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32366",
+      "office": "manurewa"
+    },
+    {
+      "id": 12425503,
+      "address": "1/143 Wyllie Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 506000,
+      "settlementDate": "2024-07-01",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/83235889__1709083973-54538-DSC09235.jpg",
+        "width": 4247,
+        "height": 2838
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30130",
+      "office": "manurewa"
+    },
+    {
+      "id": 22778560,
+      "address": "10 Skelton Avenue",
+      "suburb": "Randwick Park",
+      "salePrice": 705000,
+      "settlementDate": "2024-06-21",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/85902469__1711491665-16939-DJI0541.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32505",
+      "office": "manurewa"
+    },
+    {
+      "id": 22666928,
+      "address": "2/55A Woolfield Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 780000,
+      "settlementDate": "2024-05-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/83243686__1709087709-65666-DSC08550-2.jpg",
+        "width": 6002,
+        "height": 4004
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32469",
+      "office": "manurewa"
+    },
+    {
+      "id": 22259830,
+      "address": "115 Union Road",
+      "suburb": "Howick",
+      "salePrice": 1071000,
+      "settlementDate": "2024-05-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/85257984__1710969027-7530-DJI0208.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32582",
+      "office": "manurewa"
+    },
+    {
+      "id": 22630730,
+      "address": "50A Everitt Road",
+      "suburb": "Ōtara",
+      "salePrice": 720000,
+      "settlementDate": "2024-05-01",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/82289315__1708468680-30773-DJI0943.jpg",
+        "width": 5274,
+        "height": 3948
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32424",
+      "office": "manurewa"
+    },
+    {
+      "id": 23144314,
+      "address": "2 Busing Avenue",
+      "suburb": "Papakura",
+      "salePrice": 910000,
+      "settlementDate": "2024-04-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN32612",
+      "office": "manurewa"
+    },
+    {
+      "id": 10709135,
+      "address": "1 Lomas Place",
+      "suburb": "Manurewa",
+      "salePrice": 994000,
+      "settlementDate": "2024-04-11",
+      "bed": 5,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/80840982__1707266968-23462-DJI0336.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30010",
+      "office": "manurewa"
+    },
+    {
+      "id": 21770166,
+      "address": "1/59 Redcrest Avenue",
+      "suburb": "Red Hill",
+      "salePrice": 630000,
+      "settlementDate": "2024-04-09",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/80239681__1706569315-18230-DSC04451.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32373",
+      "office": "manurewa"
+    },
+    {
+      "id": 23001156,
+      "address": "23a Hawera Road",
+      "suburb": "Kohimarama",
+      "salePrice": 2099000,
+      "settlementDate": "2024-03-28",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN32578",
+      "office": "manurewa"
+    },
+    {
+      "id": 21576956,
+      "address": "15 Pasla Close",
+      "suburb": "Papakura",
+      "salePrice": 734000,
+      "settlementDate": "2024-03-22",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/78223175__1702327710-16474-DJI0603.jpg",
+        "width": 5470,
+        "height": 3643
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32306",
+      "office": "manurewa"
+    },
+    {
+      "id": 22244052,
+      "address": "177 Wordsworth Road",
+      "suburb": "Manurewa",
+      "salePrice": 635500,
+      "settlementDate": "2024-03-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/79402794__1705357665-28515-DJI0544v2.jpg",
+        "width": 5465,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32342",
+      "office": "manurewa"
+    },
+    {
+      "id": 22224550,
+      "address": "15 O'connor Street",
+      "suburb": "Ōtara",
+      "salePrice": 1010000,
+      "settlementDate": "2024-03-22",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/79519599__1705522034-20923-DJI0252SERVICES.jpg",
+        "width": 4500,
+        "height": 3370
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32339",
+      "office": "manurewa"
+    },
+    {
+      "id": 22231514,
+      "address": "17 Marengo Parkway",
+      "suburb": "Takanini",
+      "salePrice": 925000,
+      "settlementDate": "2024-03-22",
+      "bed": 4,
+      "bath": 3,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/80922514__1707352803-14190-DJI202402071605080534D.jpg",
+        "width": 4032,
+        "height": 2268
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32365",
+      "office": "manurewa"
+    },
+    {
+      "id": 19750799,
+      "address": "10A Oreti Place",
+      "suburb": "Clover Park",
+      "salePrice": 781000,
+      "settlementDate": "2024-03-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/78547878__1702858330-27462-DJI0671.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31959",
+      "office": "manurewa"
+    },
+    {
+      "id": 21588822,
+      "address": "21C Waterview Road West",
+      "suburb": "Takanini",
+      "salePrice": 700000,
+      "settlementDate": "2024-02-23",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/75463481__1699306288-13863-001.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32242",
+      "office": "manurewa"
+    },
+    {
+      "id": 22766338,
+      "address": "9 McClintock Road",
+      "suburb": "Massey",
+      "salePrice": 930000,
+      "settlementDate": "2024-02-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN32491",
+      "office": "manurewa"
+    },
+    {
+      "id": 21042761,
+      "address": "2/55A Woolfield Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 700000,
+      "settlementDate": "2024-01-26",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/72554772__1695867377-4517-DSC03328.jpg",
+        "width": 4500,
+        "height": 3005
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32205",
+      "office": "manurewa"
+    },
+    {
+      "id": 19342283,
+      "address": "184 Russell Road",
+      "suburb": "Manurewa",
+      "salePrice": 782608.7,
+      "settlementDate": "2024-01-26",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/77290555__1701207095-4837-DSC05600.jpg",
+        "width": 6010,
+        "height": 4012
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32209",
+      "office": "manurewa"
+    },
+    {
+      "id": 21542523,
+      "address": "25 Eccles Place",
+      "suburb": "Ōtara",
+      "salePrice": 700000,
+      "settlementDate": "2024-01-26",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN32238",
+      "office": "manurewa"
+    },
+    {
+      "id": 20122305,
+      "address": "222 East Tamaki Road",
+      "suburb": "Ōtara",
+      "salePrice": 850000,
+      "settlementDate": "2023-12-21",
+      "bed": 4,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/68395618__1690183564-17533-026Open2viewID560176-222EastTamakiRoad.jpg",
+        "width": 5370,
+        "height": 3577
+      },
+      "url": "https://rwmanukau.co.nz/MKU35922",
+      "office": "manukau"
+    },
+    {
+      "id": 21540405,
+      "address": "186 Preston Road",
+      "suburb": "Totara Vale",
+      "salePrice": 940000,
+      "settlementDate": "2023-12-12",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/75462914__1699305871-10971-DSC00586.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32249",
+      "office": "manurewa"
+    },
+    {
+      "id": 18283818,
+      "address": "2 Gloucester Road",
+      "suburb": "Manurewa",
+      "salePrice": 750000,
+      "settlementDate": "2023-12-08",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/62288487__1671576565-6665-DJI0806.jpg",
+        "width": 5472,
+        "height": 3648
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31535",
+      "office": "manurewa"
+    },
+    {
+      "id": 20127350,
+      "address": "22 Coombe Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 885000,
+      "settlementDate": "2023-12-06",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/73652641__1697062475-24930-137A5417.jpg",
+        "width": 5485,
+        "height": 3659
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32204",
+      "office": "manurewa"
+    },
+    {
+      "id": 21054394,
+      "address": "1/31 Etherton Drive",
+      "suburb": "Weymouth",
+      "salePrice": 699000,
+      "settlementDate": "2023-12-01",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/72479905__1695764970-11315-253A5194.jpg",
+        "width": 8194,
+        "height": 5465
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32207",
+      "office": "manurewa"
+    },
+    {
+      "id": 20600480,
+      "address": "28 Mcquarrie Avenue",
+      "suburb": "Wattle Downs",
+      "salePrice": 770000,
+      "settlementDate": "2023-11-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/71363780__1694731141-31837-DJI0320.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32178",
+      "office": "manurewa"
+    },
+    {
+      "id": 20168482,
+      "address": "50 Everitt Road",
+      "suburb": "Ōtara",
+      "salePrice": 670000,
+      "settlementDate": "2023-10-11",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/68898365__1690937545-25898-DJI0512v2.jpg",
+        "width": 5465,
+        "height": 3641
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32054",
+      "office": "manurewa"
+    },
+    {
+      "id": 19421250,
+      "address": "1/38 Pembroke Street",
+      "suburb": "Papatoetoe",
+      "salePrice": 750000,
+      "settlementDate": "2023-10-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/68503240__1690414580-3127-DJI0798.jpg",
+        "width": 5272,
+        "height": 3948
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31865",
+      "office": "manurewa"
+    },
+    {
+      "id": 19649247,
+      "address": "16/175 Harris Road",
+      "suburb": "East Tamaki",
+      "salePrice": 600000,
+      "settlementDate": "2023-09-25",
+      "bed": 2,
+      "bath": 2,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31918",
+      "office": "manurewa"
+    },
+    {
+      "id": 20239361,
+      "address": "186 Preston Road",
+      "suburb": "Ōtara",
+      "salePrice": 725000,
+      "settlementDate": "2023-09-19",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN32068",
+      "office": "manurewa"
+    },
+    {
+      "id": 19171905,
+      "address": "1/31 Etherton Drive",
+      "suburb": "Weymouth",
+      "salePrice": 506000,
+      "settlementDate": "2023-08-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/65305217__1682977140-4427-DJI0231v2.jpg",
+        "width": 5465,
+        "height": 3641
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31763",
+      "office": "manurewa"
+    },
+    {
+      "id": 20127350,
+      "address": "22 Coombe Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 650000,
+      "settlementDate": "2023-08-11",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/73652641__1697062475-24930-137A5417.jpg",
+        "width": 5485,
+        "height": 3659
+      },
+      "url": "https://rwmanurewa.co.nz/MAN32048",
+      "office": "manurewa"
+    },
+    {
+      "id": 18711114,
+      "address": "4 Antrim Crescent",
+      "suburb": "Totara Vale",
+      "salePrice": 735000,
+      "settlementDate": "2023-08-08",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/63407248__1676234353-4522-DJI0301.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31614",
+      "office": "manurewa"
+    },
+    {
+      "id": 19342283,
+      "address": "184 Russell Road",
+      "suburb": "Manurewa",
+      "salePrice": 650000,
+      "settlementDate": "2023-08-08",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/77290555__1701207095-4837-DSC05600.jpg",
+        "width": 6010,
+        "height": 4012
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31822",
+      "office": "manurewa"
+    },
+    {
+      "id": 19548997,
+      "address": "35 Waimate Street",
+      "suburb": "Ōtara",
+      "salePrice": 867000,
+      "settlementDate": "2023-08-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/66971999__1687386798-30823-DSC03132.jpg",
+        "width": 6014,
+        "height": 4009
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31891",
+      "office": "manurewa"
+    },
+    {
+      "id": 19128698,
+      "address": "30 Clayden Shuttleworth Street",
+      "suburb": "Papakura",
+      "salePrice": 850000,
+      "settlementDate": "2023-07-20",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/64814188__1680739211-11765-DSC05951.jpg",
+        "width": 6001,
+        "height": 4006
+      },
+      "url": "https://rwmanukau.co.nz/MKU35240",
+      "office": "manukau"
+    },
+    {
+      "id": 19750199,
+      "address": "30 Clayden Shuttleworth Street",
+      "suburb": "Takanini",
+      "salePrice": 850000,
+      "settlementDate": "2023-07-20",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31954",
+      "office": "manurewa"
+    },
+    {
+      "id": 19262748,
+      "address": "29/2 Armoy Drive",
+      "suburb": "East Tamaki",
+      "salePrice": 708000,
+      "settlementDate": "2023-07-06",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/65806156__1684199001-27385-DSC01044.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31808",
+      "office": "manurewa"
+    },
+    {
+      "id": 18699043,
+      "address": "14 Ketu Way",
+      "suburb": "Takanini",
+      "salePrice": 935000,
+      "settlementDate": "2023-06-29",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/63617253__1676939567-8630-SPL4078.jpg",
+        "width": 5760,
+        "height": 3840
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31589",
+      "office": "manurewa"
+    },
+    {
+      "id": 19421713,
+      "address": "35 Waimate Street",
+      "suburb": "Ōtara",
+      "salePrice": 591000,
+      "settlementDate": "2023-06-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31867",
+      "office": "manurewa"
+    },
+    {
+      "id": 19042031,
+      "address": "3/14 Waddell Avenue",
+      "suburb": "Point England",
+      "salePrice": 840000,
+      "settlementDate": "2023-05-19",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31722",
+      "office": "manurewa"
+    },
+    {
+      "id": 18254324,
+      "address": "47 Mahia Road",
+      "suburb": "Manurewa",
+      "salePrice": 935000,
+      "settlementDate": "2023-05-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/62506014__1673394321-6944-DJI0961.jpg",
+        "width": 5472,
+        "height": 3648
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31531",
+      "office": "manurewa"
+    },
+    {
+      "id": 10565285,
+      "address": "1 Antrim Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 699000,
+      "settlementDate": "2023-05-08",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/62505933__1673394179-5623-DJI0995.JPG",
+        "width": 5472,
+        "height": 3648
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31546",
+      "office": "manurewa"
+    },
+    {
+      "id": 17277287,
+      "address": "305/75 Michael Jones Drive",
+      "suburb": "Flat Bush",
+      "salePrice": 535000,
+      "settlementDate": "2023-03-17",
+      "bed": 2,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/59212438__1663626662-28468-DJI0772v2.jpg",
+        "width": 5472,
+        "height": 3648
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31326",
+      "office": "manurewa"
+    },
+    {
+      "id": 10556795,
+      "address": "54A Lothian Brae",
+      "suburb": "Wattle Downs",
+      "salePrice": 888000,
+      "settlementDate": "2023-02-22",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/62678236__1674010244-19585-DSC09872.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31544",
+      "office": "manurewa"
+    },
+    {
+      "id": 18334183,
+      "address": "62 Craig Road",
+      "suburb": "Maraetai",
+      "salePrice": 1225000,
+      "settlementDate": "2023-02-17",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31541",
+      "office": "manurewa"
+    },
+    {
+      "id": 16902010,
+      "address": "19 Clarkson Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 670000,
+      "settlementDate": "2023-02-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/58664480__1661908464-23832-DJI0711v2.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31232",
+      "office": "manurewa"
+    },
+    {
+      "id": 18499675,
+      "address": "7 Edward Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 750000,
+      "settlementDate": "2023-02-10",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31562",
+      "office": "manurewa"
+    },
+    {
+      "id": 16977069,
+      "address": "2/22 Bundena Place",
+      "suburb": "Clendon Park",
+      "salePrice": 517000,
+      "settlementDate": "2022-12-16",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/60684524__1667434514-26390-SPL7353.jpg",
+        "width": 5760,
+        "height": 3840
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31283",
+      "office": "manurewa"
+    },
+    {
+      "id": 17893777,
+      "address": "42 Waimahia Avenue",
+      "suburb": "Weymouth",
+      "salePrice": 890000,
+      "settlementDate": "2022-12-15",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN31438",
+      "office": "manurewa"
+    },
+    {
+      "id": 17018306,
+      "address": "6 Stoll Place",
+      "suburb": "Clendon Park",
+      "salePrice": 771000,
+      "settlementDate": "2022-12-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/59285723__1663890777-30179-DJI0003V2.jpg",
+        "width": 5472,
+        "height": 3648
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31307",
+      "office": "manurewa"
+    },
+    {
+      "id": 16421474,
+      "address": "23a Ropata Avenue",
+      "suburb": "Point England",
+      "salePrice": 920000,
+      "settlementDate": "2022-12-05",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/59102539__1663118198-27085-DSC02485.jpg",
+        "width": 6002,
+        "height": 4005
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30782",
+      "office": "manurewa"
+    },
+    {
+      "id": 16712548,
+      "address": "2 Short Street",
+      "suburb": "Papakura",
+      "salePrice": 905000,
+      "settlementDate": "2022-10-13",
+      "bed": 5,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/58123392__1660607185-4296-STUDYROOM.png",
+        "width": 2048,
+        "height": 1536
+      },
+      "url": "https://rwmanurewa.co.nz/MAN31151",
+      "office": "manurewa"
+    },
+    {
+      "id": 10557397,
+      "address": "70 Franklyne Road",
+      "suburb": "Totara Vale",
+      "salePrice": 900000,
+      "settlementDate": "2022-08-25",
+      "bed": 5,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/55257185__1653529693-10225-djiexport1653519584838-HDRV2.jpg",
+        "width": 5451,
+        "height": 3634
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30687",
+      "office": "manurewa"
+    },
+    {
+      "id": 16187889,
+      "address": "301 Mahia Road",
+      "suburb": "Weymouth",
+      "salePrice": 940000,
+      "settlementDate": "2022-08-10",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/55311550__1653861519-14056-DSC03307.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30693",
+      "office": "manurewa"
+    },
+    {
+      "id": 16308334,
+      "address": "48 Castleton Drive",
+      "suburb": "Mellons Bay",
+      "salePrice": 1301000,
+      "settlementDate": "2022-08-01",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/56168404__1655866606-21209-DSC08363a.jpg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU32973",
+      "office": "manukau"
+    },
+    {
+      "id": 16558364,
+      "address": "48 Castleton Drive",
+      "suburb": "Mellons Bay",
+      "salePrice": 1301000,
+      "settlementDate": "2022-08-01",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30990",
+      "office": "manurewa"
+    },
+    {
+      "id": 10622894,
+      "address": "8 Ansty Place",
+      "suburb": "Māngere",
+      "salePrice": 740000,
+      "settlementDate": "2022-07-20",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/38022693__1628028554-14123-005Open2viewID515545-8AnstyPlaceMangere.jpg",
+        "width": 5568,
+        "height": 3712
+      },
+      "url": "https://rwmanukau.co.nz/MKU30008",
+      "office": "manukau"
+    },
+    {
+      "id": 16382020,
+      "address": "8 Ansty Place",
+      "suburb": "Māngere",
+      "salePrice": 740000,
+      "settlementDate": "2022-07-20",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30720",
+      "office": "manurewa"
+    },
+    {
+      "id": 15941268,
+      "address": "20 James Road",
+      "suburb": "Manurewa",
+      "salePrice": 1501000,
+      "settlementDate": "2022-07-04",
+      "bed": 6,
+      "bath": 3,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/54868729__1652305041-4610-DJI0245v2.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30657",
+      "office": "manurewa"
+    },
+    {
+      "id": 15852254,
+      "address": "9 Norm Pellow Drive",
+      "suburb": "Manurewa",
+      "salePrice": 1360500,
+      "settlementDate": "2022-05-31",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/54302599__1650936767-27001-DSC08894.jpg",
+        "width": 4508,
+        "height": 3011
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30648",
+      "office": "manurewa"
+    },
+    {
+      "id": 15248586,
+      "address": "7 Lamborn Drive",
+      "suburb": "Papakura",
+      "salePrice": 1000000,
+      "settlementDate": "2022-05-19",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/53410156__1649044361-4518-DJI0086.JPG",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30583",
+      "office": "manurewa"
+    },
+    {
+      "id": 15227444,
+      "address": "35 Takanini School Road",
+      "suburb": "Takanini",
+      "salePrice": 950000,
+      "settlementDate": "2022-05-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/52111033__1648072079-9957-DSC08855.jpg",
+        "width": 4500,
+        "height": 3002
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30562",
+      "office": "manurewa"
+    },
+    {
+      "id": 10560276,
+      "address": "62 Franklyne Road",
+      "suburb": "Ōtara",
+      "salePrice": 900000,
+      "settlementDate": "2022-04-14",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/50144325__1645396428-3062-DJI0764.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30519",
+      "office": "manurewa"
+    },
+    {
+      "id": 15691428,
+      "address": "17 Mckean Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 1010000,
+      "settlementDate": "2022-04-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30598",
+      "office": "manurewa"
+    },
+    {
+      "id": 14707581,
+      "address": "1 Abilene Place",
+      "suburb": "Manurewa",
+      "salePrice": 1005000,
+      "settlementDate": "2022-03-25",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/49974034__1644983074-13488-dS6DLGyI.jpeg",
+        "width": 4500,
+        "height": 3000
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30516",
+      "office": "manurewa"
+    },
+    {
+      "id": 10621556,
+      "address": "16 Mellefont Close",
+      "suburb": "East Tamaki Heights",
+      "salePrice": 2200000,
+      "settlementDate": "2022-03-17",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/49068192__1644271152-17762-DSC04177.jpg",
+        "width": 4492,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU32439",
+      "office": "manukau"
+    },
+    {
+      "id": 15181014,
+      "address": "54 Myers Road",
+      "suburb": "Manurewa",
+      "salePrice": 1000000,
+      "settlementDate": "2022-03-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30553",
+      "office": "manurewa"
+    },
+    {
+      "id": 10565755,
+      "address": "16 Mellefont Close",
+      "suburb": "East Tamaki Heights",
+      "salePrice": 2200000,
+      "settlementDate": "2022-03-01",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30547",
+      "office": "manurewa"
+    },
+    {
+      "id": 13805004,
+      "address": "8 Karaka Road",
+      "suburb": "Beachlands",
+      "salePrice": 1650000,
+      "settlementDate": "2022-01-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/46297031__1636490011-21660-DJI0860copy.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30359",
+      "office": "manurewa"
+    },
+    {
+      "id": 13874472,
+      "address": "8 Knox Road",
+      "suburb": "Hillpark",
+      "salePrice": 975000,
+      "settlementDate": "2022-01-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/46451385__1636941657-11296-PRINTDJI0008B.jpg",
+        "width": 5464,
+        "height": 3070
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30388",
+      "office": "manurewa"
+    },
+    {
+      "id": 13793016,
+      "address": "5 Nelson Street",
+      "suburb": "Ōtāhuhu",
+      "salePrice": 1600000,
+      "settlementDate": "2021-12-03",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/46233801__1636405805-20976-DJI0682Services.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30358",
+      "office": "manurewa"
+    },
+    {
+      "id": 12985273,
+      "address": "11 Raleigh Place",
+      "suburb": "Ōtara",
+      "salePrice": 896000,
+      "settlementDate": "2021-11-19",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/44500218__1633983128-10683-DJI0592v2.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30266",
+      "office": "manurewa"
+    },
+    {
+      "id": 12984938,
+      "address": "22 Rowandale Avenue",
+      "suburb": "Manurewa",
+      "salePrice": 1200000,
+      "settlementDate": "2021-11-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/44521711__1634012687-9765-RowandaleDrone.jpg",
+        "width": 646,
+        "height": 431
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30263",
+      "office": "manurewa"
+    },
+    {
+      "id": 13256433,
+      "address": "9 Maureen Close",
+      "suburb": "East Tamaki",
+      "salePrice": 1194000,
+      "settlementDate": "2021-10-29",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30304",
+      "office": "manurewa"
+    },
+    {
+      "id": 12251264,
+      "address": "20 Antrim Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 1010000,
+      "settlementDate": "2021-10-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/41441814__1630898036-589-Drone20antrim1.jpeg",
+        "width": 1669,
+        "height": 1076
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30118",
+      "office": "manurewa"
+    },
+    {
+      "id": 12252459,
+      "address": "18 Antrim Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 1010000,
+      "settlementDate": "2021-10-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/41669990__1630980665-4941-414418141630898036-589-Drone20antrim1.jpeg",
+        "width": 1669,
+        "height": 1076
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30117",
+      "office": "manurewa"
+    },
+    {
+      "id": 12513938,
+      "address": "9 Maureen Close",
+      "suburb": "East Tamaki Heights",
+      "salePrice": 1194000,
+      "settlementDate": "2021-10-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/42217505__1631589028-30963-Outsidefrontcopy.jpg",
+        "width": 2160,
+        "height": 2880
+      },
+      "url": "https://rwmanukau.co.nz/MKU31438",
+      "office": "manukau"
+    },
+    {
+      "id": 12104485,
+      "address": "5 Ixia Place",
+      "suburb": "Wiri",
+      "salePrice": 994000,
+      "settlementDate": "2021-10-15",
+      "bed": 5,
+      "bath": 2,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/41919234__1631245128-4199-PHOTO-2021-08-27-15-37-342copy1.jpg",
+        "width": 960,
+        "height": 720
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30054",
+      "office": "manurewa"
+    },
+    {
+      "id": 12074665,
+      "address": "15 Nelson Street",
+      "suburb": "Howick",
+      "salePrice": 1274000,
+      "settlementDate": "2021-10-07",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/40601684__1630282911-26247-image50409473-2copy.jpg",
+        "width": 4032,
+        "height": 3024
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30052",
+      "office": "manurewa"
+    },
+    {
+      "id": 12984924,
+      "address": "771D Great South Road",
+      "suburb": "Papatoetoe",
+      "salePrice": 1110000,
+      "settlementDate": "2021-10-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30262",
+      "office": "manurewa"
+    },
+    {
+      "id": 12151749,
+      "address": "89 Porchester Road",
+      "suburb": "Papakura",
+      "salePrice": 1475000,
+      "settlementDate": "2021-09-30",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/40870774__1630368725-23557-89porchesterPage1copy21.jpg",
+        "width": 2256,
+        "height": 1238
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30058",
+      "office": "manurewa"
+    },
+    {
+      "id": 11374604,
+      "address": "10 Beryl Place",
+      "suburb": "Māngere East",
+      "salePrice": 1151000,
+      "settlementDate": "2021-09-24",
+      "bed": 5,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/38780041__1628825640-16210-DJI0705a.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30031",
+      "office": "manurewa"
+    },
+    {
+      "id": 10564298,
+      "address": "3 Kita Road",
+      "suburb": "Manurewa",
+      "salePrice": 1956521.74,
+      "settlementDate": "2021-09-15",
+      "bed": 2,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289841-hires.20712-DJI0653copy.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26536",
+      "office": "manurewa"
+    },
+    {
+      "id": 10566157,
+      "address": "61 Tyrone Street",
+      "suburb": "Ōtara",
+      "salePrice": 1158000,
+      "settlementDate": "2021-09-10",
+      "bed": 6,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/37251360__1627427924-11897-DJI0538a.jpg",
+        "width": 5464,
+        "height": 3640
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26570",
+      "office": "manurewa"
+    },
+    {
+      "id": 10698229,
+      "address": "21 Adel Place",
+      "suburb": "Weymouth",
+      "salePrice": 1106000,
+      "settlementDate": "2021-09-10",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/38863677__1629067199-6506-DJI0743v3.jpg",
+        "width": 4500,
+        "height": 2998
+      },
+      "url": "https://rwmanurewa.co.nz/MAN30003",
+      "office": "manurewa"
+    },
+    {
+      "id": 10565152,
+      "address": "37 Buller Crescent",
+      "suburb": "Manurewa",
+      "salePrice": 1200000,
+      "settlementDate": "2021-09-03",
+      "bed": 4,
+      "bath": 1,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26471",
+      "office": "manurewa"
+    },
+    {
+      "id": 10923964,
+      "address": "24 Medvale Avenue",
+      "suburb": "Flat Bush",
+      "salePrice": 1110000,
+      "settlementDate": "2021-08-30",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN30023",
+      "office": "manurewa"
+    },
+    {
+      "id": 10566161,
+      "address": "122 Cyril French Drive",
+      "suburb": "Flat Bush",
+      "salePrice": 1359000,
+      "settlementDate": "2021-08-12",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26572",
+      "office": "manurewa"
+    },
+    {
+      "id": 10565398,
+      "address": "90 Porchester Road",
+      "suburb": "Papakura",
+      "salePrice": 790000,
+      "settlementDate": "2021-08-06",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289841-hires.28044-4J2A2146.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26518",
+      "office": "manurewa"
+    },
+    {
+      "id": 10621556,
+      "address": "16 Mellefont Close",
+      "suburb": "East Tamaki Heights",
+      "salePrice": 1321000,
+      "settlementDate": "2021-07-16",
+      "bed": 5,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/49068192__1644271152-17762-DSC04177.jpg",
+        "width": 4492,
+        "height": 3000
+      },
+      "url": "https://rwmanukau.co.nz/MKU30768",
+      "office": "manukau"
+    },
+    {
+      "id": 10565755,
+      "address": "16 Mellefont Close",
+      "suburb": "East Tamaki Heights",
+      "salePrice": 1321000,
+      "settlementDate": "2021-07-16",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26530",
+      "office": "manurewa"
+    },
+    {
+      "id": 10564771,
+      "address": "16 Old Park Place",
+      "suburb": "Takanini",
+      "salePrice": 881500,
+      "settlementDate": "2021-06-17",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289841-hires.17121-DJI0552.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26425",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562977,
+      "address": "149 Preston Road",
+      "suburb": "Ōtara",
+      "salePrice": 755000,
+      "settlementDate": "2021-06-04",
+      "bed": 3,
+      "bath": 1,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.17160-DJI0457.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26336",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562963,
+      "address": "5 Corsair Cresent",
+      "suburb": "Māngere",
+      "salePrice": 860000,
+      "settlementDate": "2021-05-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26331",
+      "office": "manurewa"
+    },
+    {
+      "id": 10564298,
+      "address": "3 Kita Road",
+      "suburb": "Manurewa",
+      "salePrice": 1925000,
+      "settlementDate": "2021-05-20",
+      "bed": 2,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289841-hires.20712-DJI0653copy.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26536",
+      "office": "manurewa"
+    },
+    {
+      "id": 10561659,
+      "address": "3 Advene Road",
+      "suburb": "Cockle Bay",
+      "salePrice": 1545000,
+      "settlementDate": "2021-03-31",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.26326-DJI0511.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26178",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562681,
+      "address": "70A Preston Road",
+      "suburb": "Clover Park",
+      "salePrice": 703550,
+      "settlementDate": "2021-03-24",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.25274-ANI2186.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26288",
+      "office": "manurewa"
+    },
+    {
+      "id": 10563723,
+      "address": "77D Goodall Street",
+      "suburb": "Hillsborough",
+      "salePrice": 1576000,
+      "settlementDate": "2021-03-15",
+      "bed": 4,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26368",
+      "office": "manurewa"
+    },
+    {
+      "id": 10618069,
+      "address": "110A Litten Road",
+      "suburb": "Cockle Bay",
+      "salePrice": 922000,
+      "settlementDate": "2021-02-24",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291492-hires.15744-DJI0399copy.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29963",
+      "office": "manukau"
+    },
+    {
+      "id": 10561795,
+      "address": "5 Don Place",
+      "suburb": "Totara Vale",
+      "salePrice": 708000,
+      "settlementDate": "2021-01-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.8749-DJI0980.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26198",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562086,
+      "address": "10 Birch Place",
+      "suburb": "Ōtara",
+      "salePrice": 750000,
+      "settlementDate": "2021-01-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.26649-10BirchPlaceConceptPage1.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26222",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562251,
+      "address": "1/5 Coombe Avenue",
+      "suburb": "Ōtara",
+      "salePrice": 560000,
+      "settlementDate": "2021-01-26",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.30307-Aerial.JPG",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26253",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562267,
+      "address": "44 Tyrone Street",
+      "suburb": "Ōtara",
+      "salePrice": 790000,
+      "settlementDate": "2021-01-19",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26262",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562245,
+      "address": "110A Litten Road",
+      "suburb": "Cockle Bay",
+      "salePrice": 922000,
+      "settlementDate": "2021-01-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26250",
+      "office": "manurewa"
+    },
+    {
+      "id": 10561663,
+      "address": "26 McGregor Road",
+      "suburb": "Clevedon",
+      "salePrice": 1930000,
+      "settlementDate": "2021-01-15",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.409-DSC05081.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26180",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562098,
+      "address": "1/6 Abelia Place",
+      "suburb": "Papatoetoe",
+      "salePrice": 665000,
+      "settlementDate": "2020-12-22",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26231",
+      "office": "manurewa"
+    },
+    {
+      "id": 10562096,
+      "address": "6A Abelia Place",
+      "suburb": "Papatoetoe",
+      "salePrice": 675000,
+      "settlementDate": "2020-12-20",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26230",
+      "office": "manurewa"
+    },
+    {
+      "id": 10561249,
+      "address": "32 Te Pene Road",
+      "suburb": "Maraetai",
+      "salePrice": 1610000,
+      "settlementDate": "2020-11-26",
+      "bed": 4,
+      "bath": 1,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.19353-DJI0156copy.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26133",
+      "office": "manurewa"
+    },
+    {
+      "id": 10560760,
+      "address": "7 Challinor Street",
+      "suburb": "Pakuranga",
+      "salePrice": 1045000,
+      "settlementDate": "2020-11-01",
+      "bed": 3,
+      "bath": 2,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26121",
+      "office": "manurewa"
+    },
+    {
+      "id": 10560941,
+      "address": "1 & 2/3 Station Road",
+      "suburb": "Takanini",
+      "salePrice": 1151000,
+      "settlementDate": "2020-10-28",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289840-hires.16081-2G1C0674.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN26128",
+      "office": "manurewa"
+    },
+    {
+      "id": 10561306,
+      "address": "15 Waite Avenue",
+      "suburb": "Wesley",
+      "salePrice": 1380000,
+      "settlementDate": "2020-10-24",
+      "bed": 2,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26153",
+      "office": "manurewa"
+    },
+    {
+      "id": 10613775,
+      "address": "7 Challinor Street",
+      "suburb": "Pakuranga",
+      "salePrice": 1045000,
+      "settlementDate": "2020-10-13",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.19906-DJI0900-V21.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29539",
+      "office": "manukau"
+    },
+    {
+      "id": 10613245,
+      "address": "4 Blake Road",
+      "suburb": "Māngere East",
+      "salePrice": 638000,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.3205-WEBSNP9181.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29400",
+      "office": "manukau"
+    },
+    {
+      "id": 10558307,
+      "address": "4 Blake Road",
+      "suburb": "Māngere East",
+      "salePrice": 638000,
+      "settlementDate": "2020-09-29",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26032",
+      "office": "manurewa"
+    },
+    {
+      "id": 10556789,
+      "address": "30 Gilbert Road",
+      "suburb": "Totara Vale",
+      "salePrice": 775000,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 1,
+      "car": 3,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289839-hires.26725-DJI0306-V2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN25951",
+      "office": "manurewa"
+    },
+    {
+      "id": 10557579,
+      "address": "4 Pembroke Crescent",
+      "suburb": "Glendowie",
+      "salePrice": 1280000,
+      "settlementDate": "2020-09-29",
+      "bed": 3,
+      "bath": 2,
+      "car": 0,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3594/mydimport-1627289839-hires.24406-4J2A3844.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanurewa.co.nz/MAN25982",
+      "office": "manurewa"
+    },
+    {
+      "id": 10559801,
+      "address": "39 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 653000,
+      "settlementDate": "2020-09-25",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26060",
+      "office": "manurewa"
+    },
+    {
+      "id": 10559600,
+      "address": "256 Sandwich Road",
+      "suburb": "Hamilton",
+      "salePrice": 689000,
+      "settlementDate": "2020-08-30",
+      "bed": 4,
+      "bath": 1,
+      "car": 1,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN26054",
+      "office": "manurewa"
+    },
+    {
+      "id": 10613421,
+      "address": "39 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 653000,
+      "settlementDate": "2020-08-27",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291489-hires.18254-WEBIMG3262.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29442",
+      "office": "manukau"
+    },
+    {
+      "id": 10612517,
+      "address": "58a Coxhead Road",
+      "suburb": "Manurewa",
+      "salePrice": 910000,
+      "settlementDate": "2020-07-09",
+      "bed": 6,
+      "bath": 2,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.18011-028aOpen2viewID481938-58aCoxheadRoadManurewa2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29252",
+      "office": "manukau"
+    },
+    {
+      "id": 10557583,
+      "address": "58A Coxhead Road",
+      "suburb": "Manurewa",
+      "salePrice": 910000,
+      "settlementDate": "2020-07-09",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN25984",
+      "office": "manurewa"
+    },
+    {
+      "id": 10612511,
+      "address": "10 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 666000,
+      "settlementDate": "2020-07-07",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.25676-hires.26510-driveway.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29247",
+      "office": "manukau"
+    },
+    {
+      "id": 10557581,
+      "address": "10 Fairlight Place",
+      "suburb": "Manurewa",
+      "salePrice": 666000,
+      "settlementDate": "2020-07-07",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN25983",
+      "office": "manurewa"
+    },
+    {
+      "id": 10611696,
+      "address": "10 & 10a Crown Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 840000,
+      "settlementDate": "2020-07-02",
+      "bed": 5,
+      "bath": 2,
+      "car": 4,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.5450-DJI0012-V2.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU28954",
+      "office": "manukau"
+    },
+    {
+      "id": 10556793,
+      "address": "10 Crown Crescent",
+      "suburb": "Ōtara",
+      "salePrice": 840000,
+      "settlementDate": "2020-07-02",
+      "bed": 0,
+      "bath": 0,
+      "car": 0,
+      "photo": null,
+      "url": "https://rwmanurewa.co.nz/MAN25953",
+      "office": "manurewa"
+    },
+    {
+      "id": 10611965,
+      "address": "41 Mt Albert Road",
+      "suburb": "Mount Albert",
+      "salePrice": 1170000,
+      "settlementDate": "2020-06-15",
+      "bed": 3,
+      "bath": 1,
+      "car": 1,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/3596/mydimport-1627291488-hires.5073-010Open2viewID480616-41MtAlbertRoadMtAlbert.jpg",
+        "width": 0,
+        "height": 0
+      },
+      "url": "https://rwmanukau.co.nz/MKU29022",
+      "office": "manukau"
+    }
+  ],
+  "soldTotal": 218,
+  "offices": [
+    {
+      "office": "manukau",
+      "vaultreId": 132888
+    },
+    {
+      "office": "manurewa",
+      "vaultreId": 132615
+    }
+  ]
+}
