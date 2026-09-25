@@ -471,6 +471,41 @@ if (PREVIEW) {
   }
 }
 
+/* ------------------------------------------------------------------ */
+/* robots.txt + sitemap.xml                                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Both were missing until 2026-09-25 and both returned 404 on the live site.
+ * Neither is strictly required — Google will crawl a single page without
+ * them — but the sitemap is what tells it the lastmod date, which is how a
+ * daily-rebuilt page gets recrawled rather than sat on for weeks.
+ *
+ * Skipped for --preview, where a sitemap pointing at the live domain would
+ * be wrong.
+ */
+if (!PREVIEW) {
+  await fs.writeFile(
+    path.join(OUT, "robots.txt"),
+    `User-agent: *\nAllow: /\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`
+  );
+
+  const lastmod = new Date().toISOString().slice(0, 10);
+  await fs.writeFile(
+    path.join(OUT, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      `  <url>\n` +
+      `    <loc>${SITE_ORIGIN}/</loc>\n` +
+      `    <lastmod>${lastmod}</lastmod>\n` +
+      `    <changefreq>daily</changefreq>\n` +
+      `    <priority>1.0</priority>\n` +
+      `  </url>\n` +
+      `</urlset>\n`
+  );
+  console.log("[build] Wrote robots.txt and sitemap.xml");
+}
+
 const bytes = (await fs.stat(path.join(OUT, "index.html"))).size;
 console.log(
   `[build] Wrote ${path.relative(HERE, OUT)}/index.html (${(bytes / 1024).toFixed(0)} KB) ` +
