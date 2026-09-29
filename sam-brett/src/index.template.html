@@ -21,11 +21,7 @@
   <div class="container">
     <div class="header__inner">
       <a href="/" class="header__logo">
-        <svg class="raywhite-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <rect width="100" height="100" fill="#FFE512" />
-          <text x="5" y="80" font-size="24" font-weight="bold" font-family="Arial" fill="#595959">RAYWHITE</text>
-        </svg>
-        <span class="header__title">Sam & Brett</span>
+        <img src="assets/raywhite-logo.png" alt="Ray White" class="raywhite-logo" />
       </a>
       <nav class="nav">
         <a href="#about" class="nav__link">About</a>
@@ -39,25 +35,12 @@
 </header>
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" style="background-image: url('assets/sam-and-brett-team-photo.jpg');">
+  <div class="hero__overlay"></div>
   <div class="hero__content">
-    <h1 class="hero__title">South Auckland's Top Real Estate Team</h1>
-    <p class="hero__subtitle">{{SOLD_COUNT}}+ sales | {{TOTAL_SETTLED}} settled | {{YEARS_ACTIVE}} years of expertise</p>
+    <h1 class="hero__title">Trusted Real Estate Experts in South Auckland</h1>
+    <p class="hero__subtitle">40+ years combined experience serving Wattle Downs, Manurewa, Hill Park and surrounding areas</p>
     <a href="#contact" class="btn btn--primary">Get Your Property Valued</a>
-  </div>
-  <div class="hero__stats">
-    <div class="stat">
-      <div class="stat__value">{{SOLD_COUNT}}+</div>
-      <div class="stat__label">Sales</div>
-    </div>
-    <div class="stat">
-      <div class="stat__value">{{TOTAL_SETTLED}}</div>
-      <div class="stat__label">Settled Value</div>
-    </div>
-    <div class="stat">
-      <div class="stat__value">{{MEDIAN_PRICE}}</div>
-      <div class="stat__label">Median Sale Price</div>
-    </div>
   </div>
 </section>
 
