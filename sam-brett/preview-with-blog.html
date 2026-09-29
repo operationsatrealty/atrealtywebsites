@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sam Steel & Brett Norris – Ray White Manurewa Real Estate Agents</title>
+  <meta name="description" content="Top real estate agents in Wattle Downs, Manurewa, Hill Park & South Auckland. 0+ sales, $0 in settled transactions. Ray White Manurewa." />
+  <meta property="og:title" content="Sam Steel & Brett Norris – Ray White Manurewa" />
+  <meta property="og:description" content="Leading South Auckland real estate team with 0+ sales and $0 settled value." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samandbrett.co.nz/" />
+  <link rel="canonical" href="https://samandbrett.co.nz/" />
+  <style>
+:root {
+  --yellow: #FFE512;
+  --dark-grey: #595959;
+  --light-grey: #EBEBEC;
+  --white: #FFFFFF;
+  --ink: #1a1a1a;
+
+  --font-primary: "Lato", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--dark-grey);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Header */
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--light-grey);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) 0;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.raywhite-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header__title {
+  color: var(--dark-grey);
+  font-family: var(--font-display);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: var(--yellow);
+}
+
+.nav__link--cta {
+  background: var(--yellow);
+  color: var(--white);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.hero__content {
+  padding: 0 var(--space-lg);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--dark-grey);
+  margin-bottom: var(--space-lg);
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: #e6cc00;
+  transform: translateY(-2px);
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  padding: 0 var(--space-lg);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--yellow);
+  font-family: var(--font-display);
+}
+
+.stat__label {
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+  margin-top: var(--space-xs);
+}
+
+/* About Section */
+.about {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.agent {
+  background: #f9f9f9;
+  padding: var(--space-lg);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.agent__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: var(--space-md);
+  object-fit: cover;
+}
+
+.agent__name {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: var(--space-xs);
+}
+
+.agent__title {
+  color: var(--yellow);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.agent__bio {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.agent__contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.agent__contact a {
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: var(--space-xs);
+}
+
+.about__statement {
+  background: linear-gradient(135deg, #fffbf0 0%, #fff8f0 100%);
+  padding: var(--space-lg);
+  border-left: 4px solid var(--yellow);
+  margin-bottom: var(--space-2xl);
+}
+
+.about__statement p {
+  margin-bottom: var(--space-md);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about__statement p:last-child {
+  margin-bottom: 0;
+}
+
+/* Awards */
+.awards {
+  background: #f9f9f9;
+  padding: var(--space-lg);
+  border-radius: 8px;
+}
+
+.awards h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.awards__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.award {
+  background: var(--white);
+  padding: var(--space-md);
+  border-radius: 4px;
+  border-top: 3px solid var(--yellow);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Listings */
+.listings {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.listings__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.listings__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--dark-grey);
+}
+
+.card {
+  display: block;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card__media {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background: #e0e0e0;
+}
+
+.card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__tag {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: var(--yellow);
+  color: var(--white);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card__body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.card__addr {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.card__suburb {
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+}
+
+.card__price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.card__specs {
+  display: flex;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+}
+
+.card__specs span {
+  background: var(--light-grey);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 3px;
+}
+
+/* Sales / Sold Properties */
+.sales {
+  padding: var(--space-2xl) 0;
+  background: #f9f9f9;
+}
+
+.sales__subtitle {
+  text-align: center;
+  color: var(--dark-grey);
+  margin-bottom: var(--space-lg);
+}
+
+.sales__table-wrapper {
+  overflow-x: auto;
+}
+
+.sales__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sales__table thead {
+  background: var(--dark-grey);
+  color: var(--white);
+}
+
+.sales__table th {
+  padding: var(--space-md);
+  text-align: left;
+  font-weight: 600;
+}
+
+.sales__table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.sales__table tbody tr:hover {
+  background: #f0f0f0;
+}
+
+.sold__addr {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.sold__suburb {
+  color: var(--dark-grey);
+}
+
+/* Contact Section */
+.contact {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+}
+
+.contact__info {
+  background: #f9f9f9;
+  padding: var(--space-lg);
+  border-radius: 8px;
+}
+
+.contact__info h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.contact__info p {
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.contact__form {
+  background: #f9f9f9;
+  padding: var(--space-lg);
+  border-radius: 8px;
+}
+
+.formPanel__fallback {
+  color: var(--dark-grey);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-grey);
+  color: var(--white);
+  padding: var(--space-lg) 0;
+  text-align: center;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.footer__links a {
+  color: var(--white);
+}
+
+.footer__links a:hover {
+  color: var(--yellow);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .header__inner {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .listings__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+  }
+
+  .section__title {
+    font-size: 1.75rem;
+  }
+
+  .stat__value {
+    font-size: 2rem;
+  }
+}
+
+/* Blog Pages */
+.blog-post {
+  padding: var(--space-2xl) 0;
+}
+
+.blog-post__header {
+  margin-bottom: var(--space-2xl);
+  border-bottom: 2px solid var(--light-grey);
+  padding-bottom: var(--space-lg);
+}
+
+.blog-post__title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.blog-post__meta {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+}
+
+.blog-post__suburb {
+  background: var(--light-grey);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 3px;
+}
+
+.blog-post__body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-2xl);
+  color: var(--dark-grey);
+}
+
+.blog-post__body h1,
+.blog-post__body h2,
+.blog-post__body h3 {
+  font-family: var(--font-display);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  color: var(--ink);
+}
+
+.blog-post__body h1 {
+  font-size: 2rem;
+}
+
+.blog-post__body h2 {
+  font-size: 1.75rem;
+}
+
+.blog-post__body h3 {
+  font-size: 1.35rem;
+}
+
+.blog-post__body p {
+  margin-bottom: var(--space-md);
+}
+
+.blog-post__body ul {
+  margin: var(--space-lg) 0;
+  padding-left: var(--space-lg);
+}
+
+.blog-post__body li {
+  margin-bottom: var(--space-sm);
+}
+
+.blog-post__body strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.blog-post__footer {
+  background: linear-gradient(135deg, #fffbf0 0%, #fff8f0 100%);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  margin-top: var(--space-2xl);
+}
+
+.blog-post__cta {
+  text-align: center;
+}
+
+.blog-post__cta p {
+  margin-bottom: var(--space-md);
+}
+
+.blog-related {
+  padding: var(--space-2xl) 0;
+  background: #f9f9f9;
+}
+
+.blog-related__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.blog-related__item {
+  background: var(--white);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  border-left: 4px solid var(--yellow);
+}
+
+.blog-related__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-related__item h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--ink);
+}
+
+.blog-related__item p {
+  font-size: 0.95rem;
+  color: var(--dark-grey);
+  margin-bottom: var(--space-md);
+}
+
+.blog-related__item time {
+  font-size: 0.85rem;
+  color: var(--dark-grey);
+}
+
+/* Blog Index */
+.blog-index {
+  padding: var(--space-2xl) 0;
+}
+
+.blog-index__header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.blog-index__header h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.blog-index__list {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.blog-card {
+  padding: var(--space-lg);
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid var(--yellow);
+}
+
+.blog-card h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.blog-card h2 a {
+  color: var(--ink);
+}
+
+.blog-card h2 a:hover {
+  color: var(--yellow);
+}
+
+.blog-card__meta {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+  margin-bottom: var(--space-md);
+}
+
+.blog-card__meta span {
+  background: var(--white);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 3px;
+}
+
+.blog-card p {
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.blog-card__link {
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.blog-card__link:hover {
+  text-decoration: underline;
+}
+
+</style>
+  <text y='75' font-size='75' font-weight='bold' fill='%23FFE512'>S</text></svg>" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Sam Steel & Brett Norris","url":"https://samandbrett.co.nz/","telephone":"+64 21 026 2945","email":"sam.steel@raywhite.com","areaServed":["Wattle Downs","Hill Park","Manurewa","Totara Park","The Gardens"],"worksFor":{"@type":"Organization","name":"Ray White Manurewa (A T Realty)"},"address":{"@type":"PostalAddress","streetAddress":"182 Great South Road","addressLocality":"Manurewa","addressRegion":"Auckland","postalCode":"2102","addressCountry":"NZ"}}</script>
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <svg class="raywhite-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" fill="#FFE512" />
+          <text x="5" y="80" font-size="24" font-weight="bold" font-family="Arial" fill="#595959">RAYWHITE</text>
+        </svg>
+        <span class="header__title">Sam & Brett</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#listings" class="nav__link">For Sale</a>
+        <a href="#sales" class="nav__link">Sold</a>
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero__content">
+    <h1 class="hero__title">South Auckland's Top Real Estate Team</h1>
+    <p class="hero__subtitle">0+ sales | $0 settled | 6 years of expertise</p>
+    <a href="#contact" class="btn btn--primary">Get Your Property Valued</a>
+  </div>
+  <div class="hero__stats">
+    <div class="stat">
+      <div class="stat__value">0+</div>
+      <div class="stat__label">Sales</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">$0</div>
+      <div class="stat__label">Settled Value</div>
+    </div>
+    <div class="stat">
+      <div class="stat__value">$0</div>
+      <div class="stat__label">Median Sale Price</div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section__title">About Sam & Brett</h2>
+
+    <div class="about__grid">
+      <div class="agent">
+        <img src="/assets/sam-portrait-placeholder.jpg" alt="Sam Steel" class="agent__photo" />
+        <h3 class="agent__name">Sam Steel</h3>
+        <p class="agent__title">Real Estate Agent</p>
+        <p class="agent__bio">
+          With over 12 years of industry experience, Sam has built a reputation in the Wattle Downs and South Auckland community for his honesty, strong marketing strategies, and exceptional negotiation skills. With over 350 sales, Sam's business thrives on repeat and referral clients who value his transparent and upfront approach.
+        </p>
+        <div class="agent__contact">
+          <a href="tel:+642102262945">021 026 2945</a>
+          <a href="mailto:sam.steel@raywhite.com">sam.steel@raywhite.com</a>
+        </div>
+      </div>
+
+      <div class="agent">
+        <img src="/assets/brett-portrait-placeholder.jpg" alt="Brett Norris" class="agent__photo" />
+        <h3 class="agent__name">Brett Norris</h3>
+        <p class="agent__title">Real Estate Agent</p>
+        <p class="agent__bio">
+          Brett's remarkable career spans over three decades, starting in Manurewa in 1991. Armed with a National Diploma in Real Estate and numerous awards, Brett has consistently delivered outstanding outcomes for clients, achieving over 1,000 local sales. Known for his integrity and client-first philosophy, Brett brings wealth of experience and a tailored approach to every property journey.
+        </p>
+        <div class="agent__contact">
+          <a href="tel:+64274988529">027 498 8529</a>
+          <a href="mailto:brett.norris@raywhite.com">brett.norris@raywhite.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__statement">
+      <p><strong>Together, Sam and Brett offer a powerful blend of modern marketing, proven strategies, and over 4 decades of sales expertise.</strong></p>
+      <p>Whether you're buying or selling, their combined skills and commitment to achieving premium results make them the team you want by your side.</p>
+    </div>
+
+    <div class="awards">
+      <h3>Awards & Recognition</h3>
+      <div class="awards__grid">
+        <div class="award"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2023</div>
+        <div class="award"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2022</div>
+        <div class="award"><strong>Top 10%</strong><br />Previous Brand 2024</div>
+        <div class="award"><strong>Top 5%</strong><br />Previous Brand 2023</div>
+        <div class="award"><strong>Top 2.5%</strong><br />Previous Brand 2022–2020</div>
+        <div class="award"><strong>21 Club</strong><br />2021</div>
+        <div class="award"><strong>Top 7% Internationally</strong><br />Premier Performer 2025–2026</div>
+        <div class="award"><strong>Top 3% Internationally</strong><br />Elite Member 2025–2026</div>
+        <div class="award"><strong>50 Million Dollar Club</strong><br />A T Realty Limited 2025–2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Current Listings -->
+<section id="listings" class="listings">
+  <div class="container">
+    <h2 class="section__title">Current Properties For Sale</h2>
+    <p class="listings__empty">
+      Nothing on the market at this moment — new campaigns launch regularly.
+      <a href="#contact">Get in touch</a> and we'll let you know what's coming.
+    </p>
+  </div>
+</section>
+
+<!-- Sold Properties -->
+<section id="sales" class="sales">
+  <div class="container">
+    <h2 class="section__title">Recently Sold</h2>
+    <p class="sales__subtitle">0 of 0+ sales in South Auckland</p>
+    <div class="sales__table-wrapper">
+      <table class="sales__table">
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th>Suburb</th>
+            <th>Sale Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section__title">Get in Touch</h2>
+    <div class="contact__grid">
+      <div class="contact__info">
+        <h3>Ray White Manurewa</h3>
+        <p>
+          182 Great South Road<br />
+          Manurewa, Auckland 2102<br />
+          <strong>Phone:</strong> <a href="tel:+6492690636">(09) 269 0636</a>
+        </p>
+        <p>
+          <strong>Sam Steel:</strong> <a href="tel:+642102262945">021 026 2945</a><br />
+          <strong>Brett Norris:</strong> <a href="tel:+64274988529">027 498 8529</a>
+        </p>
+      </div>
+      <div class="contact__form">
+        <div class="formPanel__fallback">
+        <strong style="color:var(--ink);font-size:1rem">Appraisal request form</strong>
+        <p>The live A T Realty form is embedded here on the published site.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <p>&copy; 2020-<span id="year"></span> Sam Steel & Brett Norris. Ray White Manurewa (A T Realty Group).</p>
+      <div class="footer__links">
+        <a href="https://www.facebook.com/samsteelrealestate">Facebook</a>
+        <a href="https://www.instagram.com/samsteel_realestate/">Instagram</a>
+        <a href="https://www.linkedin.com/in/brett-norris-071284245/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Mobile nav toggle (optional, if needed)
+const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav__link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Smooth scroll already handled by CSS scroll-behavior
+  });
+});
+
+</script>
+
+
+</body>
+</html>

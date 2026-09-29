@@ -1,0 +1,45 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node build.mjs",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/testimonials",
+      "destination": "/#reviews",
+      "permanent": true
+    },
+    {
+      "source": "/my-properties",
+      "destination": "/#listings",
+      "permanent": true
+    },
+    {
+      "source": "/recent-sales",
+      "destination": "/#sales",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

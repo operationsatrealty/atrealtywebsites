@@ -65,3 +65,15 @@ jobs:
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
           echo "Deploy hook responded $code"
           [ "$code" = "201" ] || [ "$code" = "200" ]
+
+      - name: Sam & Brett
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_SAM_BRETT }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::notice::No deploy hook set for Sam & Brett — skipping."
+            exit 0
+          fi
+          code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
+          echo "Deploy hook responded $code"
+          [ "$code" = "201" ] || [ "$code" = "200" ]

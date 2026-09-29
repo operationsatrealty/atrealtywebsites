@@ -1,0 +1,9 @@
+node_modules/
+package.json
+package-lock.json
+.DS_Store
+.vercel
+*.log
+dist/
+dist-preview/
+.image-cache/
