@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sam Steel & Brett Norris – Ray White Manurewa Real Estate Agents</title>
-  <meta name="description" content="Top real estate agents in Wattle Downs, Manurewa, Hill Park & South Auckland. {{SOLD_COUNT}}+ sales, {{TOTAL_SETTLED}} in settled transactions. Ray White Manurewa." />
+  <meta name="description" content="Trusted real estate experts in Wattle Downs, Manurewa, Hill Park & South Auckland. 40+ years combined experience. Ray White Manurewa." />
   <meta property="og:title" content="Sam Steel & Brett Norris – Ray White Manurewa" />
-  <meta property="og:description" content="Leading South Auckland real estate team with {{SOLD_COUNT}}+ sales and {{TOTAL_SETTLED}} settled value." />
+  <meta property="og:description" content="Trusted real estate experts in South Auckland with 40+ years combined experience." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://samandbrett.co.nz/" />
   <link rel="canonical" href="https://samandbrett.co.nz/" />
@@ -16,19 +16,19 @@
 </head>
 <body>
 
-<!-- Header & Navigation -->
+<!-- Header Navigation -->
 <header class="header">
   <div class="container">
     <div class="header__inner">
       <a href="/" class="header__logo">
-        <img src="assets/raywhite-logo.png" alt="Ray White" class="raywhite-logo" />
+        <img src="assets/raywhite-logo.png" alt="Ray White" class="header__logo-img" />
       </a>
       <nav class="nav">
         <a href="#about" class="nav__link">About</a>
         <a href="#listings" class="nav__link">For Sale</a>
-        <a href="#sales" class="nav__link">Sold</a>
+        <a href="#sold" class="nav__link">Sold</a>
         <a href="/blog/" class="nav__link">Blog</a>
-        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        <a href="#contact" class="nav__link nav__cta">Get in Touch</a>
       </nav>
     </div>
   </div>
@@ -37,63 +37,111 @@
 <!-- Hero Section -->
 <section class="hero" style="background-image: url('assets/sam-and-brett-team-photo.jpg');">
   <div class="hero__overlay"></div>
-  <div class="hero__content">
-    <h1 class="hero__title">Trusted Real Estate Experts in South Auckland</h1>
-    <p class="hero__subtitle">40+ years combined experience serving Wattle Downs, Manurewa, Hill Park and surrounding areas</p>
-    <a href="#contact" class="btn btn--primary">Get Your Property Valued</a>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="hero__heading">Trusted Real Estate Experts in South Auckland</h1>
+        <p class="hero__subheading">40+ years combined experience helping families and investors achieve their property goals</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">Get Your Property Valued</a>
+          <a href="#listings" class="btn btn--secondary">View Available Properties</a>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-value">{{SOLD_COUNT}}+</div>
+          <div class="hero__stat-label">Properties Sold</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">{{TOTAL_SETTLED}}</div>
+          <div class="hero__stat-label">Total Value</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">40+</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- About Section -->
 <section id="about" class="about">
   <div class="container">
-    <h2 class="section__title">About Sam & Brett</h2>
+    <h2 class="section__heading">Meet Sam & Brett</h2>
 
     <div class="about__grid">
-      <div class="agent">
-        <img src="{{PORTRAIT_SAM}}" alt="Sam Steel" class="agent__photo" />
-        <h3 class="agent__name">Sam Steel</h3>
-        <p class="agent__title">Real Estate Agent</p>
-        <p class="agent__bio">
-          With over 12 years of industry experience, Sam has built a reputation in the Wattle Downs and South Auckland community for his honesty, strong marketing strategies, and exceptional negotiation skills. With over 350 sales, Sam's business thrives on repeat and referral clients who value his transparent and upfront approach.
-        </p>
-        <div class="agent__contact">
-          <a href="tel:+642102262945">021 026 2945</a>
-          <a href="mailto:sam.steel@raywhite.com">sam.steel@raywhite.com</a>
+      <div class="about__agent">
+        <img src="{{PORTRAIT_SAM}}" alt="Sam Steel" class="about__portrait" />
+        <div class="about__agent-content">
+          <h3 class="about__name">Sam Steel</h3>
+          <p class="about__role">Real Estate Agent</p>
+          <p class="about__bio">With over 12 years of industry experience, Sam has built a reputation in the Wattle Downs and South Auckland community for his honesty, strong marketing strategies, and exceptional negotiation skills. With over 350 sales, Sam's business thrives on repeat and referral clients who value his transparent and upfront approach.</p>
+          <div class="about__contact">
+            <a href="tel:+642102262945" class="contact-link">021 026 2945</a>
+            <a href="mailto:sam.steel@raywhite.com" class="contact-link">sam.steel@raywhite.com</a>
+          </div>
         </div>
       </div>
 
-      <div class="agent">
-        <img src="{{PORTRAIT_BRETT}}" alt="Brett Norris" class="agent__photo" />
-        <h3 class="agent__name">Brett Norris</h3>
-        <p class="agent__title">Real Estate Agent</p>
-        <p class="agent__bio">
-          Brett's remarkable career spans over three decades, starting in Manurewa in 1991. Armed with a National Diploma in Real Estate and numerous awards, Brett has consistently delivered outstanding outcomes for clients, achieving over 1,000 local sales. Known for his integrity and client-first philosophy, Brett brings wealth of experience and a tailored approach to every property journey.
-        </p>
-        <div class="agent__contact">
-          <a href="tel:+64274988529">027 498 8529</a>
-          <a href="mailto:brett.norris@raywhite.com">brett.norris@raywhite.com</a>
+      <div class="about__agent">
+        <img src="{{PORTRAIT_BRETT}}" alt="Brett Norris" class="about__portrait" />
+        <div class="about__agent-content">
+          <h3 class="about__name">Brett Norris</h3>
+          <p class="about__role">Real Estate Agent</p>
+          <p class="about__bio">Brett's remarkable career spans over three decades, starting in Manurewa in 1991. Armed with a National Diploma in Real Estate and numerous awards, Brett has consistently delivered outstanding outcomes for clients, achieving over 1,000 local sales. Known for his integrity and client-first philosophy, Brett brings wealth of experience and a tailored approach to every property journey.</p>
+          <div class="about__contact">
+            <a href="tel:+64274988529" class="contact-link">027 498 8529</a>
+            <a href="mailto:brett.norris@raywhite.com" class="contact-link">brett.norris@raywhite.com</a>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="about__statement">
-      <p><strong>Together, Sam and Brett offer a powerful blend of modern marketing, proven strategies, and over 4 decades of sales expertise.</strong></p>
-      <p>Whether you're buying or selling, their combined skills and commitment to achieving premium results make them the team you want by your side.</p>
+      <p>Together, Sam and Brett offer a powerful blend of modern marketing, proven strategies, and over 4 decades of sales expertise. Whether you're buying or selling, their combined skills and commitment to achieving premium results make them the team you want by your side.</p>
     </div>
 
-    <div class="awards">
-      <h3>Awards & Recognition</h3>
+    <div class="awards__section">
+      <h3 class="awards__heading">Recognition & Awards</h3>
       <div class="awards__grid">
-        <div class="award"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2023</div>
-        <div class="award"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2022</div>
-        <div class="award"><strong>Top 10%</strong><br />Previous Brand 2024</div>
-        <div class="award"><strong>Top 5%</strong><br />Previous Brand 2023</div>
-        <div class="award"><strong>Top 2.5%</strong><br />Previous Brand 2022–2020</div>
-        <div class="award"><strong>21 Club</strong><br />2021</div>
-        <div class="award"><strong>Top 7% Internationally</strong><br />Premier Performer 2025–2026</div>
-        <div class="award"><strong>Top 3% Internationally</strong><br />Elite Member 2025–2026</div>
-        <div class="award"><strong>50 Million Dollar Club</strong><br />A T Realty Limited 2025–2026</div>
+        <div class="award">
+          <div class="award__icon">⭐</div>
+          <div class="award__text"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2023</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">⭐</div>
+          <div class="award__text"><strong>#1 Wattle Downs Agent</strong><br />RateMyAgent 2022</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🏆</div>
+          <div class="award__text"><strong>Top 10%</strong><br />Previous Brand 2024</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🏆</div>
+          <div class="award__text"><strong>Top 5%</strong><br />Previous Brand 2023</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🏆</div>
+          <div class="award__text"><strong>Top 2.5%</strong><br />Previous Brand 2022–2020</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🎖️</div>
+          <div class="award__text"><strong>21 Club</strong><br />2021</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🌍</div>
+          <div class="award__text"><strong>Top 7% Internationally</strong><br />Premier Performer 2025–2026</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">🌍</div>
+          <div class="award__text"><strong>Top 3% Internationally</strong><br />Elite Member 2025–2026</div>
+        </div>
+        <div class="award">
+          <div class="award__icon">💰</div>
+          <div class="award__text"><strong>50M Dollar Club</strong><br />A T Realty Limited 2025–2026</div>
+        </div>
       </div>
     </div>
   </div>
@@ -102,29 +150,20 @@
 <!-- Current Listings -->
 <section id="listings" class="listings">
   <div class="container">
-    <h2 class="section__title">Current Properties For Sale</h2>
-    {{CURRENT_LISTINGS}}
+    <h2 class="section__heading">Properties For Sale</h2>
+    <div class="listings__grid">
+      {{CURRENT_LISTINGS}}
+    </div>
   </div>
 </section>
 
-<!-- Sold Properties -->
-<section id="sales" class="sales">
+<!-- Sold Properties Gallery -->
+<section id="sold" class="sold">
   <div class="container">
-    <h2 class="section__title">Recently Sold</h2>
-    <p class="sales__subtitle">{{SOLD_SHOWN}} of {{SOLD_COUNT}}+ sales in South Auckland</p>
-    <div class="sales__table-wrapper">
-      <table class="sales__table">
-        <thead>
-          <tr>
-            <th>Address</th>
-            <th>Suburb</th>
-            <th>Sale Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{SOLD_ROWS}}
-        </tbody>
-      </table>
+    <h2 class="section__heading">Recently Sold</h2>
+    <p class="section__subtitle">{{SOLD_SHOWN}} of {{SOLD_COUNT}}+ successful sales in South Auckland</p>
+    <div class="sold__gallery">
+      {{SOLD_ROWS}}
     </div>
   </div>
 </section>
@@ -132,22 +171,38 @@
 <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="container">
-    <h2 class="section__title">Get in Touch</h2>
-    <div class="contact__grid">
-      <div class="contact__info">
-        <h3>Ray White Manurewa</h3>
-        <p>
-          182 Great South Road<br />
-          Manurewa, Auckland 2102<br />
-          <strong>Phone:</strong> <a href="tel:+6492690636">(09) 269 0636</a>
-        </p>
-        <p>
-          <strong>Sam Steel:</strong> <a href="tel:+642102262945">021 026 2945</a><br />
-          <strong>Brett Norris:</strong> <a href="tel:+64274988529">027 498 8529</a>
-        </p>
-      </div>
-      <div class="contact__form">
-        {{FORM_SLOT}}
+    <div class="contact__inner">
+      <div class="contact__content">
+        <h2 class="contact__heading">Ready to Get Started?</h2>
+        <p class="contact__description">Let's discuss your property goals and find the right strategy for your situation.</p>
+
+        <div class="contact__wrapper">
+          <div class="contact__form-wrapper">
+            <div data-atr-form="sam-and-brett-appraisal"></div>
+          </div>
+
+          <div class="contact__info">
+            <h3 class="contact__info-heading">Get in Touch</h3>
+
+            <div class="info__item">
+              <h4 class="info__label">Sam Steel</h4>
+              <a href="tel:+642102262945" class="info__link">021 026 2945</a>
+              <a href="mailto:sam.steel@raywhite.com" class="info__link">sam.steel@raywhite.com</a>
+            </div>
+
+            <div class="info__item">
+              <h4 class="info__label">Brett Norris</h4>
+              <a href="tel:+64274988529" class="info__link">027 498 8529</a>
+              <a href="mailto:brett.norris@raywhite.com" class="info__link">brett.norris@raywhite.com</a>
+            </div>
+
+            <div class="info__item">
+              <h4 class="info__label">Ray White Manurewa</h4>
+              <p class="info__text">Shop 3, 27 Marama Road<br />Manurewa 2102</p>
+              <a href="tel:+6497266400" class="info__link">09 726 6400</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -157,18 +212,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__content">
-      <p>&copy; {{FIRST_YEAR}}-<span id="year"></span> Sam Steel & Brett Norris. Ray White Manurewa (A T Realty Group).</p>
+      <p>&copy; 2026 Sam Steel & Brett Norris, Ray White Manurewa. All rights reserved.</p>
       <div class="footer__links">
-        <a href="https://www.facebook.com/samsteelrealestate">Facebook</a>
-        <a href="https://www.instagram.com/samsteel_realestate/">Instagram</a>
-        <a href="https://www.linkedin.com/in/brett-norris-071284245/">LinkedIn</a>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="script.js" defer></script>
-{{FORM_SCRIPT}}
+<script src="script.js"></script>
+<script async src="https://atrealtygroup.co.nz/mkt-forms-embed.js"></script>
 
 </body>
 </html>
