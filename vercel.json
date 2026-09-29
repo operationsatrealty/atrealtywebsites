@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "projects": {
+    "sam-brett": {
+      "rootDirectory": "sam-brett"
+    }
+  },
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
