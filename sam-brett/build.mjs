@@ -66,15 +66,21 @@ async function loadData() {
     console.log(`[build] Fetching ${AGENT_EMAILS.join(", ")} from VaultRE…`);
     const results = await Promise.all(AGENT_EMAILS.map(email => agentListings(email)));
 
-    // Merge data from both agents
+    // Merge data from both agents, deduplicating by property ID
     const merged = { current: [], sold: [], soldTotal: 0, offices: [] };
     const officeSet = new Set();
+    const seenCurrent = new Set();
+    const seenSold = new Set();
 
     for (const result of results) {
       if (result) {
-        merged.current.push(...result.current);
-        merged.sold.push(...result.sold);
-        merged.soldTotal += result.soldTotal;
+        for (const l of result.current) {
+          if (!seenCurrent.has(l.id)) { seenCurrent.add(l.id); merged.current.push(l); }
+        }
+        for (const l of result.sold) {
+          if (!seenSold.has(l.id)) { seenSold.add(l.id); merged.sold.push(l); }
+        }
+        merged.soldTotal = Math.max(merged.soldTotal, result.soldTotal);
         result.offices.forEach(o => officeSet.add(o.office));
       }
     }
@@ -575,7 +581,7 @@ async function buildBlog() {
   <a href="/#sold">Sold</a>
   <a href="/blog/">Blog</a>
   <a href="/#contact">Contact</a>
-  <a href="tel:+642102262945" class="mnav__phone">021 026 2945</a>
+  <a href="tel:+642102269245" class="mnav__phone">021 0226 9245</a>
 </nav>
 
 <header class="site-header scrolled" id="header">
@@ -735,7 +741,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
   <a href="/#sold">Sold</a>
   <a href="/blog/">Blog</a>
   <a href="/#contact">Contact</a>
-  <a href="tel:+642102262945" class="mnav__phone">021 026 2945</a>
+  <a href="tel:+642102269245" class="mnav__phone">021 0226 9245</a>
 </nav>
 
 <header class="site-header scrolled" id="header">
