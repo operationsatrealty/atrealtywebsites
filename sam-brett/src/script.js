@@ -1,12 +1,15 @@
-// Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile nav toggle (optional, if needed)
-const nav = document.querySelector('.nav');
-const navLinks = document.querySelectorAll('.nav__link');
+var toggle = document.getElementById('nav-toggle');
+var nav = document.getElementById('nav');
+toggle.addEventListener('click', function () {
+  nav.classList.toggle('open');
+  toggle.classList.toggle('open');
+});
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Smooth scroll already handled by CSS scroll-behavior
+document.querySelectorAll('.nav a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    nav.classList.remove('open');
+    toggle.classList.remove('open');
   });
 });
