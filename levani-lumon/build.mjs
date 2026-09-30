@@ -136,7 +136,16 @@ function summarise(data) {
     .slice(0, 3)
     .map(([name]) => name);
 
-  const firstYear = years[0] ?? "2020";
+  /**
+   * Levani's career start is 2006 (confirmed by Rachel Lumon, 1 Oct 2026, and
+   * consistent with the "over 20 years" claim on every Ray White profile).
+   * VaultRE's settlement records for him only begin in 2008, so the computed
+   * earliest year under-reports. Use the earlier of the two — if VaultRE ever
+   * surfaces pre-2006 sales, the data wins.
+   */
+  const CAREER_START = 2006;
+  const dataFirst = Number(years[0] ?? CAREER_START);
+  const firstYear = String(Math.min(dataFirst, CAREER_START));
 
   return {
     totalSettled: money(prices.reduce((a, b) => a + b, 0)),
