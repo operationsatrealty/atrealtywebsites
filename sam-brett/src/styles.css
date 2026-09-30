@@ -177,8 +177,15 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--ink); font-weight: 500;
 .gbadge .txt { font-family: var(--sans); font-weight: 700; font-size: 13px; color: var(--ink); letter-spacing: .02em; line-height: 1.3 }
 .gbadge .txt small { display: block; font-weight: 400; color: var(--muted); font-size: 11px; letter-spacing: .04em; margin-top: 2px }
 
-.tfeatured { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start }
-.tcard { margin: 0; background: var(--white); border: 1px solid var(--hairline); border-radius: 6px; padding: 28px 28px 24px; box-shadow: 0 2px 20px rgba(0,0,0,.03) }
+.tscroll-wrap { position: relative }
+.tscroll { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 4px }
+.tscroll::-webkit-scrollbar { display: none }
+.tcard { margin: 0; flex: 0 0 340px; scroll-snap-align: start; background: var(--white); border: 1px solid var(--hairline); border-radius: 6px; padding: 28px 28px 24px; box-shadow: 0 2px 20px rgba(0,0,0,.03) }
+.tscroll-btn { position: absolute; top: 50%; translate: 0 -50%; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--hairline); background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,.08); font-size: 22px; color: var(--ink); cursor: pointer; z-index: 2; display: flex; align-items: center; justify-content: center; transition: opacity .2s }
+.tscroll-btn:hover { background: var(--paper) }
+.tscroll-btn--prev { left: -22px }
+.tscroll-btn--next { right: -22px }
+.tscroll-btn[disabled] { opacity: 0; pointer-events: none }
 .tcard .stars { color: #fbbc04; letter-spacing: 2px; font-size: 13px; margin-bottom: 14px }
 .tcard blockquote { margin: 0; font-family: var(--sans); font-weight: 300; font-size: 15px; line-height: 1.72; color: var(--body) }
 .tcard .who { margin-top: 18px; font-family: var(--sans); font-weight: 700; font-size: 13px; letter-spacing: .03em; color: var(--ink) }
@@ -266,7 +273,8 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--ink); font-weight: 500;
   .agent__portrait { max-width: 280px }
 
   .reviews__head { flex-direction: column }
-  .tfeatured { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto }
+  .tcard { flex: 0 0 280px }
+  .tscroll-btn { display: none }
 
   .awards__grid { grid-template-columns: 1fr }
 

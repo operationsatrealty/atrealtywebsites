@@ -81,4 +81,4 @@ Sam and Brett can give you an honest assessment of:
 
 ---
 
-*Sam Steel & Brett Norris are Ray White Manurewa agents with over 4 decades of combined South Auckland experience. We've helped 1,300+ families sell their homes. Let us help you, too.*
+*Sam Steel & Brett Norris are Ray White Manurewa agents specialising in South Auckland residential sales. Let us help you, too.*

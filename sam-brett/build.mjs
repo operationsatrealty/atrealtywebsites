@@ -499,92 +499,162 @@ async function buildBlog() {
   // Generate individual post pages
   for (const post of posts) {
     const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${esc(post.title)} – Sam & Brett | Ray White Manurewa</title>
-  <meta name="description" content="${esc(post.excerpt)}" />
-  <link rel="canonical" href="${SITE_ORIGIN}/blog/${post.slug}/" />
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FFE512'>S</text></svg>" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(post.title)} | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
+<meta name="description" content="${esc(post.excerpt)}">
+<link rel="canonical" href="${SITE_ORIGIN}/blog/${post.slug}/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(post.title)}">
+<meta property="og:description" content="${esc(post.excerpt)}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFE512'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23595959'>S</text></svg>">
+<style>
+.page-hero{position:relative;color:#fff;padding-top:88px;overflow:hidden;background:var(--near-black)}
+.page-hero__media{position:absolute;inset:0;z-index:0}
+.page-hero__media img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,14,16,.5) 0%,rgba(14,14,16,.35) 45%,rgba(14,14,16,.86) 100%)}
+.page-hero .wrap{position:relative;z-index:2}
+.post-hero{padding-bottom:56px}
+.post-hero .cat{display:inline-block;font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:100px;margin-bottom:26px}
+.page-hero h1{color:#fff;font-weight:500;font-size:clamp(30px,4.5vw,56px);line-height:1.08;max-width:22ch}
+.post-hero .meta{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:28px;color:rgba(255,255,255,.85);font-family:var(--sans);font-size:14px;letter-spacing:.02em}
+.post-hero .meta .dot{width:4px;height:4px;border-radius:50%;background:var(--yellow)}
+.article{padding-block:clamp(48px,6vw,84px)}
+.article .col{max-width:720px;margin:0 auto}
+.article p,.article ul,.article ol{font-size:18px;line-height:1.85;color:var(--body);margin:0 0 26px}
+.article h1{font-size:clamp(26px,3.4vw,38px);font-weight:500;margin:52px 0 20px;line-height:1.15}
+.article h2{font-family:var(--serif);font-size:clamp(24px,3vw,34px);font-weight:500;color:var(--ink);margin:48px 0 18px;line-height:1.15}
+.article h3{font-family:var(--sans);font-size:clamp(20px,2.4vw,24px);font-weight:600;letter-spacing:-.01em;color:var(--ink);margin:36px 0 14px}
+.article ul,.article ol{padding-left:24px}
+.article li{margin-bottom:12px}
+.article li::marker{color:var(--muted)}
+.article a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--yellow);text-underline-offset:4px;text-decoration-thickness:2px}
+.article a:hover{color:#000}
+.article blockquote{margin:36px 0;padding:6px 0 6px 28px;border-left:3px solid var(--yellow);font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.45;color:var(--ink)}
+.article strong{font-weight:700;color:var(--ink)}
+.post-cta{background:var(--near-black);color:#fff;text-align:center;padding-block:clamp(56px,7vw,96px)}
+.post-cta h2{color:#fff;font-family:var(--serif);font-size:clamp(28px,3.6vw,44px);font-weight:500;max-width:20ch;margin:0 auto 18px}
+.post-cta h2 em{font-style:italic}
+.post-cta>p{color:rgba(255,255,255,.8);max-width:50ch;margin:0 auto 34px}
+.related{padding-block:clamp(56px,7vw,88px);background:var(--paper)}
+.related h2{font-size:clamp(26px,3.2vw,38px);margin-bottom:40px}
+.related__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.rpost{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hairline);border-radius:3px;overflow:hidden;padding:28px 26px 30px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.rpost:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.08)}
+.rpost .cat{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.rpost h3{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--ink);margin:12px 0 12px;line-height:1.22}
+.rpost p{font-size:14.5px;color:var(--body);margin:0 0 18px;flex:1;line-height:1.65}
+.rpost .date{font-family:var(--sans);font-size:12.5px;letter-spacing:.06em;color:var(--muted);display:flex;align-items:center;gap:10px}
+.rpost .date::before{content:"";width:16px;height:2px;background:var(--yellow)}
+.nav a.active::after{width:100%}
+@media(max-width:768px){
+  .page-hero h1{font-size:28px}
+  .related__grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+}
+</style>
 </head>
 <body>
+<a id="top"></a>
 
-<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <svg class="raywhite-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <rect width="100" height="100" fill="#FFE512" />
-          <text x="5" y="80" font-size="24" font-weight="bold" font-family="Arial" fill="#595959">RAYWHITE</text>
-        </svg>
-        <span class="header__title">Sam & Brett</span>
-      </a>
-      <nav class="nav">
-        <a href="/" class="nav__link">Home</a>
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/#contact" class="nav__link nav__link--cta">Contact</a>
-      </nav>
-    </div>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <button class="mnav__close" id="mclose" aria-label="Close menu">&times;</button>
+  <a href="/">Home</a>
+  <a href="/#about">About</a>
+  <a href="/#listings">For Sale</a>
+  <a href="/#sold">Sold</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#contact">Contact</a>
+  <a href="tel:+642102262945" class="mnav__phone">021 026 2945</a>
+</nav>
+
+<header class="site-header scrolled" id="header">
+  <div class="wrap">
+    <a href="/" class="brand" aria-label="Sam Steel &amp; Brett Norris, Ray White Manurewa">
+      <img class="brand-logo" src="../../assets/raywhite-logo.png" alt="Ray White">
+      <span class="brand-txt">
+        <span class="name">Sam Steel &amp; Brett Norris</span>
+        <span class="sub">Ray White Manurewa</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#listings">For Sale</a>
+      <a href="/#sold">Sold</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/#contact" class="nav-cta">Get in Touch</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<article class="blog-post">
-  <div class="container">
-    <header class="blog-post__header">
-      <h1 class="blog-post__title">${esc(post.title)}</h1>
-      <div class="blog-post__meta">
-        <time datetime="${post.date}">${shortDate(post.date)}</time>
-        ${post.suburb ? `<span class="blog-post__suburb">${esc(post.suburb)}</span>` : ''}
-      </div>
-    </header>
-
-    <div class="blog-post__body">
-      ${convertMarkdownToHtml(post.content)}
-    </div>
-
-    <footer class="blog-post__footer">
-      <div class="blog-post__cta">
-        <p><strong>Need help in ${esc(post.suburb || 'South Auckland')}?</strong></p>
-        <a href="/#contact" class="btn btn--primary">Get in Touch</a>
-      </div>
-    </footer>
-  </div>
-</article>
-
-<section class="blog-related">
-  <div class="container">
-    <h2>More from the Blog</h2>
-    <div class="blog-related__list">
-      ${posts.filter(p => p.slug !== post.slug).slice(0, 3).map(p => 
-        `<div class="blog-related__item">
-          <a href="/blog/${p.slug}/">
-            <h3>${esc(p.title)}</h3>
-            <p>${esc(p.excerpt)}</p>
-            <time>${shortDate(p.date)}</time>
-          </a>
-        </div>`
-      ).join('\n')}
+<section class="page-hero post-hero">
+  <div class="page-hero__media"><img src="../../assets/website-hero.jpg" alt="${esc(post.title)}"></div>
+  <div class="wrap">
+    ${post.suburb ? `<span class="cat">${esc(post.suburb)}</span>` : ''}
+    <h1>${esc(post.title)}</h1>
+    <div class="meta">
+      <span>Sam Steel &amp; Brett Norris</span>
+      <span class="dot"></span>
+      <time datetime="${post.date}">${shortDate(post.date)}</time>
+      ${post.suburb ? `<span class="dot"></span><span>${esc(post.suburb)}</span>` : ''}
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer__content">
-      <p>&copy; 2026–<span id="year"></span> Sam Steel & Brett Norris. Ray White Manurewa (A T Realty Group).</p>
-      <div class="footer__links">
-        <a href="https://www.facebook.com/samsteelrealestate">Facebook</a>
-        <a href="https://www.instagram.com/samsteel_realestate/">Instagram</a>
-        <a href="https://www.linkedin.com/in/brett-norris-071284245/">LinkedIn</a>
-      </div>
+<article class="article">
+  <div class="wrap"><div class="col">
+    ${convertMarkdownToHtml(post.content)}
+  </div></div>
+</article>
+
+<section class="post-cta">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.75)">Get in touch</p>
+    <h2>Thinking about your <em>next move?</em></h2>
+    <p>Sam and Brett offer honest, obligation-free appraisals across Wattle Downs, Manurewa, Hill Park, and South Auckland.</p>
+    <a href="/#contact" class="btn" style="background:var(--yellow);color:var(--near-black);border-color:var(--yellow)">Request an appraisal</a>
+  </div>
+</section>
+
+${posts.filter(p => p.slug !== post.slug).length ? `<section class="related">
+  <div class="wrap">
+    <p class="eyebrow">More insights</p>
+    <h2>Keep reading</h2>
+    <div class="related__grid">
+      ${posts.filter(p => p.slug !== post.slug).slice(0, 3).map(p =>
+        `<a class="rpost" href="/blog/${p.slug}/">
+          <span class="cat">${esc(p.suburb)}</span>
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.excerpt)}</p>
+          <span class="date"><time datetime="${p.date}">${shortDate(p.date)}</time></span>
+        </a>`
+      ).join('\n      ')}
     </div>
+  </div>
+</section>` : ''}
+
+<footer class="footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Sam Steel &amp; Brett Norris, Ray White Manurewa. All rights reserved.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('mnav').classList.add('open')});
+document.getElementById('mclose').addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')});
+document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')})});
+</script>
 </body>
 </html>`;
 
@@ -594,75 +664,155 @@ async function buildBlog() {
 
   // Generate blog index
   const blogIndexHtml = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog – Sam & Brett | Ray White Manurewa</title>
-  <meta name="description" content="Real estate insights for Wattle Downs, Manurewa, Hill Park, Totara Park, and The Gardens." />
-  <link rel="canonical" href="${SITE_ORIGIN}/blog/" />
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FFE512'>S</text></svg>" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Insights | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
+<meta name="description" content="Real estate insights for Wattle Downs, Manurewa, Hill Park, Totara Park, and The Gardens — market updates, buyer guides and selling tips.">
+<link rel="canonical" href="${SITE_ORIGIN}/blog/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Market Insights — Sam Steel &amp; Brett Norris">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFE512'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23595959'>S</text></svg>">
+<style>
+.page-hero{position:relative;color:#fff;padding-top:88px;overflow:hidden;background:var(--near-black)}
+.page-hero__media{position:absolute;inset:0;z-index:0}
+.page-hero__media img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,14,16,.5) 0%,rgba(14,14,16,.35) 45%,rgba(14,14,16,.86) 100%)}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero.index{min-height:clamp(340px,48vh,520px);display:flex;align-items:flex-end;padding-bottom:60px}
+.page-hero .kick{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.9);margin:0 0 22px}
+.page-hero h1{color:#fff;font-weight:500;font-size:clamp(34px,5vw,64px);line-height:1.06;max-width:20ch}
+.page-hero .tag{max-width:54ch;color:rgba(255,255,255,.85);font-size:clamp(16px,1.7vw,19px);margin:22px 0 0;font-weight:300;line-height:1.6}
+.blog-list{padding-block:clamp(56px,7vw,100px)}
+.featured{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,4vw,56px);align-items:center;margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--hairline)}
+.featured .cat{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.featured h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,42px);font-weight:500;color:var(--ink);margin:14px 0 16px;line-height:1.12}
+.featured p{color:var(--body);margin:0 0 20px;max-width:48ch;line-height:1.65}
+.featured .thumb{aspect-ratio:4/3;border-radius:4px;overflow:hidden;background:var(--light-grey)}
+.featured .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.featured:hover .thumb img{transform:scale(1.04)}
+.featured .date{font-family:var(--sans);font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
+.featured .date::before{content:"";width:18px;height:2px;background:var(--yellow)}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.post{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hairline);border-radius:3px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.post:hover{transform:translateY(-5px);box-shadow:0 22px 50px rgba(0,0,0,.09)}
+.post .c{padding:26px 26px 30px;display:flex;flex-direction:column;flex:1}
+.post .cat{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.post h3{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--ink);margin:12px 0 12px;line-height:1.22}
+.post p{font-size:14.5px;color:var(--body);margin:0 0 20px;flex:1;line-height:1.65}
+.post .date{font-family:var(--sans);font-size:12.5px;letter-spacing:.06em;color:var(--muted);display:flex;align-items:center;gap:10px}
+.post .date::before{content:"";width:16px;height:2px;background:var(--yellow)}
+.post-cta{background:var(--near-black);color:#fff;text-align:center;padding-block:clamp(56px,7vw,96px)}
+.post-cta h2{color:#fff;font-family:var(--serif);font-size:clamp(28px,3.6vw,44px);font-weight:500;max-width:20ch;margin:0 auto 18px}
+.post-cta h2 em{font-style:italic}
+.post-cta>p{color:rgba(255,255,255,.8);max-width:50ch;margin:0 auto 34px}
+.nav a.active::after{width:100%}
+@media(max-width:768px){
+  .featured{grid-template-columns:1fr;gap:24px}
+  .posts{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .page-hero h1{font-size:30px}
+}
+</style>
 </head>
 <body>
+<a id="top"></a>
 
-<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a href="/" class="header__logo">
-        <svg class="raywhite-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <rect width="100" height="100" fill="#FFE512" />
-          <text x="5" y="80" font-size="24" font-weight="bold" font-family="Arial" fill="#595959">RAYWHITE</text>
-        </svg>
-        <span class="header__title">Sam & Brett</span>
-      </a>
-      <nav class="nav">
-        <a href="/" class="nav__link">Home</a>
-        <a href="/#about" class="nav__link">About</a>
-        <a href="/blog/" class="nav__link">Blog</a>
-        <a href="/#contact" class="nav__link nav__link--cta">Contact</a>
-      </nav>
-    </div>
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <button class="mnav__close" id="mclose" aria-label="Close menu">&times;</button>
+  <a href="/">Home</a>
+  <a href="/#about">About</a>
+  <a href="/#listings">For Sale</a>
+  <a href="/#sold">Sold</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#contact">Contact</a>
+  <a href="tel:+642102262945" class="mnav__phone">021 026 2945</a>
+</nav>
+
+<header class="site-header scrolled" id="header">
+  <div class="wrap">
+    <a href="/" class="brand" aria-label="Sam Steel &amp; Brett Norris, Ray White Manurewa">
+      <img class="brand-logo" src="../assets/raywhite-logo.png" alt="Ray White">
+      <span class="brand-txt">
+        <span class="name">Sam Steel &amp; Brett Norris</span>
+        <span class="sub">Ray White Manurewa</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#listings">For Sale</a>
+      <a href="/#sold">Sold</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/#contact" class="nav-cta">Get in Touch</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="blog-index">
-  <div class="container">
-    <header class="blog-index__header">
-      <h1>Real Estate Insights for South Auckland</h1>
-      <p>Market updates, buyer guides, and selling tips from Sam and Brett.</p>
-    </header>
+<section class="page-hero index">
+  <div class="page-hero__media"><img src="../assets/website-hero.jpg" alt="South Auckland property insights"></div>
+  <div class="wrap">
+    <p class="kick">Market Insights</p>
+    <h1>Local knowledge, worth reading.</h1>
+    <p class="tag">Market updates, buyer guides and selling tips from Sam and Brett — helping you make confident property decisions across South Auckland.</p>
+  </div>
+</section>
 
-    <div class="blog-index__list">
-      ${posts.map(p => 
-        `<article class="blog-card">
-          <h2><a href="/blog/${p.slug}/">${esc(p.title)}</a></h2>
-          <div class="blog-card__meta">
-            <time datetime="${p.date}">${shortDate(p.date)}</time>
-            ${p.suburb ? `<span>${esc(p.suburb)}</span>` : ''}
+<section class="blog-list">
+  <div class="wrap">
+    ${posts.length ? `<a class="featured" href="/blog/${posts[0].slug}/">
+      <div class="thumb"><img src="../assets/website-hero.jpg" alt="${esc(posts[0].title)}"></div>
+      <div>
+        <span class="cat">Featured &middot; ${esc(posts[0].suburb)}</span>
+        <h2>${esc(posts[0].title)}</h2>
+        <p>${esc(posts[0].excerpt)}</p>
+        <span class="date"><time datetime="${posts[0].date}">${shortDate(posts[0].date)}</time></span>
+      </div>
+    </a>` : ''}
+    ${posts.length > 1 ? `<div class="posts">
+      ${posts.slice(1).map(p =>
+        `<a class="post" href="/blog/${p.slug}/">
+          <div class="c">
+            <span class="cat">${esc(p.suburb)}</span>
+            <h3>${esc(p.title)}</h3>
+            <p>${esc(p.excerpt)}</p>
+            <span class="date"><time datetime="${p.date}">${shortDate(p.date)}</time></span>
           </div>
-          <p>${esc(p.excerpt)}</p>
-          <a href="/blog/${p.slug}/" class="blog-card__link">Read more →</a>
-        </article>`
-      ).join('\n')}
-    </div>
+        </a>`
+      ).join('\n      ')}
+    </div>` : ''}
+  </div>
+</section>
+
+<section class="post-cta">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.75)">Get in touch</p>
+    <h2>Thinking about your <em>next move?</em></h2>
+    <p>Sam and Brett offer honest, obligation-free appraisals across Wattle Downs, Manurewa, Hill Park, and South Auckland.</p>
+    <a href="/#contact" class="btn" style="background:var(--yellow);color:var(--near-black);border-color:var(--yellow)">Request an appraisal</a>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer__content">
-      <p>&copy; 2026–<span id="year"></span> Sam Steel & Brett Norris. Ray White Manurewa (A T Realty Group).</p>
-      <div class="footer__links">
-        <a href="https://www.facebook.com/samsteelrealestate">Facebook</a>
-        <a href="https://www.instagram.com/samsteel_realestate/">Instagram</a>
-        <a href="https://www.linkedin.com/in/brett-norris-071284245/">LinkedIn</a>
-      </div>
-    </div>
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Sam Steel &amp; Brett Norris, Ray White Manurewa. All rights reserved.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('mnav').classList.add('open')});
+document.getElementById('mclose').addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')});
+document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')})});
+</script>
 </body>
 </html>`;
 

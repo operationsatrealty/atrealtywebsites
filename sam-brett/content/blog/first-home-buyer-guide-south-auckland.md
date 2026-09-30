@@ -106,4 +106,4 @@ Buying a home is one of your biggest decisions. Sam and Brett have helped hundre
 
 ---
 
-*Sam Steel & Brett Norris specialize in helping first-home buyers in Wattle Downs, Hill Park, Manurewa, Totara Park, and The Gardens. With over 4 decades of combined experience, we're here to make your first home purchase smooth and successful.*
+*Sam Steel & Brett Norris specialize in helping first-home buyers in Wattle Downs, Hill Park, Manurewa, Totara Park, and The Gardens. We're here to make your first home purchase smooth and successful.*
