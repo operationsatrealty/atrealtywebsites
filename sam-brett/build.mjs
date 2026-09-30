@@ -537,6 +537,12 @@ async function buildBlog() {
 .article a:hover{color:#000}
 .article blockquote{margin:36px 0;padding:6px 0 6px 28px;border-left:3px solid var(--yellow);font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.45;color:var(--ink)}
 .article strong{font-weight:700;color:var(--ink)}
+.article .table-wrap{overflow-x:auto;margin:0 0 32px}
+.article table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.article th{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:12px 16px;border-bottom:2px solid var(--hairline)}
+.article td{padding:12px 16px;border-bottom:1px solid var(--hairline);color:var(--body)}
+.article tr:last-child td{border-bottom:none}
+.article tbody tr:hover{background:var(--paper)}
 .post-cta{background:var(--near-black);color:#fff;text-align:center;padding-block:clamp(56px,7vw,96px)}
 .post-cta h2{color:#fff;font-family:var(--serif);font-size:clamp(28px,3.6vw,44px);font-weight:500;max-width:20ch;margin:0 auto 18px}
 .post-cta h2 em{font-style:italic}
@@ -823,17 +829,75 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
 }
 
 function convertMarkdownToHtml(md) {
-  let html = md
-    .replace(/^### (.*?)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.*?)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.*?)$/gm, '<h1>$1</h1>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/^- (.*?)$/gm, '<li>$1</li>');
-  
-  html = html.replace(/(<li>.*?<\/li>)/s, '<ul>$1</ul>');
-  return `<p>${html}</p>`;
+  const lines = md.split('\n');
+  const out = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Blank line
+    if (!line.trim()) { i++; continue; }
+
+    // Headings
+    if (/^### (.+)/.test(line)) { out.push(`<h3>${inline(line.slice(4))}</h3>`); i++; continue; }
+    if (/^## (.+)/.test(line)) { out.push(`<h2>${inline(line.slice(3))}</h2>`); i++; continue; }
+    if (/^# (.+)/.test(line)) { out.push(`<h1>${inline(line.slice(2))}</h1>`); i++; continue; }
+
+    // Table
+    if (line.includes('|') && lines[i + 1] && /^\|[\s-:|]+\|$/.test(lines[i + 1].trim())) {
+      const headers = line.split('|').filter(c => c.trim()).map(c => `<th>${inline(c.trim())}</th>`);
+      i += 2; // skip header + separator
+      const rows = [];
+      while (i < lines.length && lines[i].includes('|') && lines[i].trim().startsWith('|')) {
+        const cells = lines[i].split('|').filter(c => c.trim()).map(c => `<td>${inline(c.trim())}</td>`);
+        rows.push(`<tr>${cells.join('')}</tr>`);
+        i++;
+      }
+      out.push(`<div class="table-wrap"><table><thead><tr>${headers.join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`);
+      continue;
+    }
+
+    // Unordered list
+    if (/^[-*] /.test(line.trim())) {
+      const items = [];
+      while (i < lines.length && /^[-*] /.test(lines[i].trim())) {
+        items.push(`<li>${inline(lines[i].trim().slice(2))}</li>`);
+        i++;
+      }
+      out.push(`<ul>${items.join('')}</ul>`);
+      continue;
+    }
+
+    // Ordered list
+    if (/^\d+\. /.test(line.trim())) {
+      const items = [];
+      while (i < lines.length && /^\d+\. /.test(lines[i].trim())) {
+        items.push(`<li>${inline(lines[i].trim().replace(/^\d+\.\s*/, ''))}</li>`);
+        i++;
+      }
+      out.push(`<ol>${items.join('')}</ol>`);
+      continue;
+    }
+
+    // Paragraph (collect contiguous non-blank lines)
+    const para = [];
+    while (i < lines.length && lines[i].trim() && !/^#{1,3} /.test(lines[i]) && !/^[-*] /.test(lines[i].trim()) && !/^\d+\. /.test(lines[i].trim()) && !(lines[i].includes('|') && lines[i + 1] && /^\|[\s-:|]+\|$/.test((lines[i + 1] || '').trim()))) {
+      para.push(lines[i]);
+      i++;
+    }
+    out.push(`<p>${inline(para.join(' '))}</p>`);
+  }
+
+  return out.join('\n');
+
+  function inline(s) {
+    return s
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em>$1</em>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>');
+  }
 }
 
 // Call buildBlog() before writing output
