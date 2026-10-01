@@ -197,9 +197,13 @@ export async function agentListings(email, { currentLimit = 60, soldLimit = 500 
         address: address(p),
         suburb: macrons(p.address?.suburb?.name ?? ""),
         displayPrice: p.displayPrice ?? "",
+        // The official Ray White site shows searchPrice when displayPrice is
+        // blank — mirror that, or three of four prices vanish.
+        searchPrice: p.searchPrice ?? null,
         bed: p.bed ?? null,
         bath: p.bath ?? null,
-        car: p.garages ?? null,
+        // Public pages count garages + carports + open spaces.
+        car: (p.garages ?? 0) + (p.carports ?? 0) + (p.openSpaces ?? 0) || null,
         status: p.status ?? "listing",
         method: p.saleDetails?.methodOfSale ?? p.methodOfSale ?? null,
         auctionDate: p.auctionDetails?.dateTime ?? null,

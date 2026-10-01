@@ -215,6 +215,7 @@ function statusLabel(l) {
 /** The price line: the advertised price, else the method (with auction date). */
 function priceLine(l) {
   if (l.displayPrice) return l.displayPrice;
+  if (l.searchPrice) return moneyExact(l.searchPrice);
   const label = methodLabel(l);
   if (/auction/i.test(label) && l.auctionDate) {
     return `Auction · ${AUCKLAND_TZ_DATE.format(new Date(l.auctionDate))}`;
