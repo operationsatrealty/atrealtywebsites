@@ -39,7 +39,7 @@
   /* Rhythm */
   --gutter: clamp(1.25rem, 5vw, 4rem);
   --spine: 1180px;
-  --section-y: clamp(4.5rem, 9vw, 8.5rem);
+  --section-y: clamp(3rem, 6vw, 5.5rem);
 }
 
 /* ---------- reset ---------- */
@@ -309,6 +309,7 @@ p {
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.9rem;
   list-style: none;
   margin: 0;
@@ -389,14 +390,22 @@ p {
 
 /* ---------- hero ---------- */
 .hero {
-  padding-block: clamp(3rem, 7vw, 6.5rem) clamp(3.5rem, 7vw, 6rem);
+  padding-block: clamp(1.25rem, 3vw, 2.5rem) clamp(1.75rem, 3.5vw, 3rem);
+}
+
+.hero .stats {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .hero__grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: clamp(2.5rem, 5vw, 5rem);
-  align-items: center;
+  align-items: start;
+}
+
+.hero__copy {
+  padding-top: clamp(0.5rem, 2vw, 2rem);
 }
 
 .hero__copy {

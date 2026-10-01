@@ -537,6 +537,55 @@ if (unresolved.length) {
   process.exit(1);
 }
 
+/* case studies: the 3 strongest recent sales with a full, verifiable story —
+   a price on record and a computable campaign length, one per suburb. */
+function caseStudiesHtml(soldList) {
+  const DAY = 86_400_000;
+  // Candidates need the full story on record. Showcase the sharpest recent
+  // campaigns first (under 45 days live-to-unconditional), relaxing the
+  // threshold only if that yields fewer than three.
+  const candidates = soldList
+    .filter((x) => x.salePrice && x.publishedToWeb && x.unconditionalDate && x.settlementDate)
+    .map((x) => ({ ...x, days: Math.round((new Date(x.unconditionalDate) - new Date(x.publishedToWeb)) / DAY) }))
+    .filter((x) => x.days > 0 && x.days <= 180);
+  const picks = [];
+  for (const limit of [45, 90, 180]) {
+    for (const x of candidates) {
+      if (picks.length === 3) break;
+      if (x.days > limit) continue;
+      if (picks.some((p) => p.suburb === x.suburb || p.id === x.id)) continue;
+      picks.push(x);
+    }
+    if (picks.length === 3) break;
+  }
+  picks.sort((a, b) => (b.settlementDate ?? "").localeCompare(a.settlementDate ?? ""));
+  return picks
+    .map(
+      (x) => `<article class="post">
+          <div class="post__meta">
+            <span class="post__tag">${esc(x.suburb)}</span>
+            <span class="post__date">Settled ${esc(shortDate(x.settlementDate))}</span>
+          </div>
+          <h2>${esc(x.address)}, ${esc(x.suburb)}</h2>
+          <p><strong>${esc(moneyExact(x.salePrice))}</strong> — unconditional
+          <strong>${x.days} days</strong> after the campaign went live${x.bed ? `, ${x.bed} bedrooms` : ""}.</p>
+          <p class="post__sources">Recorded in VaultRE (Ray White) · settled ${esc(shortDate(x.settlementDate))}</p>
+        </article>`
+    )
+    .join("\n");
+}
+
+async function renderSubpage(name, replacements) {
+  let html = await fs.readFile(path.join(HERE, "src", `${name}.template.html`), "utf8");
+  for (const [k, v] of Object.entries(replacements)) html = html.replaceAll(`{{${k}}}`, v);
+  const un = [...html.matchAll(/\{\{([A-Z_]+)\}\}/g)].map((m) => m[1]);
+  if (un.length) {
+    console.error(`[build] Unresolved placeholders in ${name}: ${[...new Set(un)].join(", ")}`);
+    process.exit(1);
+  }
+  return html;
+}
+
 /* market news page */
 const blogTemplate = await fs.readFile(path.join(HERE, "src", "blog.template.html"), "utf8");
 let blogHtml = blogTemplate
@@ -568,6 +617,11 @@ if (PREVIEW) {
 } else {
   await fs.writeFile(path.join(OUT, "index.html"), html);
   await fs.writeFile(path.join(OUT, "blog.html"), blogHtml);
+  const og = { PORTRAIT: `${SITE_ORIGIN}/${portraitHero}` };
+  await fs.writeFile(path.join(OUT, "case-studies.html"),
+    await renderSubpage("case-studies", { ...og, CASE_STUDIES: caseStudiesHtml(data.sold) }));
+  await fs.writeFile(path.join(OUT, "off-market.html"), await renderSubpage("off-market", og));
+  await fs.writeFile(path.join(OUT, "first-time-selling.html"), await renderSubpage("first-time-selling", og));
   await fs.copyFile(path.join(HERE, "src", "styles.css"), path.join(OUT, "styles.css"));
   await fs.copyFile(path.join(HERE, "src", "script.js"), path.join(OUT, "script.js"));
   for (const name of await fs.readdir(path.join(HERE, "assets"))) {
