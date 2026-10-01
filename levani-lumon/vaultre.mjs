@@ -202,6 +202,7 @@ export async function agentListings(email, { currentLimit = 60, soldLimit = 500 
         car: p.garages ?? null,
         status: p.status ?? "listing",
         method: p.saleDetails?.methodOfSale ?? p.methodOfSale ?? null,
+        auctionDate: p.auctionDetails?.dateTime ?? null,
         photo: primaryPhoto(p),
         url: listingUrl(p, office),
         modified: p.modified ?? null,
@@ -216,6 +217,10 @@ export async function agentListings(email, { currentLimit = 60, soldLimit = 500 
         suburb: macrons(p.address?.suburb?.name ?? ""),
         salePrice: p.saleDetails?.salePrice ?? null,
         settlementDate: p.saleDetails?.settlement ?? null,
+        // Campaign timeline for days-on-market: web-live date to the date the
+        // sale went unconditional (conditional as fallback).
+        publishedToWeb: p.saleDetails?.publishedToWeb ?? null,
+        unconditionalDate: p.saleDetails?.unconditional ?? p.saleDetails?.conditional ?? null,
         bed: p.bed ?? null,
         bath: p.bath ?? null,
         car: p.garages ?? null,

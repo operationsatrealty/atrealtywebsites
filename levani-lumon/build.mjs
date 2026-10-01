@@ -147,11 +147,27 @@ function summarise(data) {
   const dataFirst = Number(years[0] ?? CAREER_START);
   const firstYear = String(Math.min(dataFirst, CAREER_START));
 
+  // Median days on market over the last 12 months of settled sales:
+  // web-live date (publishedToWeb) to the unconditional date. Sales missing
+  // either date, or with implausible spans, are excluded from the median.
+  const DAY = 86_400_000;
+  const doms = recent
+    .map((x) => {
+      if (!x.publishedToWeb || !x.unconditionalDate) return null;
+      const n = Math.round((new Date(x.unconditionalDate) - new Date(x.publishedToWeb)) / DAY);
+      return n > 0 && n < 730 ? n : null;
+    })
+    .filter((n) => n !== null)
+    .sort((a, b) => a - b);
+  const medianDom = doms.length ? doms[Math.floor(doms.length / 2)] : null;
+
   return {
     totalSettled: money(prices.reduce((a, b) => a + b, 0)),
     soldCount: data.sold.length,
     soldTotal: data.soldTotal || data.sold.length,
     medianPrice: money(median),
+    medianDom: medianDom !== null ? String(medianDom) : "—",
+    domSampleSize: doms.length,
     topSale: money(Math.max(...prices, 0)),
     recentCount: recent.length,
     recentValue: money(recentValue),
@@ -165,10 +181,45 @@ function summarise(data) {
 /* fragments                                                           */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Method of sale straight from VaultRE (methodOfSale.name), translated to
+ * buyer-facing wording. "Private Treaty" is trade jargon for an advertised /
+ * negotiated sale, so it renders as "For sale".
+ */
+const METHOD_LABELS = {
+  "private treaty": "For sale",
+  auction: "Auction",
+  tender: "Tender",
+  "set sale date": "Set sale date",
+  "deadline sale": "Deadline sale",
+  "deadline private treaty": "Deadline sale",
+  "expressions of interest": "Expressions of interest",
+};
+
+function methodLabel(l) {
+  const raw = (l.method?.name ?? "").trim();
+  return METHOD_LABELS[raw.toLowerCase()] ?? (raw || "For sale");
+}
+
+const AUCKLAND_TZ_DATE = new Intl.DateTimeFormat("en-NZ", {
+  day: "numeric",
+  month: "short",
+  timeZone: "Pacific/Auckland",
+});
+
 function statusLabel(l) {
   if ((l.status ?? "").toLowerCase() === "conditional") return "Under offer";
-  const method = l.method?.name ?? "";
-  return /auction/i.test(method) ? "Auction" : "For sale";
+  return methodLabel(l);
+}
+
+/** The price line: the advertised price, else the method (with auction date). */
+function priceLine(l) {
+  if (l.displayPrice) return l.displayPrice;
+  const label = methodLabel(l);
+  if (/auction/i.test(label) && l.auctionDate) {
+    return `Auction · ${AUCKLAND_TZ_DATE.format(new Date(l.auctionDate))}`;
+  }
+  return label === "For sale" ? "Price by negotiation" : label;
 }
 
 function specs(l) {
@@ -204,7 +255,7 @@ function currentListingsHtml(listings, photoSrc) {
           <div class="card__body">
             <span class="card__addr">${esc(l.address)}</span>
             <span class="card__suburb">${esc(l.suburb)}</span>
-            <span class="card__price">${esc(l.displayPrice || "Price by negotiation")}</span>
+            <span class="card__price">${esc(priceLine(l))}</span>
             <span class="card__specs">${specs(l)}</span>
           </div>
         ${close}`;
@@ -249,7 +300,7 @@ function schema(stats) {
       "Massey",
       "South Auckland",
     ],
-    worksFor: { "@type": "Organization", name: "Ray White Manukau (A T Realty)" },
+    worksFor: { "@type": "Organization", name: "Ray White AT Realty (A T Realty Limited)" },
     address: {
       "@type": "PostalAddress",
       streetAddress: "603 Great South Road",
@@ -463,6 +514,7 @@ const replacements = {
   SOLD_COUNT: String(stats.soldCount),
   TOTAL_SETTLED: stats.totalSettled,
   MEDIAN_PRICE: stats.medianPrice,
+  MEDIAN_DOM: stats.medianDom,
   TOP_SALE: stats.topSale,
   RECENT_COUNT: String(stats.recentCount),
   RECENT_VALUE: stats.recentValue,
