@@ -491,7 +491,7 @@ p {
 
 .about__portrait img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: auto;
   object-fit: cover;
   border-radius: 2px;
 }
@@ -967,8 +967,7 @@ p {
   /* On phones the full 4:5 portraits each swallowed a whole screen of
      scroll (twice). Shorter landscape windows keep his face without the
      scrolling toll. */
-  .hero__figure img,
-  .about__portrait img {
+  .hero__figure img {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 10;

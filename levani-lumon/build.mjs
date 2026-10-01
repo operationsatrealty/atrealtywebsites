@@ -438,9 +438,10 @@ const portraitHero = await image(PORTRAIT_SRC, {
   quality: 82,
   name: "levani-hero",
 });
-const portraitAbout = await image(PORTRAIT_SRC, {
-  width: 640,
-  height: 800,
+// The About photo is the real thing: Levani and the team with vendors and a
+// SOLD ON THE DAY sign. Landscape, so no upright crop — resized only.
+const portraitAbout = await image("assets/levani-sold-on-the-day.jpg", {
+  width: 960,
   quality: 82,
   name: "levani-about",
 });
