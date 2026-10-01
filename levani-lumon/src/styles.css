@@ -964,8 +964,19 @@ p {
     display: none;
   }
 
+  /* On phones the full 4:5 portraits each swallowed a whole screen of
+     scroll (twice). Shorter landscape windows keep his face without the
+     scrolling toll. */
+  .hero__figure img,
+  .about__portrait img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-position: 50% 22%;
+  }
+
   .about__portrait {
-    max-width: 22rem;
+    max-width: none;
   }
 
   .listings__grid {
