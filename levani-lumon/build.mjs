@@ -629,6 +629,32 @@ if (PREVIEW) {
   for (const name of await fs.readdir(path.join(HERE, "assets"))) {
     await fs.copyFile(path.join(HERE, "assets", name), path.join(OUT, "assets", name));
   }
+
+  /* robots.txt + sitemap.xml — vercel.json has cleanUrls, so pages are listed
+   * without .html, and everything is on the apex (www 308s to it). lastmod is
+   * only given where it means something: listings/sold data refreshes with
+   * every build, the blog carries its own updatedAt, the two static pages
+   * carry none. */
+  const built = new Date().toISOString().slice(0, 10);
+  const pages = [
+    { loc: "/", lastmod: built },
+    { loc: "/case-studies", lastmod: built },
+    { loc: "/blog", lastmod: new Date(news.updatedAt).toISOString().slice(0, 10) },
+    { loc: "/off-market" },
+    { loc: "/first-time-selling" },
+  ];
+  const sitemap =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    pages
+      .map((p) => `  <url><loc>${SITE_ORIGIN}${p.loc}</loc>${p.lastmod ? `<lastmod>${p.lastmod}</lastmod>` : ""}</url>`)
+      .join("\n") +
+    `\n</urlset>\n`;
+  await fs.writeFile(path.join(OUT, "sitemap.xml"), sitemap);
+  await fs.writeFile(
+    path.join(OUT, "robots.txt"),
+    `User-agent: *\nAllow: /\nDisallow: /data.json\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`
+  );
 }
 
 // Expose the (just-refreshed) snapshot alongside the site. It's the same
