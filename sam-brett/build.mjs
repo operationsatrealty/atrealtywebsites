@@ -211,7 +211,7 @@ function schema(stats) {
     "@type": "RealEstateAgent",
     name: "Sam Steel & Brett Norris",
     url: "https://samandbrett.co.nz/",
-    telephone: "+64 21 026 2945",
+    telephone: "+64 21 0226 9245",
     email: "sam.steel@raywhite.com",
     areaServed: ["Wattle Downs", "Hill Park", "Manurewa", "Totara Park", "The Gardens"],
     worksFor: { "@type": "Organization", name: "Ray White Manurewa (A T Realty)" },
@@ -409,8 +409,6 @@ if (PREVIEW) {
       console.warn(`[build] Asset ${name} not found`);
     }
   }
-  html = html.replace(/<link rel="icon"[^>]*>\s*/g, "");
-
   await fs.writeFile(path.join(OUT, "index.html"), html);
 } else {
   await fs.writeFile(path.join(OUT, "index.html"), html);
@@ -442,6 +440,12 @@ if (!PREVIEW) {
       `    <changefreq>daily</changefreq>\n` +
       `    <priority>1.0</priority>\n` +
       `  </url>\n` +
+      `  <url>\n` +
+      `    <loc>${SITE_ORIGIN}/sold/</loc>\n` +
+      `    <lastmod>${lastmod}</lastmod>\n` +
+      `    <changefreq>weekly</changefreq>\n` +
+      `    <priority>0.8</priority>\n` +
+      `  </url>\n` +
       `</urlset>\n`
   );
   console.log("[build] Wrote robots.txt and sitemap.xml");
@@ -453,6 +457,191 @@ console.log(
     `— data source: ${source}, ${stats.soldCount} sales, ${stats.totalSettled} settled.`
 );
 
+
+/* ------------------------------------------------------------------ */
+/* sold page                                                           */
+/* ------------------------------------------------------------------ */
+
+async function buildSoldPage(sold) {
+  const distSoldDir = path.join(OUT, "sold");
+  await fs.mkdir(distSoldDir, { recursive: true });
+
+  // Process sold property photos
+  const soldPhotoMap = new Map();
+  for (const [i, s] of sold.entries()) {
+    if (!s.photo) continue;
+    const name = (s.address || `sold-${i}`).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    soldPhotoMap.set(
+      s.photo.url,
+      await image(s.photo.url, { width: 600, name })
+    );
+  }
+  const soldPhotoSrc = (u) => soldPhotoMap.get(u) ?? u;
+
+  // Sort by settlement date descending
+  const sorted = [...sold].sort((a, b) =>
+    (b.settlementDate || "").localeCompare(a.settlementDate || "")
+  );
+
+  const cards = sorted
+    .map((s) => {
+      const media = s.photo
+        ? `<img src="../${esc(soldPhotoSrc(s.photo.url))}" alt="${esc(s.address)}, ${esc(s.suburb)}" loading="lazy" />`
+        : `<div class="sold-card__no-photo"></div>`;
+      const link = s.url ? s.url : null;
+      const open = link ? `<a class="sold-card" href="${esc(link)}" target="_blank" rel="noopener">` : `<div class="sold-card">`;
+      const close = link ? `</a>` : `</div>`;
+
+      return `${open}
+        <div class="sold-card__media">
+          ${media}
+          <span class="sold-card__tag">Sold</span>
+        </div>
+        <div class="sold-card__body">
+          <span class="sold-card__addr">${esc(s.address)}</span>
+          <span class="sold-card__suburb">${esc(s.suburb)}</span>
+          <span class="sold-card__price">${esc(moneyExact(s.salePrice))}</span>
+          <span class="sold-card__meta">${specs(s)}${s.settlementDate ? `<span>${esc(shortDate(s.settlementDate))}</span>` : ""}</span>
+        </div>
+      ${close}`;
+    })
+    .join("\n");
+
+  const html = `<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sold Properties | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
+<meta name="description" content="Recently sold properties by Sam Steel and Brett Norris — Ray White Manurewa. Wattle Downs, Hill Park, Manurewa, and South Auckland.">
+<link rel="canonical" href="${SITE_ORIGIN}/sold/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sold Properties — Sam Steel &amp; Brett Norris">
+<meta property="og:description" content="Recently sold properties across South Auckland by Ray White Manurewa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
+<style>
+.page-hero{position:relative;color:#fff;padding-top:88px;overflow:hidden;background:var(--near-black)}
+.page-hero__media{position:absolute;inset:0;z-index:0}
+.page-hero__media img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,14,16,.5) 0%,rgba(14,14,16,.35) 45%,rgba(14,14,16,.86) 100%)}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero.index{min-height:clamp(340px,48vh,520px);display:flex;align-items:flex-end;padding-bottom:60px}
+.page-hero .kick{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.9);margin:0 0 22px}
+.page-hero h1{color:#fff;font-weight:500;font-size:clamp(34px,5vw,64px);line-height:1.06;max-width:20ch}
+.page-hero .tag{max-width:54ch;color:rgba(255,255,255,.85);font-size:clamp(16px,1.7vw,19px);margin:22px 0 0;font-weight:300;line-height:1.6}
+.sold-grid-section{padding-block:clamp(56px,7vw,100px)}
+.sold-grid-section .count{font-family:var(--sans);font-size:15px;color:var(--muted);margin-bottom:36px}
+.sold-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.sold-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hairline);border-radius:3px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.sold-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.08)}
+.sold-card__media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--light-grey,#f0f0f0)}
+.sold-card__media img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.sold-card:hover .sold-card__media img{transform:scale(1.04)}
+.sold-card__no-photo{width:100%;height:100%;background:linear-gradient(135deg,#e8e8e8,#d4d4d4)}
+.sold-card__tag{position:absolute;top:12px;left:12px;font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--near-black);color:#fff;padding:6px 14px;border-radius:2px}
+.sold-card__body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:4px}
+.sold-card__addr{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--ink);letter-spacing:-.01em}
+.sold-card__suburb{font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.02em}
+.sold-card__price{font-family:var(--sans);font-weight:700;font-size:17px;color:var(--ink);margin-top:8px}
+.sold-card__meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:4px}
+.sold-cta{background:var(--near-black);color:#fff;text-align:center;padding-block:clamp(56px,7vw,96px)}
+.sold-cta h2{color:#fff;font-family:var(--serif);font-size:clamp(28px,3.6vw,44px);font-weight:500;max-width:20ch;margin:0 auto 18px}
+.sold-cta h2 em{font-style:italic}
+.sold-cta>p{color:rgba(255,255,255,.8);max-width:50ch;margin:0 auto 34px}
+.nav a.active::after{width:100%}
+@media(max-width:900px){.sold-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.sold-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}.page-hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<a id="top"></a>
+
+<nav class="mnav" id="mnav" aria-label="Mobile">
+  <button class="mnav__close" id="mclose" aria-label="Close menu">&times;</button>
+  <a href="/">Home</a>
+  <a href="/#about">About</a>
+  <a href="/#listings">For Sale</a>
+  <a href="/sold/" class="active">Sold</a>
+  <a href="/blog/">Blog</a>
+  <a href="/#contact">Contact</a>
+  <a href="tel:+642102269245" class="mnav__phone">021 0226 9245</a>
+</nav>
+
+<header class="site-header scrolled" id="header">
+  <div class="wrap">
+    <a href="/" class="brand" aria-label="Sam Steel &amp; Brett Norris, Ray White Manurewa">
+      <img class="brand-logo" src="../assets/raywhite-logo.png" alt="Ray White">
+      <span class="brand-txt">
+        <span class="name">Sam Steel &amp; Brett Norris</span>
+        <span class="sub">Ray White Manurewa</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#listings">For Sale</a>
+      <a href="/sold/" class="active">Sold</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact" class="nav-cta">Get in Touch</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero index">
+  <div class="page-hero__media"><img src="../assets/website-hero.jpg" alt="Sold properties in South Auckland"></div>
+  <div class="wrap">
+    <p class="kick">Our Results</p>
+    <h1>Recently sold properties</h1>
+    <p class="tag">Properties sold by Sam Steel and Brett Norris across Wattle Downs, Manurewa, Hill Park, and South Auckland.</p>
+  </div>
+</section>
+
+<section class="sold-grid-section">
+  <div class="wrap">
+    <p class="count">${sorted.length} properties sold</p>
+    <div class="sold-grid">
+      ${cards}
+    </div>
+  </div>
+</section>
+
+<section class="sold-cta">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;color:rgba(255,255,255,.75)">Get in touch</p>
+    <h2>Thinking about your <em>next move?</em></h2>
+    <p>Sam and Brett offer honest, obligation-free appraisals across Wattle Downs, Manurewa, Hill Park, and South Auckland.</p>
+    <a href="/#contact" class="btn" style="background:var(--yellow);color:var(--near-black);border-color:var(--yellow)">Request an appraisal</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Sam Steel &amp; Brett Norris, Ray White Manurewa. All rights reserved.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/sold/">Sold</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('mnav').classList.add('open')});
+document.getElementById('mclose').addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')});
+document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mnav').classList.remove('open')})});
+</script>
+</body>
+</html>`;
+
+  await fs.writeFile(path.join(distSoldDir, "index.html"), html);
+  console.log(`[build] Sold page: ${sorted.length} properties`);
+}
 
 /* ------------------------------------------------------------------ */
 /* blog: markdown → html                                              */
@@ -518,7 +707,8 @@ async function buildBlog() {
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFE512'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23595959'>S</text></svg>">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/favicon.png">
 <style>
 .page-hero{position:relative;color:#fff;padding-top:88px;overflow:hidden;background:var(--near-black)}
 .page-hero__media{position:absolute;inset:0;z-index:0}
@@ -578,7 +768,7 @@ async function buildBlog() {
   <a href="/">Home</a>
   <a href="/#about">About</a>
   <a href="/#listings">For Sale</a>
-  <a href="/#sold">Sold</a>
+  <a href="/sold/">Sold</a>
   <a href="/blog/">Blog</a>
   <a href="/#contact">Contact</a>
   <a href="tel:+642102269245" class="mnav__phone">021 0226 9245</a>
@@ -596,7 +786,7 @@ async function buildBlog() {
     <nav class="nav" aria-label="Primary">
       <a href="/#about">About</a>
       <a href="/#listings">For Sale</a>
-      <a href="/#sold">Sold</a>
+      <a href="/sold/">Sold</a>
       <a href="/blog/" class="active">Blog</a>
       <a href="/#contact" class="nav-cta">Get in Touch</a>
     </nav>
@@ -655,6 +845,7 @@ ${posts.filter(p => p.slug !== post.slug).length ? `<section class="related">
     <p>&copy; <span id="year">2026</span> Sam Steel &amp; Brett Norris, Ray White Manurewa. All rights reserved.</p>
     <nav>
       <a href="/">Home</a>
+      <a href="/sold/">Sold</a>
       <a href="/blog/">Blog</a>
       <a href="/#contact">Contact</a>
     </nav>
@@ -688,7 +879,8 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFE512'/><text x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23595959'>S</text></svg>">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
 <style>
 .page-hero{position:relative;color:#fff;padding-top:88px;overflow:hidden;background:var(--near-black)}
 .page-hero__media{position:absolute;inset:0;z-index:0}
@@ -738,7 +930,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
   <a href="/">Home</a>
   <a href="/#about">About</a>
   <a href="/#listings">For Sale</a>
-  <a href="/#sold">Sold</a>
+  <a href="/sold/">Sold</a>
   <a href="/blog/">Blog</a>
   <a href="/#contact">Contact</a>
   <a href="tel:+642102269245" class="mnav__phone">021 0226 9245</a>
@@ -756,7 +948,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
     <nav class="nav" aria-label="Primary">
       <a href="/#about">About</a>
       <a href="/#listings">For Sale</a>
-      <a href="/#sold">Sold</a>
+      <a href="/sold/">Sold</a>
       <a href="/blog/" class="active">Blog</a>
       <a href="/#contact" class="nav-cta">Get in Touch</a>
     </nav>
@@ -813,6 +1005,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
     <p>&copy; <span id="year">2026</span> Sam Steel &amp; Brett Norris, Ray White Manurewa. All rights reserved.</p>
     <nav>
       <a href="/">Home</a>
+      <a href="/sold/">Sold</a>
       <a href="/blog/">Blog</a>
       <a href="/#contact">Contact</a>
     </nav>
@@ -906,5 +1099,6 @@ function convertMarkdownToHtml(md) {
   }
 }
 
-// Call buildBlog() before writing output
+// Build sold page and blog
+await buildSoldPage(data.sold);
 await buildBlog();

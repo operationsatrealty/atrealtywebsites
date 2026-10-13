@@ -19,10 +19,10 @@ name: Daily rebuild
 
 on:
   schedule:
-    # 17:00 UTC = 5am NZDT / 6am NZST — done before the working day starts.
+    # 05:00 UTC = 5pm NZST / 6pm NZDT — end of the working day.
     # GitHub cron is always UTC and does not follow NZ daylight saving, so
     # this drifts by an hour twice a year. That's harmless here.
-    - cron: "0 17 * * *"
+    - cron: "0 5 * * *"
   workflow_dispatch: # lets you trigger a rebuild by hand from the Actions tab
 
 jobs:
@@ -68,7 +68,7 @@ jobs:
 
       - name: Sam & Brett
         env:
-          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_SAM_BRETT }}
+          HOOK: ${{ secrets.vercel_deploy_hook_sam_brett_daily_rebuild }}
         run: |
           if [ -z "$HOOK" ]; then
             echo "::notice::No deploy hook set for Sam & Brett — skipping."

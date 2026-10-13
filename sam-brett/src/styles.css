@@ -61,6 +61,8 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--ink); font-weight: 500;
 .btn:hover { transform: translateY(-2px); background: #000; border-color: #000 }
 .btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.5) }
 .btn--ghost:hover { background: #fff; color: var(--near-black); border-color: #fff }
+.btn--outline { background: transparent; color: var(--near-black); border-color: var(--near-black) }
+.btn--outline:hover { background: var(--near-black); color: #fff }
 
 /* ---- Reveal animation ---- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease) }
