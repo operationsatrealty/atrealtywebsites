@@ -223,18 +223,18 @@ function page(title, inner) {
   <meta name="robots" content="noindex, nofollow" />
   <title>${esc(title)}</title>
   <style>
-    body { margin: 0; background: #f5f2ed; color: #17181b; font: 16px/1.6 "Lato", -apple-system, "Segoe UI", Arial, sans-serif; }
+    body { margin: 0; background: #ebebec; color: #17181b; font: 16px/1.6 "Lato", -apple-system, "Segoe UI", Arial, sans-serif; }
     main { max-width: 620px; margin: 0 auto; padding: 48px 20px; }
     h1 { margin: 0 0 8px; font: 500 30px/1.2 Georgia, serif; }
-    .card { margin: 24px 0; padding: 22px; background: #fff; border: 1px solid #e4e0d8; }
+    .card { margin: 24px 0; padding: 22px; background: #fff; border: 1px solid #dedee0; }
     .ok { border-left: 4px solid #2e7d32; }
     .warn { border-left: 4px solid #f2d600; }
     .bad { border-left: 4px solid #c62828; }
     label { display: block; margin-bottom: 6px; font-weight: 700; }
-    input { width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #cdc8bd; font: inherit; }
+    input { width: 100%; box-sizing: border-box; padding: 12px; border: 1px solid #c6c6c9; font: inherit; }
     button { margin: 14px 10px 0 0; padding: 12px 20px; border: 1px solid #17181b; background: #ffe512; font: 700 14px/1 inherit; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
     button.ghost { background: #fff; }
-    code { padding: 2px 5px; background: #ebe6dd; font-size: 13px; overflow-wrap: anywhere; }
+    code { padding: 2px 5px; background: #dfdfe1; font-size: 13px; overflow-wrap: anywhere; }
     small, .muted { color: #626469; }
     a { color: inherit; }
   </style>

@@ -36,6 +36,7 @@ npm run build:offline  # → dist/   (uses the data/listings.json snapshot)
 | `data/profile.json` | Bio, community and contact details from her A T Realty profile; licence number from the Super App. |
 | `data/testimonials.json` | Word for word from her homes.co.nz profile. Add new ones here; never paraphrase or invent one. |
 | `data/areas.json` | The suburb pages. Descriptive copy only — no prices, medians or market statistics, which go stale and need a licensed source. Each names its photo. |
+| `assets/raywhite-mark.png` | Ray White's square logo, used in the header and footer. The build cuts every favicon from it (`favicon.ico`, `favicon-192.png`, `apple-touch-icon.png`); keep it square so nothing is stretched. |
 | `assets/photos/` | Casey's brand shoot by Forme Studio (Sep 2026, around Ponsonby), cut down to 2600px with camera metadata removed. Originals: Operations' Google Drive. Shots showing other identifiable people were left out. Which photo goes where: `PHOTOS` in `build.mjs`, `photo` in `data/areas.json`. |
 
 Sale prices are never shown, as on Ray White's own pages, and the build drops

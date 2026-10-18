@@ -358,8 +358,35 @@ for (const p of pages) {
 
 await fs.copyFile(path.join(HERE, "src", "styles.css"), path.join(OUT, "styles.css"));
 await fs.copyFile(path.join(HERE, "src", "script.js"), path.join(OUT, "script.js"));
-for (const name of ["raywhite-logo.png", "raywhite-mark.png", "favicon.png", "favicon.svg"]) {
-  await fs.copyFile(path.join(HERE, "assets", name), path.join(OUT, "assets", name));
+await fs.copyFile(path.join(HERE, "assets", "raywhite-mark.png"), path.join(OUT, "assets", "raywhite-mark.png"));
+
+/* Favicons, all cut from Ray White's square logo (square to square, so
+   nothing is stretched). favicon.ico holds 16, 32 and 48px PNGs. */
+const MARK = path.join(HERE, "assets", "raywhite-mark.png");
+const iconPng = (size) => sharp(MARK).resize(size, size).png().toBuffer();
+await fs.writeFile(path.join(OUT, "assets", "favicon-192.png"), await iconPng(192));
+await fs.writeFile(
+  path.join(OUT, "assets", "apple-touch-icon.png"),
+  await sharp(MARK).resize(180, 180).flatten({ background: "#ffe512" }).png().toBuffer()
+);
+{
+  const sizes = [16, 32, 48];
+  const pngs = await Promise.all(sizes.map(iconPng));
+  const head = Buffer.alloc(6 + 16 * sizes.length);
+  head.writeUInt16LE(1, 2);
+  head.writeUInt16LE(sizes.length, 4);
+  let offset = head.length;
+  sizes.forEach((size, i) => {
+    const e = 6 + 16 * i;
+    head.writeUInt8(size, e);
+    head.writeUInt8(size, e + 1);
+    head.writeUInt16LE(1, e + 4);
+    head.writeUInt16LE(32, e + 6);
+    head.writeUInt32LE(pngs[i].length, e + 8);
+    head.writeUInt32LE(offset, e + 12);
+    offset += pngs[i].length;
+  });
+  await fs.writeFile(path.join(OUT, "favicon.ico"), Buffer.concat([head, ...pngs]));
 }
 
 /* robots.txt + sitemap.xml. cleanUrls is on, so pages are listed without
