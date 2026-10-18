@@ -83,7 +83,7 @@ const PHOTOS = {
     position: "50% 35%",
   },
   band: { src: "assets/photos/casey-honey-sundays.jpg", alt: "Casey Green over coffee at Honey Sundays" },
-  intro: { src: "assets/photos/casey-villa-fence.jpg", alt: "Casey Green, real estate agent for Auckland’s inner west" },
+  intro: { src: "assets/photos/casey-hotel-ponsonby-bar.jpg", alt: "Casey Green, real estate agent for Auckland’s inner west" },
   about: { src: PORTRAIT_SRC, alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
   contact: { src: "assets/photos/casey-on-the-phone.jpg", alt: "Casey Green on the phone" },
   // The bridge sits low on the left; the band would crop it out from the centre.
