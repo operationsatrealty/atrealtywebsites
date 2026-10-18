@@ -421,26 +421,22 @@ export function renderSite(ctx) {
     return `<cite>${esc(t.context || "Client")}</cite>`;
   }
 
+  /**
+   * The follow card, which script.js swaps for Casey's latest posts once
+   * /api/instagram/feed answers with some (lib/instagram.mjs). Until Instagram
+   * is connected — or if the feed is down — the card is what stays.
+   */
   function instagramBlock() {
-    if (instagram.posts.length) {
-      const posts = instagram.posts
-        .slice(0, 6)
-        .map(
-          (u) => `<blockquote class="instagram-media" data-instgrm-permalink="${esc(u)}" data-instgrm-version="14"><a href="${esc(u)}" target="_blank" rel="noopener">View this post on Instagram</a></blockquote>`
-        )
-        .join("\n");
-      return `<div class="insta__posts">${posts}</div>
-          <p class="links"><a class="btn btn--ghost" href="${esc(instagram.url)}" target="_blank" rel="noopener">Follow @${esc(instagram.handle)}</a></p>
-          <script async src="https://www.instagram.com/embed.js"></script>`;
-    }
-    return `<div class="insta">
+    return `<div data-instagram-feed>
+          <div class="insta">
             <img class="insta__avatar" src="${esc(images.avatar.src)}" alt="${esc(agent.name)}" width="${images.avatar.width}" height="${images.avatar.height}" loading="lazy" />
             <div>
               <a class="insta__handle" href="${esc(instagram.url)}" target="_blank" rel="noopener">${ICON_INSTAGRAM}@${esc(instagram.handle)}</a>
               <p>New listings, open homes, sold results and life around Ponsonby, Herne Bay and Grey Lynn — follow along on Instagram.</p>
               <a class="btn btn--primary" href="${esc(instagram.url)}" target="_blank" rel="noopener">Follow on Instagram</a>
             </div>
-          </div>`;
+          </div>
+        </div>`;
   }
 
   function areasList(wide = false) {

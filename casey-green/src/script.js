@@ -2,8 +2,8 @@
    Casey Green · Ray White Auckland Central — interactions
    ------------------------------------------------------------
    Kept small: mobile navigation, the sticky-header hairline, a
-   quiet reveal on scroll, the testimonial slider and mounting the
-   appraisal form. The content works without it; .reveal only hides
+   quiet reveal on scroll, the testimonial slider, mounting the
+   appraisal form and the live Instagram grid. The content works without it; .reveal only hides
    anything once the inline head script has marked the page as .js.
    ============================================================ */
 (function () {
@@ -137,6 +137,87 @@
     forms.forEach(function (el) {
       formIo.observe(el);
     });
+  }
+
+  /* ---- Instagram ----
+     The home page ships a "Follow on Instagram" card. When the section
+     comes near the screen this asks /api/instagram/feed for Casey's
+     latest posts (lib/instagram.mjs) and, if there are any, swaps the
+     card for a grid. Not connected, offline or an error: the card stays.
+     Built with DOM methods, never innerHTML — captions are Instagram's. */
+  var feedEl = document.querySelector("[data-instagram-feed]");
+
+  function renderFeed(data) {
+    var posts = (data && data.posts) || [];
+    if (!posts.length) return;
+
+    var grid = document.createElement("ul");
+    grid.className = "igGrid";
+    posts.forEach(function (p) {
+      if (!/^https:\/\/www\.instagram\.com\//.test(p.url) || !/^https:\/\//.test(p.image)) return;
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = p.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      var img = document.createElement("img");
+      img.src = p.image;
+      img.alt = p.caption ? p.caption.slice(0, 120) : "Instagram post by @" + (data.username || "");
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.width = 400;
+      img.height = 400;
+      a.appendChild(img);
+      if (p.type === "VIDEO" || p.type === "CAROUSEL_ALBUM") {
+        var badge = document.createElement("span");
+        badge.className = "igGrid__badge";
+        badge.textContent = p.type === "VIDEO" ? "Video" : "Gallery";
+        a.appendChild(badge);
+      }
+      li.appendChild(a);
+      grid.appendChild(li);
+    });
+    if (!grid.children.length) return;
+
+    var foot = document.createElement("p");
+    foot.className = "igFoot";
+    var follow = document.createElement("a");
+    follow.className = "btn btn--ghost";
+    follow.href = data.profile;
+    follow.target = "_blank";
+    follow.rel = "noopener";
+    follow.textContent = "Follow @" + (data.username || "on Instagram");
+    foot.appendChild(follow);
+
+    feedEl.replaceChildren(grid, foot);
+  }
+
+  function loadFeed() {
+    if (!window.fetch) return;
+    fetch("/api/instagram/feed", { headers: { accept: "application/json" } })
+      .then(function (res) {
+        return res.ok ? res.json() : null;
+      })
+      .then(renderFeed)
+      .catch(function () {
+        /* keep the follow card */
+      });
+  }
+
+  if (feedEl) {
+    if (!("IntersectionObserver" in window)) {
+      loadFeed();
+    } else {
+      var feedIo = new IntersectionObserver(
+        function (entries) {
+          if (!entries.some(function (e) { return e.isIntersecting; })) return;
+          feedIo.disconnect();
+          loadFeed();
+        },
+        { rootMargin: "1200px 0px" }
+      );
+      feedIo.observe(feedEl);
+    }
   }
 
   /* ---- Footer year ---- */

@@ -19,7 +19,7 @@ npm run build:offline  # → dist/   (uses the data/listings.json snapshot)
 
 | Path | What it is |
 |---|---|
-| `/` | Hero, intro, testimonials, current listings, recent sales, areas, Instagram, community, appraisal form |
+| `/` | Hero, intro, testimonials, current listings, recent sales, areas, live Instagram, community, appraisal form |
 | `/about` | Full bio, how Casey works, Bayfield School Garden to Table |
 | `/listings` | Current listings (VaultRE), linking to the Ray White listing pages |
 | `/recent-sales` | Every sale: VaultRE settled sales, then her Ray White Grey Lynn sales |
@@ -36,7 +36,6 @@ npm run build:offline  # → dist/   (uses the data/listings.json snapshot)
 | `data/profile.json` | Bio, community and contact details from her A T Realty profile; licence number from the Super App. |
 | `data/testimonials.json` | Word for word from her homes.co.nz profile. Add new ones here; never paraphrase or invent one. |
 | `data/areas.json` | The suburb pages. Descriptive copy only — no prices, medians or market statistics, which go stale and need a licensed source. |
-| `data/instagram.json` | Her handle, plus optional post URLs (see below). |
 
 Sale prices are never shown, as on Ray White's own pages, and the build drops
 them from VaultRE's answer before the snapshot is written — this repo is public
@@ -81,13 +80,54 @@ loading it up front on every page cost about 400 KB before the visitor had
 seen anything. Leads carry the page they came from (`atr_src`), so a lead from
 `/areas/herne-bay` says so.
 
-## Instagram
+## Instagram — live feed
 
-The site links to [@caseygreen.raywhite](https://www.instagram.com/caseygreen.raywhite/)
-from the header, footer and an "On Instagram" panel. Instagram doesn't let a
-static site read a feed without an access token, so the panel shows a follow
-card. To show posts instead, add up to six public post URLs to
-`data/instagram.json` → `posts`; Instagram's own embed renders them.
+The home page's "Latest on Instagram" section shows Casey's latest nine posts,
+live, once her account is connected; until then it shows a follow card. The
+whole system is in `lib/instagram.mjs` (setup notes at the top), with thin
+Vercel Functions in `api/instagram/`:
+
+| Route | What it does |
+|---|---|
+| `/api/instagram/connect` | Status page. With the connect key: **Connect Instagram** (Casey logs in on Instagram's own screen) or **Disconnect**. |
+| `/api/instagram/callback` | Instagram returns here; the code becomes a 60-day token, stored in the private Blob store. Only @caseygreen.raywhite is accepted. |
+| `/api/instagram/feed` | Latest posts as JSON (links and image URLs, never the token), cached at the CDN for 15 minutes. `src/script.js` turns it into the grid. |
+| `/api/instagram/refresh` | Weekly cron (`vercel.json`) that renews the token, so it never runs out. The feed also renews it if it gets within 14 days. |
+
+Uses Meta's Instagram API with Instagram Login (the old Basic Display API was
+switched off in December 2024), so Casey's account must be a **professional**
+account (Business or Creator — free to switch in the Instagram app).
+
+### One-time setup
+
+1. **Meta app** (one app can serve every agent site): developers.facebook.com
+   → Create app → use case *Manage messaging & content on Instagram* → type
+   *Business*. Then Instagram → *API setup with Instagram login*:
+   - copy the **Instagram app ID** and **Instagram app secret**;
+   - *Set up Instagram business login* → *Business login settings* → add the
+     OAuth redirect URI shown at the bottom of `/api/instagram/connect`
+     (e.g. `https://casey-green.vercel.app/api/instagram/callback`; add the
+     custom domain's one too when it's live);
+   - App roles → Roles → add **caseygreen.raywhite** as an *Instagram Tester*.
+     Casey accepts in Instagram → Settings → *Website permissions* → *Apps and
+     websites* → *Tester invites* (or at instagram.com/accounts/manage_access).
+2. **Vercel** (project → Storage): create a **Blob** store with **Private**
+   access and connect it to this project — that adds `BLOB_READ_WRITE_TOKEN`.
+3. **Vercel** (project → Settings → Environment Variables, Production +
+   Preview): `INSTAGRAM_APP_ID`, `INSTAGRAM_APP_SECRET`,
+   `INSTAGRAM_CONNECT_KEY` (any long password — you type it on the connect
+   page) and `CRON_SECRET` (any long random string). Redeploy.
+
+### Connecting, with Casey
+
+Open `/api/instagram/connect` on the site, enter the connect key, press
+**Connect Instagram**, and let Casey log in to Instagram and tap **Allow**.
+The page confirms "Connected as @caseygreen.raywhite" and the grid appears on
+the home page within about five minutes. Nothing else is needed after that;
+if the connection ever breaks (she changes her password, removes the app),
+the status page says so and the site quietly falls back to the follow card.
+
+`npm test` runs the whole flow against a fake Instagram.
 
 ## SEO
 

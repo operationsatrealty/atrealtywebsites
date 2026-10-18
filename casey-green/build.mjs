@@ -28,6 +28,7 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { agentListings, vaultreConfigured } from "./vaultre.mjs";
 import { renderSite, suburbKey } from "./src/render.mjs";
+import { HANDLE, PROFILE_URL } from "./lib/instagram.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const OFFLINE = process.argv.includes("--offline");
@@ -211,7 +212,7 @@ const profile = await readJson("data/profile.json");
 const historic = await readJson("data/historic-sales.json");
 const testimonialData = await readJson("data/testimonials.json");
 const { areas } = await readJson("data/areas.json");
-const instagram = await readJson("data/instagram.json");
+const instagram = { handle: HANDLE, url: PROFILE_URL };
 
 const { data, source } = await loadData();
 
@@ -342,7 +343,7 @@ const sitemap =
     .join("\n") +
   `\n</urlset>\n`;
 await fs.writeFile(path.join(OUT, "sitemap.xml"), sitemap);
-await fs.writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /data.json\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`);
+await fs.writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /data.json\nDisallow: /api/\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`);
 
 // The snapshot ships beside the site (same public data the pages show), so a
 // machine without VaultRE credentials can pull a fresh one from any build.
