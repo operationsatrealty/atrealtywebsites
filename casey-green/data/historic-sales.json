@@ -1,0 +1,231 @@
+{
+  "note": "Sold with Ray White Grey Lynn (Locals Grey Lynn Limited, Licensed REAA 2008) before Casey joined Ray White Auckland Central, several alongside Kane Taylor. Ray White does not publish these sale prices.",
+  "source": "Captured from Casey's Ray White profile; the same list the A T Realty website shows (atrealty-next src/content/agents.json, historicSales).",
+  "items": [
+    {
+      "address": "5 Cumberland Avenue",
+      "suburb": "Westmere",
+      "bed": 4,
+      "bath": 2,
+      "car": 4,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY31448",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/93fe-H3507110-200483393__1778194424-30385-5Cumberlandlowres-6.jpg"
+    },
+    {
+      "address": "46 Cumberland Avenue",
+      "suburb": "Westmere",
+      "bed": 4,
+      "bath": 2,
+      "car": 1,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY31288",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1c7a-H3515198-201524454__1778795721-23529-46Cumberlandlowres-29.jpg"
+    },
+    {
+      "address": "37 Sackville Street",
+      "suburb": "Grey Lynn",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/grey-lynn/GRY31385",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/7349-H3507107-201022967__1778551225-63788-37Sackvilledaylowres-1.jpg"
+    },
+    {
+      "address": "2E/8 Howe Street",
+      "suburb": "Freemans Bay",
+      "bed": 2,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/freemans-bay/GRY31243",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/03f7-H3478767-193935160__1774406314-248298-2e-8howelr-10.jpg"
+    },
+    {
+      "address": "29 Warnock Street",
+      "suburb": "Grey Lynn",
+      "bed": 3,
+      "bath": 1,
+      "car": 4,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/grey-lynn/GRY31449",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/f60d-H3498668-198729058__1777412136-21585-29Warnocklowres-24.jpg"
+    },
+    {
+      "address": "60 Fir Street",
+      "suburb": "Waterview",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/waterview/GRY30729",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ea45-H3459672-187768129__1771442106-7467-Duskherolowres.jpg"
+    },
+    {
+      "address": "43 Kiwi Road",
+      "suburb": "Point Chevalier",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/point-chevalier/GRY31296",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/4e28-H3451309-180689920__1766089779-15271-43kiwidusklr-5.jpg"
+    },
+    {
+      "address": "1/6 Dickens Street",
+      "suburb": "Grey Lynn",
+      "bed": 2,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/grey-lynn/GRY31318",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/1e40-H3452437-186463478__1770760941-26549-1-6dickenslr-29.jpg"
+    },
+    {
+      "address": "1B Kotare Avenue",
+      "suburb": "Westmere",
+      "bed": 4,
+      "bath": 3,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY31336",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/afdd-H3451310-186231165__1770672888-23582-1bkotarelr-9.jpg"
+    },
+    {
+      "address": "14 Tainui Road",
+      "suburb": "Titirangi",
+      "bed": 4,
+      "bath": 2,
+      "car": 3,
+      "url": "https://www.raywhite.co.nz/auckland/waitakere-city/titirangi/GRY31255",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/8f7e-H3410038-82327928__1708487035-54050-DJI202402202020410357D.jpg"
+    },
+    {
+      "address": "27 Seaside Avenue",
+      "suburb": "Waterview",
+      "bed": 5,
+      "bath": 3,
+      "car": 3,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/waterview/GRY30503",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/e4b6-H3400565-173023269__1762284413-8543-27seasidenewlr-4.jpg"
+    },
+    {
+      "address": "21 Tane Street",
+      "suburb": "New Lynn",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/waitakere-city/new-lynn/GRY31181",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/01b9-H3381127-166585969__1759713233-53022-21tanelr-21.jpg"
+    },
+    {
+      "address": "45 Pompallier Terrace",
+      "suburb": "Ponsonby",
+      "bed": 2,
+      "bath": 1,
+      "car": null,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/ponsonby/GRY31150",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/07e7-H3361956-161744873__1756775400-53597-1341735016-325-17photoprint.jpg"
+    },
+    {
+      "address": "187 Avondale Road",
+      "suburb": "Avondale",
+      "bed": 4,
+      "bath": 3,
+      "car": 1,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/avondale/GRY31002",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/7d8e-H3357419-160804475__1756174319-57954-herocrop2.jpg"
+    },
+    {
+      "address": "14 Richard Street",
+      "suburb": "Westmere",
+      "bed": 3,
+      "bath": 1,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY30999",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ba98-H3298875-147525981__1747089381-23782-RichardsDay-36.jpg"
+    },
+    {
+      "address": "4A Finch Street",
+      "suburb": "Morningside",
+      "bed": 4,
+      "bath": 3,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/morningside/GRY31006",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/e05d-H3306037-148885703__1747954467-25401-4aFinchdusk-17.jpg"
+    },
+    {
+      "address": "13A Walmer Road",
+      "suburb": "Point Chevalier",
+      "bed": 3,
+      "bath": 3,
+      "car": 1,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/point-chevalier/GRY30946",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/c303-H3275484-142173263__1743459373-13980-DSC08610.jpg"
+    },
+    {
+      "address": "31 Tutanekai Street",
+      "suburb": "Grey Lynn",
+      "bed": 5,
+      "bath": 5,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/grey-lynn/GRY30652",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/96f7-H3290340-140820410__1742774987-42124-DSC07382.jpg"
+    },
+    {
+      "address": "25 Bayfield Road",
+      "suburb": "Ponsonby",
+      "bed": 4,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/ponsonby/GRY30674",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/3ec4-H3290338-145471873__1745880149-24561-DSC00583.jpg"
+    },
+    {
+      "address": "45A Riro Street",
+      "suburb": "Point Chevalier",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/point-chevalier/GRY30844",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/95ef-H3266970-139722206__1742158804-103061-DSC05345.jpg"
+    },
+    {
+      "address": "2B Kotare Avenue",
+      "suburb": "Westmere",
+      "bed": 4,
+      "bath": 3,
+      "car": 1,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY30818",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/21de-H3244156-134355197__1738717232-136778-DSC08812.jpg"
+    },
+    {
+      "address": "8A Elcoat Avenue",
+      "suburb": "Henderson",
+      "bed": 4,
+      "bath": 2,
+      "car": 4,
+      "url": "https://www.raywhite.co.nz/auckland/waitakere-city/henderson/GRY30673",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/9845-H3258301-137384816__1740620641-142074-DSC02957.jpg"
+    },
+    {
+      "address": "16 Scenic Drive",
+      "suburb": "Titirangi",
+      "bed": 4,
+      "bath": 3,
+      "car": 6,
+      "url": "https://www.raywhite.co.nz/auckland/waitakere-city/titirangi/GRY30810",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ac1f-H3244344-134806995__1739147419-147851-DJI202502052026360190D.jpg"
+    },
+    {
+      "address": "48A Old Mill Road",
+      "suburb": "Grey Lynn",
+      "bed": 3,
+      "bath": 2,
+      "car": 3,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/grey-lynn/GRY30754",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/ef95-H3244341-124281160__1733083209-107477-DJI202411292027020080D.jpg"
+    },
+    {
+      "address": "1A Richard Street",
+      "suburb": "Westmere",
+      "bed": 3,
+      "bath": 2,
+      "car": 2,
+      "url": "https://www.raywhite.co.nz/auckland/auckland-city/westmere/GRY30443",
+      "photo": "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/c905-H3192522-119695063__1730747532-103164-DSC04000lowres.jpg"
+    }
+  ]
+}

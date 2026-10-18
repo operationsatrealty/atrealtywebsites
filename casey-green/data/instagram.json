@@ -1,0 +1,6 @@
+{
+  "_note": "posts: up to 6 public post URLs (https://www.instagram.com/p/<code>/). When the list is empty the site shows a follow panel instead of an empty grid. Instagram's own embed renders each post, so no access token is needed.",
+  "handle": "caseygreen.raywhite",
+  "url": "https://www.instagram.com/caseygreen.raywhite/",
+  "posts": []
+}

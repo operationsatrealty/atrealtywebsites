@@ -1,0 +1,12 @@
+{
+  "name": "casey-green-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:offline": "node build.mjs --offline"
+  },
+  "dependencies": {
+    "sharp": "^0.35.4"
+  }
+}
