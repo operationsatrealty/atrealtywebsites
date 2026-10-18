@@ -68,7 +68,8 @@ const OFFICE = {
  * Ponsonby): masters in assets/photos, cut down to 2600px with the camera
  * metadata removed; the full-size originals stay in Operations' Google Drive.
  * Shots with other, identifiable people in them were left out.
- * casey-portrait.jpg is her A T Realty profile photo, still used for the
+ * casey-portrait.jpg is her A T Realty profile photo (at Honey Sundays, the
+ * same file raywhiteatrealty.co.nz shows): the About page portrait, the
  * Instagram avatar and link previews. Suburb pages take their photo from
  * data/areas.json.
  */
@@ -84,7 +85,7 @@ const PHOTOS = {
   },
   band: { src: "assets/photos/casey-honey-sundays.jpg", alt: "Casey Green over coffee at Honey Sundays" },
   intro: { src: "assets/photos/casey-villa-fence.jpg", alt: "Casey Green, real estate agent for Auckland’s inner west" },
-  about: { src: "assets/photos/casey-hotel-ponsonby-bar.jpg", alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
+  about: { src: PORTRAIT_SRC, alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
   contact: { src: "assets/photos/casey-on-the-phone.jpg", alt: "Casey Green on the phone" },
   // The bridge sits low on the left; the band would crop it out from the centre.
   areas: { src: "assets/photos/villa-harbour-bridge.jpg", alt: "A character villa with the Auckland Harbour Bridge beyond", position: "30% 82%" },
