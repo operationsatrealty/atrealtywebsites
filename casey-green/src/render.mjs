@@ -335,7 +335,8 @@ export function renderSite(ctx) {
   function img(image, alt, { sizes = "(max-width: 560px) 100vw, (max-width: 960px) 50vw, 400px", eager = false } = {}) {
     if (!image) return "";
     const srcset = image.srcset ? ` srcset="${esc(image.srcset)}" sizes="${esc(sizes)}"` : "";
-    return `<img src="${esc(image.src)}"${srcset} alt="${esc(alt)}" width="${image.width}" height="${image.height}"${eager ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'} />`;
+    const position = image.position ? ` style="object-position:${esc(image.position)}"` : "";
+    return `<img src="${esc(image.src)}"${srcset} alt="${esc(alt)}" width="${image.width}" height="${image.height}"${position}${eager ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'} />`;
   }
 
   function cardWrap(url, inner) {
@@ -476,7 +477,7 @@ export function renderSite(ctx) {
     const body = `
     <section class="hero">
       <div class="hero__media">
-        <img src="${esc(images.hero.src)}" srcset="${esc(images.hero.srcset)}" sizes="100vw" alt="A Ponsonby villa at dusk, sold by Casey Green" width="${images.hero.width}" height="${images.hero.height}" fetchpriority="high" />
+        <img src="${esc(images.hero.src)}" srcset="${esc(images.hero.srcset)}" sizes="100vw" alt="${esc(images.hero.alt)}" width="${images.hero.width}" height="${images.hero.height}" style="object-position:${esc(images.hero.position ?? "50% 50%")}" fetchpriority="high" />
       </div>
       <div class="shell hero__content">
         <p class="eyebrow">${esc(agent.name)} · Herne Bay, Ponsonby &amp; Grey Lynn real estate</p>
@@ -507,7 +508,7 @@ export function renderSite(ctx) {
             </div>
           </div>
           <figure class="intro__photo reveal" style="margin:0">
-            ${img(images.portrait, `${agent.name}, Ray White real estate agent in Ponsonby`, { sizes: "(max-width: 900px) 460px, 600px" })}
+            ${img(images.intro, images.intro.alt, { sizes: "(max-width: 900px) 460px, 600px" })}
           </figure>
         </div>
 
@@ -545,7 +546,7 @@ export function renderSite(ctx) {
 
     <div class="band">
       ${img(images.band, images.band.alt, { sizes: "100vw" })}
-      <p class="band__caption">${esc(images.band.caption)}</p>
+      ${images.band.caption ? `<p class="band__caption">${esc(images.band.caption)}</p>` : ""}
     </div>
 
     <section class="section">
@@ -639,7 +640,7 @@ ${appraisalBlock()}`;
     <section class="section">
       <div class="shell profile">
         <div class="profile__photo">
-          ${img(images.portrait, `${agent.name}, Licensee Salesperson at Ray White Auckland Central`, { sizes: "(max-width: 900px) 460px, 480px" })}
+          ${img(images.about, images.about.alt, { sizes: "(max-width: 900px) 460px, 480px" })}
           <dl class="profile__card">
             <dt>Role</dt><dd>${esc(agent.role)}</dd>
             <dt>Office</dt><dd>${esc(office.brand)}, ${esc(office.address)}</dd>
@@ -836,6 +837,7 @@ ${appraisalBlock({
       <div class="shell split">
         <div class="split__head">
           <h2 class="h2">Find the office</h2>
+          <figure class="split__photo">${img(images.contact, images.contact.alt, { sizes: "(max-width: 900px) 460px, 380px" })}</figure>
         </div>
         <div class="prose">
           <p>${esc(office.brand)} is on ${esc(office.address)}. ${esc(agent.firstName)} spends most of her time out in Herne Bay, Ponsonby, Grey Lynn and the neighbouring suburbs, so call ahead and she’ll meet you wherever suits.</p>
@@ -863,6 +865,10 @@ ${appraisalBlock({
         ${areasList(true)}
       </div>
     </section>
+
+    <div class="band">
+      ${img(images.areas, images.areas.alt, { sizes: "100vw" })}
+    </div>
 ${appraisalBlock()}`;
     add("areas.html", "/areas", title, page({ title, description, path: "/areas", schema: [crumbs(trail)] }, "/areas", body));
   }
@@ -916,6 +922,7 @@ ${appraisalBlock()}`;
         <div class="split__head">
           <h2 class="h2">Living in ${esc(a.name)}</h2>
           <p>${esc(a.tagline)}</p>
+          ${ctx.areaImage(a.slug) ? `<figure class="split__photo">${img(ctx.areaImage(a.slug), ctx.areaImage(a.slug).alt, { sizes: "(max-width: 900px) 460px, 380px" })}</figure>` : ""}
         </div>
         <div class="prose">
           ${a.about.map((p) => `<p>${esc(p)}</p>`).join("\n          ")}

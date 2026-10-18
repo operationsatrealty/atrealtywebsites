@@ -1,5 +1,5 @@
 {
-  "_note": "One entry per suburb page (/areas/<slug>). Copy is descriptive only: no prices, medians or market statistics, which go stale and need a licensed source. `neighbours` drives the 'recent sales nearby' fallback and the cross-links, so keep it to real neighbouring suburbs. Order here is the order everywhere on the site.",
+  "_note": "One entry per suburb page (/areas/<slug>). Copy is descriptive only: no prices, medians or market statistics, which go stale and need a licensed source. `neighbours` drives the 'recent sales nearby' fallback and the cross-links, so keep it to real neighbouring suburbs. Order here is the order everywhere on the site. `photo` is a master in assets/photos (cropped 4:5 for the page); its alt text must not claim a location the photo doesn't show.",
   "areas": [
     {
       "slug": "herne-bay",
@@ -19,7 +19,11 @@
         "Bayfield School, where Casey’s daughters went to school"
       ],
       "selling": "Herne Bay buyers are well informed and often comparing a handful of very different homes, so presentation, positioning and timing matter as much as the price guide. Casey’s family ties to Bayfield School and two decades in the neighbourhood give her a working knowledge of who is looking here and why.",
-      "neighbours": ["Ponsonby", "St Marys Bay", "Westmere"],
+      "neighbours": [
+        "Ponsonby",
+        "St Marys Bay",
+        "Westmere"
+      ],
       "faqs": [
         {
           "q": "What is my Herne Bay home worth?",
@@ -33,7 +37,17 @@
           "q": "Does Casey sell in the suburbs around Herne Bay?",
           "a": "Yes. Casey works across greater Ponsonby and the city fringe, including Ponsonby, St Marys Bay, Freemans Bay, Grey Lynn, Westmere and Point Chevalier."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-villa-gate.jpg",
+        "alt": "Casey Green, real estate agent for Herne Bay",
+        "extract": {
+          "left": 0.22,
+          "top": 0,
+          "width": 0.533,
+          "height": 1
+        }
+      }
     },
     {
       "slug": "ponsonby",
@@ -53,7 +67,12 @@
         "Recent Ponsonby sales include 45 Pompallier Terrace and 25 Bayfield Road"
       ],
       "selling": "Ponsonby draws buyers from across Auckland and overseas, and the right campaign gets a home in front of the people already watching the suburb. Casey combines sales data, current market conditions and buyer psychology to position each home, then uses her local networks to bring competing buyers to the table.",
-      "neighbours": ["Herne Bay", "St Marys Bay", "Freemans Bay", "Grey Lynn"],
+      "neighbours": [
+        "Herne Bay",
+        "St Marys Bay",
+        "Freemans Bay",
+        "Grey Lynn"
+      ],
       "faqs": [
         {
           "q": "What is my Ponsonby home worth?",
@@ -67,7 +86,11 @@
           "q": "Does Casey sell apartments and townhouses in Ponsonby as well as villas?",
           "a": "Yes — villas, family homes, townhouses and apartments across Ponsonby and the neighbouring suburbs."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/ponsonby-post-office.jpg",
+        "alt": "The old Ponsonby Post Office and its clock tower"
+      }
     },
     {
       "slug": "grey-lynn",
@@ -87,7 +110,11 @@
         "Casey’s recent Grey Lynn sales are listed below"
       ],
       "selling": "Grey Lynn buyers often come from Ponsonby, Westmere and further afield, and many are families stepping up into a first character home. Casey’s approach is analytical — pricing and positioning built on real sales evidence — and personal, with clear communication from the first conversation to settlement.",
-      "neighbours": ["Ponsonby", "Westmere", "Herne Bay"],
+      "neighbours": [
+        "Ponsonby",
+        "Westmere",
+        "Herne Bay"
+      ],
       "faqs": [
         {
           "q": "What is my Grey Lynn home worth?",
@@ -101,7 +128,11 @@
           "q": "Does Casey help with buying and selling at the same time?",
           "a": "Yes. Several of Casey’s clients have bought and sold in a back-to-back deal; she can plan a campaign around your next purchase."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-cafe-yellow-wall.jpg",
+        "alt": "Casey Green, real estate agent for Grey Lynn"
+      }
     },
     {
       "slug": "st-marys-bay",
@@ -120,7 +151,11 @@
         "Walking distance to Westhaven, Wynyard Quarter and Ponsonby Road"
       ],
       "selling": "With so few homes coming up for sale in St Marys Bay, buyers who want to be here are often waiting for the right one. Casey’s job is to reach them, present the home at its best and create the competition that sets the price.",
-      "neighbours": ["Herne Bay", "Freemans Bay", "Ponsonby"],
+      "neighbours": [
+        "Herne Bay",
+        "Freemans Bay",
+        "Ponsonby"
+      ],
       "faqs": [
         {
           "q": "What is my St Marys Bay home worth?",
@@ -134,7 +169,11 @@
           "q": "Which suburbs near St Marys Bay does Casey cover?",
           "a": "Herne Bay, Ponsonby, Freemans Bay, Grey Lynn, Westmere and Point Chevalier."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-villa-street.jpg",
+        "alt": "Casey Green, real estate agent for St Marys Bay"
+      }
     },
     {
       "slug": "freemans-bay",
@@ -154,7 +193,11 @@
         "Recent Freemans Bay sale: 2E/8 Howe Street"
       ],
       "selling": "Freemans Bay buyers range from first-home buyers and downsizers to families and investors, and each needs reaching in a different way. Casey tailors every campaign to the buyers a home will actually attract.",
-      "neighbours": ["Ponsonby", "St Marys Bay", "Herne Bay"],
+      "neighbours": [
+        "Ponsonby",
+        "St Marys Bay",
+        "Herne Bay"
+      ],
       "faqs": [
         {
           "q": "What is my Freemans Bay home or apartment worth?",
@@ -168,7 +211,11 @@
           "q": "How do I see Casey’s current Freemans Bay listings?",
           "a": "They are listed on this page and on her listings page, with links through to full details, photos and open-home times on Ray White."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-florist.jpg",
+        "alt": "Casey Green, real estate agent for Freemans Bay"
+      }
     },
     {
       "slug": "westmere",
@@ -188,7 +235,11 @@
         "Casey’s recent Westmere sales are listed below"
       ],
       "selling": "Westmere attracts families moving up from Grey Lynn and Ponsonby as well as buyers wanting more land close to the city. Casey’s local networks and steady flow of Westmere buyers help generate the competition that lifts a price.",
-      "neighbours": ["Herne Bay", "Grey Lynn", "Point Chevalier"],
+      "neighbours": [
+        "Herne Bay",
+        "Grey Lynn",
+        "Point Chevalier"
+      ],
       "faqs": [
         {
           "q": "What is my Westmere home worth?",
@@ -202,7 +253,11 @@
           "q": "Does Casey also sell in Point Chevalier and Grey Lynn?",
           "a": "Yes, along with Herne Bay, Ponsonby, St Marys Bay and Freemans Bay."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-villa-walk.jpg",
+        "alt": "Casey Green, real estate agent for Westmere"
+      }
     },
     {
       "slug": "point-chevalier",
@@ -222,7 +277,11 @@
         "Recent sales on Kiwi Road, Walmer Road and Riro Street"
       ],
       "selling": "Point Chevalier buyers are often families who know exactly which streets and school zones they want. Casey positions each home for the buyers already looking, and keeps you informed at every step.",
-      "neighbours": ["Westmere", "Grey Lynn", "Waterview"],
+      "neighbours": [
+        "Westmere",
+        "Grey Lynn",
+        "Waterview"
+      ],
       "faqs": [
         {
           "q": "What is my Point Chevalier home worth?",
@@ -236,7 +295,11 @@
           "q": "Which suburbs near Point Chevalier does Casey cover?",
           "a": "Westmere, Grey Lynn, Herne Bay, Ponsonby, St Marys Bay and Freemans Bay — and she has recently sold in Waterview too."
         }
-      ]
+      ],
+      "photo": {
+        "src": "assets/photos/casey-green-booth.jpg",
+        "alt": "Casey Green, real estate agent for Point Chevalier"
+      }
     }
   ]
 }

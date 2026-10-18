@@ -675,6 +675,18 @@ ul {
   font-size: 0.95rem;
 }
 
+/* A photo under a section's heading column (contact, suburb pages). */
+.split__photo {
+  margin: 1.75rem 0 0;
+  max-width: 460px;
+}
+
+.split__photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
 @media (max-width: 900px) {
   .split {
     grid-template-columns: minmax(0, 1fr);

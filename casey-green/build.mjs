@@ -64,19 +64,30 @@ const OFFICE = {
 };
 
 /**
- * Photography. The portrait is the 1608x2000 original behind Casey's A T
- * Realty profile photo. The hero and band photos are from her own sold
- * campaigns (Ray White's CDN), and say so in their captions.
+ * Photography. Casey's brand shoot by Forme Studio (4 Sep 2026, around
+ * Ponsonby): masters in assets/photos, cut down to 2600px with the camera
+ * metadata removed; the full-size originals stay in Operations' Google Drive.
+ * Shots with other, identifiable people in them were left out.
+ * casey-portrait.jpg is her A T Realty profile photo, still used for the
+ * Instagram avatar and link previews. Suburb pages take their photo from
+ * data/areas.json.
  */
 const PORTRAIT_SRC = "assets/casey-portrait.jpg";
-const HERO = {
-  url: "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/07e7-H3361956-161744873__1756775400-53597-1341735016-325-17photoprint.jpg",
-  caption: "Sold — 45 Pompallier Terrace, Ponsonby",
-};
-const BAND = {
-  url: "https://cdn6.ep.dynamics.net/s3/rw-propertyimages/96f7-H3290340-140820410__1742774987-42124-DSC07382.jpg",
-  caption: "Sold — 31 Tutanekai Street, Grey Lynn",
-  alt: "A renovated Grey Lynn villa with a pool, sold by Casey Green",
+const PHOTOS = {
+  // She sits right of centre, so the headline has the left; `position` keeps
+  // her in frame when a phone crops the sides.
+  hero: {
+    src: "assets/photos/casey-hotel-ponsonby-seated.jpg",
+    alt: "Casey Green at Hotel Ponsonby",
+    caption: "Casey Green at Hotel Ponsonby",
+    position: "50% 35%",
+  },
+  band: { src: "assets/photos/casey-honey-sundays.jpg", alt: "Casey Green over coffee at Honey Sundays" },
+  intro: { src: "assets/photos/casey-villa-fence.jpg", alt: "Casey Green, real estate agent for Auckland’s inner west" },
+  about: { src: "assets/photos/casey-hotel-ponsonby-bar.jpg", alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
+  contact: { src: "assets/photos/casey-on-the-phone.jpg", alt: "Casey Green on the phone" },
+  // The bridge sits low on the left; the band would crop it out from the centre.
+  areas: { src: "assets/photos/villa-harbour-bridge.jpg", alt: "A character villa with the Auckland Harbour Bridge beyond", position: "30% 82%" },
 };
 
 /* ------------------------------------------------------------------ */
@@ -262,10 +273,26 @@ await fs.mkdir(path.join(OUT, "areas"), { recursive: true });
 
 console.log("[build] Optimising images…");
 
+/** 4:5 crop for a column photo. `extract` (fractions) overrides the automatic crop when it misses the subject. */
+const portrait45 = (photo, name) =>
+  image(photo.src, { name, widths: [960, 600], ratio: 4 / 5, extract: photo.extract, quality: 80 }).then((i) => ({ ...i, alt: photo.alt }));
+
 const images = {
-  hero: { ...(await image(HERO.url, { name: "hero", widths: [2200, 1400, 820], quality: 70 })), caption: HERO.caption },
-  band: { ...(await image(BAND.url, { name: "band", widths: [2000, 1200, 760], quality: 70 })), caption: BAND.caption, alt: BAND.alt },
-  portrait: await image(PORTRAIT_SRC, { name: "casey-green", widths: [960, 600], ratio: 4 / 5, quality: 80 }),
+  hero: {
+    ...(await image(PHOTOS.hero.src, { name: "hero", widths: [2200, 1400, 820], quality: 70 })),
+    alt: PHOTOS.hero.alt,
+    caption: PHOTOS.hero.caption,
+    position: PHOTOS.hero.position,
+  },
+  band: { ...(await image(PHOTOS.band.src, { name: "band", widths: [2000, 1200, 760], quality: 70 })), alt: PHOTOS.band.alt },
+  intro: await portrait45(PHOTOS.intro, "casey-green-intro"),
+  about: await portrait45(PHOTOS.about, "casey-green-about"),
+  contact: await portrait45(PHOTOS.contact, "casey-green-contact"),
+  areas: {
+    ...(await image(PHOTOS.areas.src, { name: "areas", widths: [2000, 1200, 760], quality: 70 })),
+    alt: PHOTOS.areas.alt,
+    position: PHOTOS.areas.position,
+  },
   // Square crop around Casey's face for the Instagram panel.
   avatar: await image(PORTRAIT_SRC, {
     name: "casey-green-avatar",
@@ -284,6 +311,11 @@ const images = {
   }),
   community: await image("assets/bayfield-garden-to-table.png", { name: "bayfield-garden-to-table", widths: [440], quality: 86 }),
 };
+
+const areaPhotos = new Map();
+for (const a of areas) {
+  if (a.photo) areaPhotos.set(a.slug, await portrait45(a.photo, `area-${a.slug}`));
+}
 
 const cards = new Map();
 for (const l of [...current, ...sold]) {
@@ -311,6 +343,7 @@ const pages = renderSite({
   historicNote: historicSold.length ? historic.note : null,
   builtLabel: new Intl.DateTimeFormat("en-NZ", { day: "numeric", month: "long", year: "numeric", timeZone: "Pacific/Auckland" }).format(builtAt),
   cardImage: (l) => (l.photo?.url ? cards.get(l.photo.url) : null),
+  areaImage: (slug) => areaPhotos.get(slug) ?? null,
 });
 
 for (const p of pages) {
