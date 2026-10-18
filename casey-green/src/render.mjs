@@ -422,24 +422,6 @@ export function renderSite(ctx) {
     return `<cite>${esc(t.context || "Client")}</cite>`;
   }
 
-  /**
-   * The follow card, which script.js swaps for Casey's latest posts once
-   * /api/instagram/feed answers with some (lib/instagram.mjs). Until Instagram
-   * is connected — or if the feed is down — the card is what stays.
-   */
-  function instagramBlock() {
-    return `<div data-instagram-feed>
-          <div class="insta">
-            <img class="insta__avatar" src="${esc(images.avatar.src)}" alt="${esc(agent.name)}" width="${images.avatar.width}" height="${images.avatar.height}" loading="lazy" />
-            <div>
-              <a class="insta__handle" href="${esc(instagram.url)}" target="_blank" rel="noopener">${ICON_INSTAGRAM}@${esc(instagram.handle)}</a>
-              <p>New listings, open homes, sold results and life around Ponsonby, Herne Bay and Grey Lynn — follow along on Instagram.</p>
-              <a class="btn btn--primary" href="${esc(instagram.url)}" target="_blank" rel="noopener">Follow on Instagram</a>
-            </div>
-          </div>
-        </div>`;
-  }
-
   function areasList(wide = false) {
     return `<ul class="areas${wide ? " areas--wide" : ""}">${areas
       .map((a) => {
@@ -556,16 +538,6 @@ export function renderSite(ctx) {
           <a class="link" href="/areas">All areas</a>
         </div>
         ${areasList()}
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell split">
-        <div class="split__head">
-          <h2 class="h2">Latest on Instagram</h2>
-          <a class="link" href="${esc(instagram.url)}" target="_blank" rel="noopener">@${esc(instagram.handle)}</a>
-        </div>
-        ${instagramBlock()}
       </div>
     </section>
 
