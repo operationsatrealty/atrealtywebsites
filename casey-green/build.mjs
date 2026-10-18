@@ -28,7 +28,6 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { agentListings, vaultreConfigured } from "./vaultre.mjs";
 import { renderSite, suburbKey } from "./src/render.mjs";
-import { HANDLE, PROFILE_URL } from "./lib/instagram.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const OFFLINE = process.argv.includes("--offline");
@@ -69,8 +68,8 @@ const OFFICE = {
  * metadata removed; the full-size originals stay in Operations' Google Drive.
  * Shots with other, identifiable people in them were left out.
  * casey-portrait.jpg is her A T Realty profile photo (at Honey Sundays, the
- * same file raywhiteatrealty.co.nz shows): the About page portrait, the
- * Instagram avatar and link previews. Suburb pages take their photo from
+ * same file raywhiteatrealty.co.nz shows): the About page portrait and link
+ * previews. Suburb pages take their photo from
  * data/areas.json.
  */
 const PORTRAIT_SRC = "assets/casey-portrait.jpg";
@@ -224,7 +223,7 @@ const profile = await readJson("data/profile.json");
 const historic = await readJson("data/historic-sales.json");
 const testimonialData = await readJson("data/testimonials.json");
 const { areas } = await readJson("data/areas.json");
-const instagram = { handle: HANDLE, url: PROFILE_URL };
+const instagram = { handle: "caseygreen.raywhite", url: "https://www.instagram.com/caseygreen.raywhite/" };
 
 const { data, source } = await loadData();
 
@@ -294,14 +293,6 @@ const images = {
     alt: PHOTOS.areas.alt,
     position: PHOTOS.areas.position,
   },
-  // Square crop around Casey's face for the Instagram panel.
-  avatar: await image(PORTRAIT_SRC, {
-    name: "casey-green-avatar",
-    widths: [240],
-    extract: { left: 0.2, top: 0.1, width: 0.62, height: 0.5 },
-    ratio: 1,
-    quality: 82,
-  }),
   // 1200x630 for link previews (Facebook, LinkedIn, iMessage).
   og: await image(PORTRAIT_SRC, {
     name: "casey-green-og",
