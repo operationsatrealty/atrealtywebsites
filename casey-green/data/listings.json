@@ -1,0 +1,35 @@
+{
+  "_source": "Seeded 18 Oct 2026 from Casey's profile on raywhiteatrealty.co.nz, which reads the same VaultRE endpoints. The first build with VaultRE credentials replaces this file.",
+  "email": "casey.green@raywhite.com",
+  "current": [
+    {
+      "id": 37434451,
+      "address": "2I/15 Hopetoun Street",
+      "suburb": "Freemans Bay",
+      "displayPrice": "Price by Negotiation",
+      "searchPrice": null,
+      "bed": 2,
+      "bath": 2,
+      "car": null,
+      "status": "listing",
+      "method": null,
+      "auctionDate": null,
+      "photo": {
+        "url": "https://propertyphotos.vaultre.com.au/4174/218122682__1788904407-24610-15Hopetounhighres-8.jpg",
+        "width": 4240,
+        "height": 2832
+      },
+      "url": "https://rwaucklandcentral.co.nz/CTA48310",
+      "modified": "2026-10-09T23:21:53+00:00",
+      "office": "auckland-central"
+    }
+  ],
+  "sold": [],
+  "soldTotal": 0,
+  "offices": [
+    {
+      "office": "auckland-central",
+      "vaultreId": null
+    }
+  ]
+}

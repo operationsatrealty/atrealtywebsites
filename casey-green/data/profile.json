@@ -1,0 +1,31 @@
+{
+  "_source": "Bio, community and contact details as published on Casey's A T Realty profile (raywhiteatrealty.co.nz/our-team/casey-green, atrealty-next src/content/agents.json). Licence number from the Super App profiles table.",
+  "name": "Casey Green",
+  "firstName": "Casey",
+  "role": "Licensee Salesperson",
+  "licence": "20134614",
+  "email": "casey.green@raywhite.com",
+  "phone": "021 281 5555",
+  "phoneHref": "+64212815555",
+  "linkedin": "https://www.linkedin.com/in/casey-green-2679251a4/",
+  "companyProfile": "https://www.raywhiteatrealty.co.nz/our-team/casey-green/",
+  "listingsUrl": "https://rwaucklandcentral.co.nz/agents/casey-green/170905",
+  "seoDescription": "Casey Green is a Ray White Auckland Central real estate agent who has called greater Ponsonby home for more than two decades, selling across Herne Bay, Ponsonby, Grey Lynn, St Marys Bay, Freemans Bay and Westmere.",
+  "bio": [
+    "Casey Green has called greater Ponsonby home for more than two decades, and that long tenure is the foundation of what she offers a seller. Genuine local authority across Ponsonby, Grey Lynn, Herne Bay and Westmere is not acquired in a season — it is built street by street, over years — and it is what gives Casey the insight to position a home precisely and the judgement to know what buyers in this part of Auckland will actually pay for.",
+    "Choosing an agent to sell your house is not a routine decision. Casey treats a sale as the highly personal event it is, and as the catalyst for whatever comes next, bringing empathy, respect and strategic expertise to it in equal measure. Her career has been built on guiding people to the outcome they were hoping for.",
+    "Her approach is deliberately analytical. Casey combines sales data, current market dynamics and a working understanding of buyer psychology to position each property for maximum value, then pairs that strategy with clear communication and a calm confidence that carries through every negotiation.",
+    "Disciplined and relentlessly driven, she stays a step ahead in a competitive industry, using strong local networks and infectious enthusiasm to generate the multiple competitive offers that lift a sale price. Built on trust and transparency, her process delivers a superior result with professional ease and genuine care.",
+    "Resilient, honest and completely committed, Casey is a valued member of the high-performing Ray White Auckland Central team and is passionate about helping Auckland homeowners achieve an outstanding result."
+  ],
+  "community": {
+    "name": "Bayfield School Garden to Table",
+    "body": [
+      "Casey's two daughters attended Bayfield School in Herne Bay, and she has long valued the close-knit, village feel of the place. She is proud to sponsor Bayfield's Garden to Table programme.",
+      "Garden to Table is hands-on: children grow, harvest, prepare and share their own food. It builds healthy habits, practical skills and a sense of connection that carries well beyond the school gate and into the families around it.",
+      "As someone who now helps families find homes in these streets, Casey sees first-hand how much a supportive, connected neighbourhood adds to everyday life — which is exactly what a programme like this creates."
+    ],
+    "url": "https://gardentotable.org.nz/",
+    "logoAlt": "Bayfield School Tukitukimuka, Herne Bay — Garden to Table"
+  }
+}
