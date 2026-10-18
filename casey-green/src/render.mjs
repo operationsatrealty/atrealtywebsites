@@ -479,8 +479,8 @@ export function renderSite(ctx) {
         <img src="${esc(images.hero.src)}" srcset="${esc(images.hero.srcset)}" sizes="100vw" alt="A Ponsonby villa at dusk, sold by Casey Green" width="${images.hero.width}" height="${images.hero.height}" fetchpriority="high" />
       </div>
       <div class="shell hero__content">
-        <p class="eyebrow">${esc(agent.name)} · ${esc(office.brand)}</p>
-        <h1>Herne Bay, Ponsonby &amp; Grey Lynn real estate, sold with local authority.</h1>
+        <p class="eyebrow">${esc(agent.name)} · Herne Bay, Ponsonby &amp; Grey Lynn real estate</p>
+        <h1 class="hero__title"><span>Know the area.</span> <span>Know the people.</span> <span>Know the market.</span> <em>Let’s Talk</em></h1>
         <p class="hero__lede">More than two decades calling greater Ponsonby home. A data-led, people-first approach to selling the city fringe’s most loved streets.</p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="/contact#appraisal" data-atr-form-popup="${esc(form.slug)}">Book a free appraisal</a>
@@ -497,7 +497,7 @@ export function renderSite(ctx) {
         <div class="intro">
           <div class="intro__body reveal">
             <p class="eyebrow">Meet Casey</p>
-            <h2 class="h2">Your local agent for greater Ponsonby.</h2>
+            <h2 class="h2">Your local agent for Auckland’s Inner-West.</h2>
             <p style="margin-top:1.25rem">${esc(agent.bio[0])}</p>
             <p>${esc(agent.bio[2])}</p>
             <div class="links">

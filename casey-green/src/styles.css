@@ -550,6 +550,17 @@ ul {
   line-height: 1.06;
 }
 
+/* One phrase per line; the eyebrow above carries the suburbs for search. */
+.hero__title span,
+.hero__title em {
+  display: block;
+}
+
+.hero__title em {
+  color: var(--yellow);
+  font-style: italic;
+}
+
 .hero__lede {
   max-width: 40rem;
   margin: 1.4rem 0 0;
