@@ -35,7 +35,8 @@ npm run build:offline  # → dist/   (uses the data/listings.json snapshot)
 | `data/historic-sales.json` | Her 25 sales at Ray White Grey Lynn before she joined A T Realty. They aren't in our VaultRE; this is the same list raywhiteatrealty.co.nz shows. No prices or dates are published for them. |
 | `data/profile.json` | Bio, community and contact details from her A T Realty profile; licence number from the Super App. |
 | `data/testimonials.json` | Word for word from her homes.co.nz profile. Add new ones here; never paraphrase or invent one. |
-| `data/areas.json` | The suburb pages. Descriptive copy only — no prices, medians or market statistics, which go stale and need a licensed source. |
+| `data/areas.json` | The suburb pages. Descriptive copy only — no prices, medians or market statistics, which go stale and need a licensed source. Each names its photo. |
+| `assets/photos/` | Casey's brand shoot by Forme Studio (Sep 2026, around Ponsonby), cut down to 2600px with camera metadata removed. Originals: Operations' Google Drive. Shots showing other identifiable people were left out. Which photo goes where: `PHOTOS` in `build.mjs`, `photo` in `data/areas.json`. |
 
 Sale prices are never shown, as on Ray White's own pages, and the build drops
 them from VaultRE's answer before the snapshot is written — this repo is public

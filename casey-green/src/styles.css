@@ -550,6 +550,17 @@ ul {
   line-height: 1.06;
 }
 
+/* One phrase per line; the eyebrow above carries the suburbs for search. */
+.hero__title span,
+.hero__title em {
+  display: block;
+}
+
+.hero__title em {
+  color: var(--yellow);
+  font-style: italic;
+}
+
 .hero__lede {
   max-width: 40rem;
   margin: 1.4rem 0 0;
@@ -662,6 +673,18 @@ ul {
   margin-top: 1rem;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+/* A photo under a section's heading column (contact, suburb pages). */
+.split__photo {
+  margin: 1.75rem 0 0;
+  max-width: 460px;
+}
+
+.split__photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
