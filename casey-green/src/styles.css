@@ -1407,12 +1407,13 @@ a.card:hover .card__media img {
 }
 
 /* ============================================================
-   Footer
+   Footer — light, like the header: white, ink text, hairlines
    ============================================================ */
 .footer {
   padding: clamp(3.5rem, 7vw, 5.5rem) 0 2rem;
-  background: var(--ink);
-  color: rgba(255, 255, 255, 0.72);
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink-soft);
   font-size: 0.9rem;
 }
 
@@ -1423,11 +1424,11 @@ a.card:hover .card__media img {
 }
 
 .footer .brand__name {
-  color: #fff;
+  color: var(--ink);
 }
 
 .footer .brand__role {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
 }
 
 .footer__about {
@@ -1443,7 +1444,7 @@ a.card:hover .card__media img {
 
 .footer h2 {
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--ink);
   font-family: var(--sans);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1460,7 +1461,7 @@ a.card:hover .card__media img {
 }
 
 .footer a:hover {
-  color: #fff;
+  color: var(--ink);
   text-decoration: underline;
 }
 
@@ -1471,8 +1472,8 @@ a.card:hover .card__media img {
   gap: 0.75rem 2rem;
   margin-top: 3.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.55);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
   font-size: 0.78rem;
 }
 
