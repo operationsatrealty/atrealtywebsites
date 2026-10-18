@@ -68,7 +68,8 @@ const OFFICE = {
  * Ponsonby): masters in assets/photos, cut down to 2600px with the camera
  * metadata removed; the full-size originals stay in Operations' Google Drive.
  * Shots with other, identifiable people in them were left out.
- * casey-portrait.jpg is her A T Realty profile photo, still used for the
+ * casey-portrait.jpg is her A T Realty profile photo (at Honey Sundays, the
+ * same file raywhiteatrealty.co.nz shows): the About page portrait, the
  * Instagram avatar and link previews. Suburb pages take their photo from
  * data/areas.json.
  */
@@ -84,7 +85,7 @@ const PHOTOS = {
   },
   band: { src: "assets/photos/casey-honey-sundays.jpg", alt: "Casey Green over coffee at Honey Sundays" },
   intro: { src: "assets/photos/casey-villa-fence.jpg", alt: "Casey Green, real estate agent for Auckland’s inner west" },
-  about: { src: "assets/photos/casey-hotel-ponsonby-bar.jpg", alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
+  about: { src: PORTRAIT_SRC, alt: "Casey Green, Licensee Salesperson at Ray White Auckland Central" },
   contact: { src: "assets/photos/casey-on-the-phone.jpg", alt: "Casey Green on the phone" },
   // The bridge sits low on the left; the band would crop it out from the centre.
   areas: { src: "assets/photos/villa-harbour-bridge.jpg", alt: "A character villa with the Auckland Harbour Bridge beyond", position: "30% 82%" },
@@ -358,8 +359,35 @@ for (const p of pages) {
 
 await fs.copyFile(path.join(HERE, "src", "styles.css"), path.join(OUT, "styles.css"));
 await fs.copyFile(path.join(HERE, "src", "script.js"), path.join(OUT, "script.js"));
-for (const name of ["raywhite-logo.png", "raywhite-mark.png", "favicon.png", "favicon.svg"]) {
-  await fs.copyFile(path.join(HERE, "assets", name), path.join(OUT, "assets", name));
+await fs.copyFile(path.join(HERE, "assets", "raywhite-mark.png"), path.join(OUT, "assets", "raywhite-mark.png"));
+
+/* Favicons, all cut from Ray White's square logo (square to square, so
+   nothing is stretched). favicon.ico holds 16, 32 and 48px PNGs. */
+const MARK = path.join(HERE, "assets", "raywhite-mark.png");
+const iconPng = (size) => sharp(MARK).resize(size, size).png().toBuffer();
+await fs.writeFile(path.join(OUT, "assets", "favicon-192.png"), await iconPng(192));
+await fs.writeFile(
+  path.join(OUT, "assets", "apple-touch-icon.png"),
+  await sharp(MARK).resize(180, 180).flatten({ background: "#ffe512" }).png().toBuffer()
+);
+{
+  const sizes = [16, 32, 48];
+  const pngs = await Promise.all(sizes.map(iconPng));
+  const head = Buffer.alloc(6 + 16 * sizes.length);
+  head.writeUInt16LE(1, 2);
+  head.writeUInt16LE(sizes.length, 4);
+  let offset = head.length;
+  sizes.forEach((size, i) => {
+    const e = 6 + 16 * i;
+    head.writeUInt8(size, e);
+    head.writeUInt8(size, e + 1);
+    head.writeUInt16LE(1, e + 4);
+    head.writeUInt16LE(32, e + 6);
+    head.writeUInt32LE(pngs[i].length, e + 8);
+    head.writeUInt32LE(offset, e + 12);
+    offset += pngs[i].length;
+  });
+  await fs.writeFile(path.join(OUT, "favicon.ico"), Buffer.concat([head, ...pngs]));
 }
 
 /* robots.txt + sitemap.xml. cleanUrls is on, so pages are listed without

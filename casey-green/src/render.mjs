@@ -131,7 +131,7 @@ export function renderSite(ctx) {
     description: agent.seoDescription,
     url: `${origin}/`,
     image: `${origin}${images.og.src}`,
-    logo: `${origin}/assets/raywhite-logo.png`,
+    logo: `${origin}/assets/raywhite-mark.png`,
     telephone: agent.phoneHref,
     email: agent.email,
     address: {
@@ -205,9 +205,9 @@ export function renderSite(ctx) {
   <meta property="og:image:height" content="${ogImage.height}" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="/assets/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/assets/favicon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -242,7 +242,7 @@ export function renderSite(ctx) {
           <span class="brand__name">${esc(agent.name)}</span>
           <span class="brand__role">Residential Sales · Ray White</span>
         </span>
-        <span class="brand__logo"><img src="/assets/raywhite-logo.png" alt="" width="38" height="38" /></span>
+        <span class="brand__logo"><img src="/assets/raywhite-mark.png" alt="" width="44" height="44" /></span>
       </a>
 
       <nav class="nav" aria-label="Main">
@@ -461,9 +461,6 @@ export function renderSite(ctx) {
   /* ---------------- home ---------------- */
   {
     const recent = sold.slice(0, 6);
-    const stat4 = current.length
-      ? { num: String(current.length), label: current.length === 1 ? "Home for sale now" : "Homes for sale now" }
-      : { num: "Free", label: "No-obligation appraisals" };
     const slides = testimonials
       .map((t, i) => `<blockquote class="slide"${i ? " hidden" : ""}><p>“${esc(t.quote)}”</p>${cite(t)}</blockquote>`)
       .join("\n            ");
@@ -493,8 +490,6 @@ export function renderSite(ctx) {
 
     <section class="section">
       <div class="shell">
-        <p class="quote reveal">Local authority isn’t acquired in a season. It’s built street by street, over years.</p>
-
         <div class="intro">
           <div class="intro__body reveal">
             <p class="eyebrow">Meet Casey</p>
@@ -509,14 +504,8 @@ export function renderSite(ctx) {
           </div>
           <figure class="intro__photo reveal" style="margin:0">
             ${img(images.intro, images.intro.alt, { sizes: "(max-width: 900px) 460px, 600px" })}
+            <figcaption class="quote">Local authority isn’t acquired in a season. It’s built street by street, over years.</figcaption>
           </figure>
-        </div>
-
-        <div class="stats" style="margin-top:clamp(3.5rem,7vw,5.5rem)">
-          <div class="stat"><div class="stat__num">20+</div><div class="stat__label">Years living in greater Ponsonby</div></div>
-          <div class="stat"><div class="stat__num">${stats.soldCount}</div><div class="stat__label">Recent Ray White sales</div></div>
-          <div class="stat"><div class="stat__num">${areas.length}</div><div class="stat__label">Core suburbs, Herne Bay to Point Chevalier</div></div>
-          <div class="stat"><div class="stat__num">${esc(stat4.num)}</div><div class="stat__label">${esc(stat4.label)}</div></div>
         </div>
       </div>
     </section>
