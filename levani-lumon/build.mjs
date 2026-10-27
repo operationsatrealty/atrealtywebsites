@@ -467,11 +467,29 @@ const photoSrc = (u) => photoMap.get(u) ?? u;
 /**
  * Posts live in data/market-news.json so refreshing the page is a data
  * commit, not a code change. Each post: { tag, date, title, paragraphs[],
- * bullets[]?, sources[{label,url}] }. The file's updatedAt drives the
+ * bullets[]?, sources[{label,url}]? }. The file's updatedAt drives the
  * "last reviewed" line; a stale file makes the build shout, because market
  * commentary quietly going out of date is worse than none at all.
+ *
+ * Optional per post:
+ *  - slug + description: the post also gets its own page at /blog/<slug>,
+ *    with description as its meta description (for sharing a single post).
+ *  - publishOn "YYYY-MM-DD": the post stays off the site until that date in
+ *    NZ time, so a post can be committed ahead and go live on the first
+ *    build that day (the daily rebuild guarantees one).
+ *  - paragraphs entries may be { heading } (a subheading) or { list: [] }
+ *    (a bulleted list) as well as plain strings. All are trusted HTML.
  */
 const news = JSON.parse(await fs.readFile(path.join(HERE, "data", "market-news.json"), "utf8"));
+const NZ_TODAY = new Intl.DateTimeFormat("en-CA", { timeZone: "Pacific/Auckland" }).format(new Date());
+const livePosts = news.posts.filter((p) => !p.publishOn || p.publishOn <= NZ_TODAY);
+for (const p of news.posts) {
+  if (p.publishOn && p.publishOn > NZ_TODAY) console.log(`[build] Holding post until ${p.publishOn}: ${p.title}`);
+  if (p.slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug)) {
+    console.error(`[build] Bad post slug "${p.slug}" — lowercase letters, digits and hyphens only.`);
+    process.exit(1);
+  }
+}
 const newsAgeDays = Math.floor((Date.now() - new Date(news.updatedAt)) / 86_400_000);
 if (newsAgeDays > 45) {
   console.warn(
@@ -480,29 +498,43 @@ if (newsAgeDays > 45) {
   );
 }
 
-function postsHtml(posts) {
-  return posts
-    .map((p) => {
-      const paragraphs = p.paragraphs.map((t) => `<p>${t}</p>`).join("\n");
-      const bullets = p.bullets?.length
-        ? `<ul>${p.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`
-        : "";
-      const sources = p.sources
+function blockHtml(b) {
+  if (typeof b === "string") return `<p>${b}</p>`;
+  if (b.heading) return `<h3>${b.heading}</h3>`;
+  if (b.list) return `<ul>${b.list.map((li) => `<li>${li}</li>`).join("")}</ul>`;
+  throw new Error(`[build] Unknown market-news block: ${JSON.stringify(b)}`);
+}
+
+/** One post. On /blog its title links to the post's own page (if it has
+ *  one); on that page the title is the h1. */
+function postHtml(p, { standalone = false } = {}) {
+  const paragraphs = p.paragraphs.map(blockHtml).join("\n");
+  const bullets = p.bullets?.length
+    ? `<ul>${p.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>`
+    : "";
+  const sources = p.sources?.length
+    ? `<p class="post__sources">Sources: ${p.sources
         .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`)
-        .join(" · ");
-      return `<article class="post">
+        .join(" · ")}</p>`
+    : "";
+  const title = standalone
+    ? `<h1>${esc(p.title)}</h1>`
+    : p.slug
+      ? `<h2><a href="/blog/${p.slug}">${esc(p.title)}</a></h2>`
+      : `<h2>${esc(p.title)}</h2>`;
+  return `<article class="post"${p.slug && !standalone ? ` id="${p.slug}"` : ""}>
           <div class="post__meta">
             <span class="post__tag">${esc(p.tag)}</span>
             <span class="post__date">${esc(p.date)}</span>
           </div>
-          <h2>${esc(p.title)}</h2>
+          ${title}
           ${paragraphs}
           ${bullets}
-          <p class="post__sources">Sources: ${sources}</p>
+          ${sources}
         </article>`;
-    })
-    .join("\n");
 }
+
+const postsHtml = (posts) => posts.map((p) => postHtml(p)).join("\n");
 
 const template = await fs.readFile(path.join(HERE, "src", "index.template.html"), "utf8");
 
@@ -591,7 +623,7 @@ async function renderSubpage(name, replacements) {
 /* market news page */
 const blogTemplate = await fs.readFile(path.join(HERE, "src", "blog.template.html"), "utf8");
 let blogHtml = blogTemplate
-  .replaceAll("{{POSTS}}", postsHtml(news.posts))
+  .replaceAll("{{POSTS}}", postsHtml(livePosts))
   .replaceAll("{{NEWS_UPDATED}}", NZ_DATE.format(new Date(news.updatedAt)))
   .replaceAll("{{PORTRAIT}}", PREVIEW ? PORTRAIT_URL : `${SITE_ORIGIN}/${portraitHero}`);
 
@@ -624,6 +656,21 @@ if (PREVIEW) {
     await renderSubpage("case-studies", { ...og, CASE_STUDIES: caseStudiesHtml(data.sold) }));
   await fs.writeFile(path.join(OUT, "off-market.html"), await renderSubpage("off-market", og));
   await fs.writeFile(path.join(OUT, "first-time-selling.html"), await renderSubpage("first-time-selling", og));
+  /* one page per slugged post — cleanUrls serves blog/<slug>.html at /blog/<slug> */
+  const slugged = livePosts.filter((p) => p.slug);
+  if (slugged.length) await fs.mkdir(path.join(OUT, "blog"), { recursive: true });
+  for (const p of slugged) {
+    await fs.writeFile(
+      path.join(OUT, "blog", `${p.slug}.html`),
+      await renderSubpage("post", {
+        ...og,
+        POST_TITLE: esc(p.title),
+        POST_DESCRIPTION: esc(p.description ?? ""),
+        POST_URL: `${SITE_ORIGIN}/blog/${p.slug}`,
+        POST: postHtml(p, { standalone: true }),
+      })
+    );
+  }
   await fs.copyFile(path.join(HERE, "src", "styles.css"), path.join(OUT, "styles.css"));
   await fs.copyFile(path.join(HERE, "src", "script.js"), path.join(OUT, "script.js"));
   for (const name of await fs.readdir(path.join(HERE, "assets"))) {
@@ -640,6 +687,7 @@ if (PREVIEW) {
     { loc: "/", lastmod: built },
     { loc: "/case-studies", lastmod: built },
     { loc: "/blog", lastmod: new Date(news.updatedAt).toISOString().slice(0, 10) },
+    ...slugged.map((p) => ({ loc: `/blog/${p.slug}`, lastmod: p.publishOn })),
     { loc: "/off-market" },
     { loc: "/first-time-selling" },
   ];

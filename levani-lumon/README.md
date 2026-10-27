@@ -37,7 +37,7 @@ the snapshot is the empty seed. Never move VaultRE calls client-side.
 
 - **Daily rebuild**: `.github/workflows/daily-rebuild.yml` POSTs the Vercel
   deploy hook (secret `VERCEL_DEPLOY_HOOK_LEVANI_LUMON`, already set) at
-  5–6am NZ. With the env vars above in place this re-fetches VaultRE daily.
+  05:00 UTC (5pm NZST / 6pm NZDT). With the env vars above in place this re-fetches VaultRE daily.
 - **Git**: the `levani-lumon` Vercel project is connected to this repo
   (root directory `levani-lumon`, production branch `claude/cool-mayer-96prl5`),
   so every push also redeploys.
@@ -47,7 +47,14 @@ the snapshot is the empty seed. Never move VaultRE calls client-side.
   scheduled refresh keeps it current — if the warning appears, the schedule
   has stopped.
   `paragraphs` entries are trusted HTML (they may contain `<strong>` links
-  etc.); `bullets` and `sources` are escaped.
+  etc.), and may also be `{ "heading": … }` or `{ "list": [ … ] }` for
+  longer posts; `bullets` and `sources` are escaped, and `sources` is
+  optional.
+  A post with a `slug` (and `description` for its meta description) also
+  gets its own page at `/blog/<slug>`, for sharing a single post.
+  A post with `publishOn: "YYYY-MM-DD"` stays hidden until the first build on
+  that NZ date. The daily rebuild runs at 05:00 UTC (6pm NZDT), so trigger a
+  deploy that morning if it needs to be live earlier.
 
 ## The appraisal panel
 

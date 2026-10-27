@@ -1113,6 +1113,25 @@ p {
   color: var(--ink);
   margin: 0 0 14px;
 }
+.post h2 a { color: inherit; text-decoration: none; }
+.post h2 a:hover { text-decoration: underline; text-decoration-color: var(--yellow); }
+.post h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.post h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+.post__back { color: inherit; text-decoration: none; }
+.post__back:hover { text-decoration: underline; }
 .post p { margin: 0 0 14px; }
 .post ul { margin: 0 0 14px 20px; }
 .post li { margin-bottom: 6px; }
