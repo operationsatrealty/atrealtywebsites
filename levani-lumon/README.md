@@ -52,6 +52,8 @@ the snapshot is the empty seed. Never move VaultRE calls client-side.
   optional.
   A post with a `slug` (and `description` for its meta description) also
   gets its own page at `/blog/<slug>`, for sharing a single post.
+  A post with `image` (a file in `assets/`) and `imageAlt` shows that banner
+  at its top, and its page uses it as the link-preview image.
   A post with `publishOn: "YYYY-MM-DD"` stays hidden until the first build on
   that NZ date. The daily rebuild runs at 05:00 UTC (6pm NZDT), so trigger a
   deploy that morning if it needs to be live earlier.
