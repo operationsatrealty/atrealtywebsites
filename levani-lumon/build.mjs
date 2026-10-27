@@ -479,6 +479,8 @@ const photoSrc = (u) => photoMap.get(u) ?? u;
  *    build that day (the daily rebuild guarantees one).
  *  - paragraphs entries may be { heading } (a subheading) or { list: [] }
  *    (a bulleted list) as well as plain strings. All are trusted HTML.
+ *  - image "assets/…" + imageAlt: a banner across the top of the post,
+ *    also used as its page's sharing image. Optimised at build time.
  */
 const news = JSON.parse(await fs.readFile(path.join(HERE, "data", "market-news.json"), "utf8"));
 const NZ_TODAY = new Intl.DateTimeFormat("en-CA", { timeZone: "Pacific/Auckland" }).format(new Date());
@@ -489,6 +491,23 @@ for (const p of news.posts) {
     console.error(`[build] Bad post slug "${p.slug}" — lowercase letters, digits and hyphens only.`);
     process.exit(1);
   }
+  if (p.image && !p.image.startsWith("assets/")) {
+    console.error(`[build] Post image "${p.image}" must be a file in assets/.`);
+    process.exit(1);
+  }
+}
+
+/* post banners: optimised once, shared by /blog, the post's page and its og:image */
+const heroes = new Map();
+for (const p of livePosts) {
+  if (!p.image || heroes.has(p.image)) continue;
+  const { width: w, height: h } = await sharp(path.join(HERE, p.image)).metadata();
+  const width = Math.min(1600, w);
+  heroes.set(p.image, {
+    src: await image(p.image, { width, quality: 82, name: path.basename(p.image, path.extname(p.image)) }),
+    width,
+    height: Math.round((h * width) / w),
+  });
 }
 const newsAgeDays = Math.floor((Date.now() - new Date(news.updatedAt)) / 86_400_000);
 if (newsAgeDays > 45) {
@@ -522,7 +541,12 @@ function postHtml(p, { standalone = false } = {}) {
     : p.slug
       ? `<h2><a href="/blog/${p.slug}">${esc(p.title)}</a></h2>`
       : `<h2>${esc(p.title)}</h2>`;
+  const hero = heroes.get(p.image);
+  const banner = hero
+    ? `<img class="post__hero" src="/${hero.src}" alt="${esc(p.imageAlt)}" width="${hero.width}" height="${hero.height}"${standalone ? "" : ` loading="lazy"`} />`
+    : "";
   return `<article class="post"${p.slug && !standalone ? ` id="${p.slug}"` : ""}>
+          ${banner}
           <div class="post__meta">
             <span class="post__tag">${esc(p.tag)}</span>
             <span class="post__date">${esc(p.date)}</span>
@@ -663,7 +687,7 @@ if (PREVIEW) {
     await fs.writeFile(
       path.join(OUT, "blog", `${p.slug}.html`),
       await renderSubpage("post", {
-        ...og,
+        POST_IMAGE: heroes.has(p.image) ? `${SITE_ORIGIN}/${heroes.get(p.image).src}` : og.PORTRAIT,
         POST_TITLE: esc(p.title),
         POST_DESCRIPTION: esc(p.description ?? ""),
         POST_URL: `${SITE_ORIGIN}/blog/${p.slug}`,
