@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aryaan Batra | Real Estate Agent South Auckland — Ray White Manukau</title>
-  <meta name="description" content="Aryaan Batra — Licensee Salesperson at Ray White Manukau. 149 confirmed sales worth $137M+, 77 in the last 24 months. Auction specialist across Papatoetoe, Manurewa, Ōtara and greater South Auckland. Call 022 427 9226." />
+  <meta name="description" content="Aryaan Batra — Licensee Salesperson at Ray White Manukau. {{SOLD_COUNT}} settled sales worth {{TOTAL_SETTLED}}, {{RECENT24_COUNT}} in the last 24 months. Auction specialist across Papatoetoe, Manurewa, Ōtara and greater South Auckland. Call 022 427 9226." />
   <meta name="theme-color" content="#FFE512" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aryaan-batra.vercel.app/" />
   <meta property="og:title" content="Aryaan Batra | South Auckland Real Estate — Ray White Manukau" />
-  <meta property="og:description" content="149 confirmed career sales worth more than $137 million. Relationships first, results fast — backed by the full power of Ray White." />
+  <meta property="og:description" content="{{SOLD_COUNT}} settled sales worth {{TOTAL_SETTLED}}. Relationships first, results fast — backed by the full power of Ray White." />
   <meta property="og:image" content="https://aryaan-batra.vercel.app/assets/aryaan-batra.jpg" />
   <link rel="canonical" href="https://aryaan-batra.vercel.app/" />
 
@@ -94,17 +94,17 @@
         <h1 class="hero__title">Relationships first. <em>Results</em> fast.</h1>
         <p class="hero__lead">
           I'm Aryaan Batra — with a family background in sales and finance, I've built my business
-          on relationships and momentum: <strong>149 confirmed sales worth more than $137 million</strong>,
-          77 of them in the last 24 months alone, backed by the full power of Ray White.
+          on relationships and momentum: <strong>{{SOLD_COUNT}} settled sales worth {{TOTAL_SETTLED}}</strong>,
+          {{RECENT24_COUNT}} of them in the last 24 months alone, backed by the full power of Ray White.
         </p>
         <div class="hero__actions">
           <a href="#contact" class="btn btn--primary">Book a free appraisal</a>
-          <a href="#listings" class="btn btn--ghost">View my 9 live listings</a>
+          <a href="#listings" class="btn btn--ghost">View my listings</a>
         </div>
         <ul class="hero__chips">
-          <li><strong>$137m+</strong><span>settled in sales</span></li>
-          <li><strong>149</strong><span>confirmed career sales</span></li>
-          <li><strong>77</strong><span>sales in the last 24 months</span></li>
+          <li><strong>{{TOTAL_SETTLED}}</strong><span>settled in sales</span></li>
+          <li><strong>{{SOLD_COUNT}}</strong><span>settled sales</span></li>
+          <li><strong>{{RECENT24_COUNT}}</strong><span>sales in the last 24 months</span></li>
         </ul>
       </div>
 
@@ -116,7 +116,7 @@
         </div>
         <div class="hero__badge">
           <span class="hero__badge-top">Ray White</span>
-          <span class="hero__badge-mid">149 Career Sales</span>
+          <span class="hero__badge-mid">{{SOLD_COUNT}} Settled Sales</span>
           <span class="hero__badge-bot">A T Realty</span>
         </div>
       </div>
@@ -128,19 +128,19 @@
   <section class="stats" aria-label="Track record">
     <div class="container stats__grid">
       <div class="stat reveal">
-        <span class="stat__num" data-count="137" data-prefix="$" data-suffix="m+">$0</span>
+        <span class="stat__num">{{TOTAL_SETTLED}}</span>
         <span class="stat__label">Settled in property sales</span>
       </div>
       <div class="stat reveal">
-        <span class="stat__num" data-count="149" data-suffix="">0</span>
-        <span class="stat__label">Confirmed career sales</span>
+        <span class="stat__num">{{SOLD_COUNT}}</span>
+        <span class="stat__label">Settled sales</span>
       </div>
       <div class="stat reveal">
-        <span class="stat__num" data-count="77" data-suffix="">0</span>
+        <span class="stat__num">{{RECENT24_COUNT}}</span>
         <span class="stat__label">Sales in the last 24 months</span>
       </div>
       <div class="stat reveal">
-        <span class="stat__num" data-count="9" data-suffix="">0</span>
+        <span class="stat__num">{{CURRENT_COUNT}}</span>
         <span class="stat__label">Homes on the market right now</span>
       </div>
     </div>
@@ -175,22 +175,22 @@
         <h2 class="section__title">Sales and finance in the blood, South Auckland in the heart.</h2>
         <p>
           Aryaan grew up around sales and finance — it's the family trade — and turned that
-          grounding into one of the busiest young sales businesses at Ray White Manukau. In four
-          and a half years in the industry he has put together
-          <strong>149 confirmed sales worth more than $137 million</strong>, with
-          <strong>77 sales in the last 24 months</strong> and an average sale price of $918,000
+          grounding into one of the busiest young sales businesses at Ray White Manukau. Since
+          {{FIRST_YEAR}} he has put together
+          <strong>{{SOLD_COUNT}} settled sales worth {{TOTAL_SETTLED}}</strong>, with
+          <strong>{{RECENT24_COUNT}} sales in the last 24 months</strong> and an average sale price of {{AVG_12M}}
           over the last year.
         </p>
         <p>
           His social, charismatic nature is not a sales technique — it's why clients take his
           calls, and why he takes theirs "at all sorts of hours without hesitation", as one
-          vendor put it. From $290,000 first-rung units to $1.25 million family homes, the
+          vendor put it. From first-rung units to family homes, the
           approach is the same: build the relationship, run the campaign hard, and get the
           result under the hammer.
         </p>
         <ul class="about__points">
-          <li>77 sales, $69 million settled in the last 24 months alone</li>
-          <li>Auction specialist — 4 listings heading to the room on the next auction day</li>
+          <li>{{RECENT24_COUNT}} sales, {{RECENT24_VALUE}} settled in the last 24 months alone</li>
+          <li>{{AUCTION_POINT}}</li>
           <li>Proven at every level, including a $1.3m under-the-hammer result in Orewa</li>
         </ul>
         <a href="#contact" class="btn btn--primary">Let's have a chat</a>
@@ -238,7 +238,7 @@
         <article class="service-card reveal">
           <div class="service-card__icon">🔨</div>
           <h3>Auction campaigns</h3>
-          <p>Auctions are my engine room — four of my current listings are headed to the room on the same morning. Competitive tension, a firm date, and an unconditional result.</p>
+          <p>Auctions are my engine room. Competitive tension, a firm date, and an unconditional result.</p>
         </article>
         <article class="service-card reveal">
           <div class="service-card__icon">🏡</div>
@@ -248,7 +248,7 @@
         <article class="service-card reveal">
           <div class="service-card__icon">🧱</div>
           <h3>Units, first rungs &amp; investments</h3>
-          <p>From $290,000 apartments to investor units and townhouses — I run real campaigns at every price point, not just the headline homes.</p>
+          <p>From first-rung apartments to investor units and townhouses — I run real campaigns at every price point, not just the headline homes.</p>
         </article>
         <article class="service-card reveal">
           <div class="service-card__icon">🔑</div>
@@ -271,7 +271,7 @@
         <div class="why__item reveal"><span>01</span><h3>Always reachable</h3><p>"Would take our calls at all sorts of hours without hesitation" — a review, not a promise.</p></div>
         <div class="why__item reveal"><span>02</span><h3>Goes beyond</h3><p>Clients consistently say the work went past what the job required.</p></div>
         <div class="why__item reveal"><span>03</span><h3>Honest &amp; upfront</h3><p>Straight answers and advice that's in your best interest, even when it's not the easy conversation.</p></div>
-        <div class="why__item reveal"><span>04</span><h3>Energy that sells</h3><p>Momentum matters in a campaign — 77 sales in 24 months doesn't happen by waiting.</p></div>
+        <div class="why__item reveal"><span>04</span><h3>Energy that sells</h3><p>Momentum matters in a campaign — {{RECENT24_COUNT}} sales in 24 months doesn't happen by waiting.</p></div>
         <div class="why__item reveal"><span>05</span><h3>Relationship builder</h3><p>Much of my business comes from people I've already helped, and the people they send my way.</p></div>
         <div class="why__item reveal"><span>06</span><h3>Local knowledge</h3><p>Papatoetoe, Manurewa, Ōtara, the Heights suburbs — streets I work every single week.</p></div>
       </div>
@@ -284,61 +284,14 @@
       <div class="section__head reveal">
         <span class="eyebrow">On the market now</span>
         <h2 class="section__title">My current listings.</h2>
-        <p class="section__sub">Nine live campaigns across Auckland. Tap through to the Ray White network for full photos, floor plans and open-home times.</p>
+        <p class="section__sub">Live campaigns across Auckland. Tap through to the Ray White network for full photos, floor plans and open-home times.</p>
       </div>
 
-      <div class="auction-banner reveal">
-        <span class="auction-banner__flag">Auction day</span>
-        <p><strong>Wednesday 26 August 2026, 9:00am</strong> — four of my listings go under the hammer on the same morning. Come and watch the room work.</p>
-      </div>
+      {{AUCTION_BANNER}}
 
-      <div class="listings__grid">
-        <article class="property reveal">
-          <div class="property__media"><div class="property__img property__img--a"></div><span class="property__tag">Auction</span></div>
-          <div class="property__body">
-            <span class="property__method">Auction · 26 Aug, 9:00am</span>
-            <h3 class="property__addr">2 Muirlea Drive</h3>
-            <p class="property__suburb">Flat Bush, Auckland</p>
-            <p class="property__meta"><span>4 bedrooms</span><span>On market</span></p>
-          </div>
-        </article>
-        <article class="property reveal">
-          <div class="property__media"><div class="property__img property__img--b"></div><span class="property__tag">Auction</span></div>
-          <div class="property__body">
-            <span class="property__method">Auction · 26 Aug, 9:00am</span>
-            <h3 class="property__addr">16 Serrano Place</h3>
-            <p class="property__suburb">Clover Park, Auckland</p>
-            <p class="property__meta"><span>3 bedrooms</span><span>On market</span></p>
-          </div>
-        </article>
-        <article class="property reveal">
-          <div class="property__media"><div class="property__img property__img--c"></div><span class="property__tag">Auction</span></div>
-          <div class="property__body">
-            <span class="property__method">Auction · 26 Aug, 9:00am</span>
-            <h3 class="property__addr">12 Sukh Lane</h3>
-            <p class="property__suburb">Manurewa, Auckland</p>
-            <p class="property__meta"><span>2 bedrooms</span><span>On market</span></p>
-          </div>
-        </article>
-        <article class="property reveal">
-          <div class="property__media"><div class="property__img property__img--d"></div><span class="property__tag">Auction</span></div>
-          <div class="property__body">
-            <span class="property__method">Auction · 26 Aug, 9:00am</span>
-            <h3 class="property__addr">2/509 Weymouth Road</h3>
-            <p class="property__suburb">Weymouth, Auckland</p>
-            <p class="property__meta"><span>2 bedrooms</span><span>On market</span></p>
-          </div>
-        </article>
-      </div>
+      {{CURRENT_LISTINGS}}
 
-      <h3 class="listings__subhead reveal">Also on the market</h3>
-      <div class="morelist reveal">
-        <div class="morelist__row"><strong>29A Ransom Smyth Drive, Goodwood Heights</strong><span>5 bedrooms</span><span class="morelist__price">Asking $1,250,000</span></div>
-        <div class="morelist__row"><strong>9 Blackgate Place, Weymouth</strong><span>3 bedrooms</span><span class="morelist__price">Asking $735,000</span></div>
-        <div class="morelist__row"><strong>33/8 Landscape Road, Papatoetoe</strong><span>1 bedroom</span><span class="morelist__price">Asking $489,000</span></div>
-        <div class="morelist__row"><strong>10C/30 Westward Ho, Glen Eden</strong><span>1 bedroom</span><span class="morelist__price">Asking $290,000</span></div>
-        <div class="morelist__row"><strong>2/36 Kimpton Road, Papatoetoe</strong><span>2 bedrooms</span><span class="morelist__price">By negotiation</span></div>
-      </div>
+      {{RECENT_SOLD}}
 
       <div class="listings__cta reveal">
         <a href="https://www.raywhite.co.nz/aryaan-batra/real-estate-agent/ab212414384" target="_blank" rel="noopener" class="btn btn--primary">See every listing on Ray White</a>
@@ -389,7 +342,7 @@
       <div class="faq__list reveal">
         <details class="faq__item">
           <summary>Why do you push auctions so hard?</summary>
-          <p>Because a firm date changes buyer behaviour. An auction campaign compresses interest into three weeks, puts qualified buyers in one room, and when the hammer falls the sale is unconditional — no finance clauses, no cold feet. Four of my current nine listings are auction campaigns for exactly that reason. When an auction isn't the right fit for your property or your timeline, I'll tell you that too.</p>
+          <p>Because a firm date changes buyer behaviour. An auction campaign compresses interest into three weeks, puts qualified buyers in one room, and when the hammer falls the sale is unconditional — no finance clauses, no cold feet. When an auction isn't the right fit for your property or your timeline, I'll tell you that too.</p>
         </details>
         <details class="faq__item">
           <summary>What does an appraisal involve, and what does it cost?</summary>
@@ -397,7 +350,7 @@
         </details>
         <details class="faq__item">
           <summary>My property is a small unit, not a showpiece home. Will it get real attention?</summary>
-          <p>Look at my current listings: alongside a five-bedroom home in Goodwood Heights I'm running campaigns for one-bedroom units at $290,000 and $489,000. Every campaign gets professional marketing and a proper strategy. A big part of my 77 sales in the last 24 months has been exactly this kind of property.</p>
+          <p>Yes. I run campaigns for first-rung units as well as family homes, and every campaign gets professional marketing and a proper strategy. A big part of my {{RECENT24_COUNT}} sales in the last 24 months has been exactly this kind of property.</p>
         </details>
         <details class="faq__item">
           <summary>How will I know what's happening during my campaign?</summary>

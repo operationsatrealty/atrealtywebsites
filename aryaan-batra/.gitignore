@@ -1,1 +1,12 @@
+node_modules/
+dist/
+.image-cache/
+
+# The repo root .gitignore excludes package.json / package-lock.json, which
+# suited the earlier dependency-free sites. This one has a real build step and
+# needs `sharp` installed, so both files must be tracked or the Vercel build
+# fails at `npm install`.
+!package.json
+!package-lock.json
 .vercel
+.env*

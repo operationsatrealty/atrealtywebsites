@@ -54,32 +54,6 @@
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* ---- Animated stat counters ---- */
-  var counters = document.querySelectorAll('.stat__num[data-count]');
-  function animateCount(el) {
-    var target = parseFloat(el.getAttribute('data-count'));
-    var prefix = el.getAttribute('data-prefix') || '';
-    var suffix = el.getAttribute('data-suffix') || '';
-    var start = 0, dur = 1400, t0 = null;
-    function tick(now) {
-      if (!t0) t0 = now;
-      var p = Math.min((now - t0) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      var val = Math.round(start + (target - start) * eased);
-      el.textContent = prefix + val + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-  if ('IntersectionObserver' in window && counters.length) {
-    var co = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) { animateCount(entry.target); co.unobserve(entry.target); }
-      });
-    }, { threshold: 0.6 });
-    counters.forEach(function (el) { co.observe(el); });
-  }
-
   /* ---- Lite YouTube embed: swap facade for iframe on click ---- */
   var video = document.getElementById('officeVideo');
   if (video) {
