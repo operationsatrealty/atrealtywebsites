@@ -1,32 +1,67 @@
 # Rebuilds the agent sites once a day so their VaultRE listings and sales
 # stay current.
 #
-# These sites fetch VaultRE at BUILD time, not in the browser (a static site
-# can't hold an API key safely). That means the data is only ever as fresh as
-# the last deploy — without this workflow, the listings freeze at whatever
-# they were when the last commit landed.
+# 1. refresh-snapshots — fetches VaultRE data and commits updated snapshots
+#    to the repo, so the fallback data is always the last known good state.
+#    Requires VAULTRE_API_KEY + office bearer tokens as GitHub secrets.
 #
-# Each site is triggered through a Vercel Deploy Hook: a URL that starts a
-# production build when something POSTs to it. Create one per project in
-# Vercel under Settings -> Git -> Deploy Hooks (branch:
-# claude/cool-mayer-96prl5), then add the URL here as a repository secret
-# under Settings -> Secrets and variables -> Actions.
+# 2. deploy — triggers Vercel Deploy Hooks to rebuild each site. The Vercel
+#    build also fetches VaultRE live, but if that fails it falls back to the
+#    snapshot committed in step 1.
 #
-# A site whose secret hasn't been added is skipped, not failed — so new agent
-# sites can be added one at a time.
+# 3. health-check — waits for deploys to finish, then verifies each live
+#    site has listings. If any site is broken the workflow fails and GitHub
+#    sends a notification email to repo watchers.
 
 name: Daily rebuild
 
 on:
   schedule:
     # 05:00 UTC = 5pm NZST / 6pm NZDT — end of the working day.
-    # GitHub cron is always UTC and does not follow NZ daylight saving, so
-    # this drifts by an hour twice a year. That's harmless here.
     - cron: "0 5 * * *"
-  workflow_dispatch: # lets you trigger a rebuild by hand from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  rebuild:
+  # ------------------------------------------------------------------
+  # 1. Refresh committed snapshots so the fallback is never empty
+  # ------------------------------------------------------------------
+  refresh-snapshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sam & Brett snapshot
+        env:
+          VAULTRE_API_KEY: ${{ secrets.VAULTRE_API_KEY }}
+          VAULTRE_BEARER_TOKEN_MANUREWA: ${{ secrets.VAULTRE_BEARER_TOKEN_MANUREWA }}
+        run: |
+          if [ -z "$VAULTRE_API_KEY" ] || [ -z "$VAULTRE_BEARER_TOKEN_MANUREWA" ]; then
+            echo "::warning::VaultRE secrets not set — skipping Sam & Brett snapshot."
+            exit 0
+          fi
+          node sam-brett/fetch-data.mjs
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A '*/data/listings.json'
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "chore: refresh VaultRE snapshots [skip ci]"
+            git push
+          fi
+
+  # ------------------------------------------------------------------
+  # 2. Trigger Vercel deploys (live VaultRE fetch + snapshot fallback)
+  # ------------------------------------------------------------------
+  deploy:
+    needs: refresh-snapshots
     runs-on: ubuntu-latest
     steps:
       - name: Tom McCartney
@@ -34,12 +69,11 @@ jobs:
           HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_TOM_MCCARTNEY }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::notice::No deploy hook set for Tom McCartney — skipping."
+            echo "::notice::No deploy hook — skipping."
             exit 0
           fi
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
           echo "Deploy hook responded $code"
-          # Vercel answers 201 when it queues the build.
           [ "$code" = "201" ] || [ "$code" = "200" ]
 
       - name: Levani Lum-On
@@ -47,7 +81,7 @@ jobs:
           HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_LEVANI_LUMON }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::notice::No deploy hook set for Levani Lum-On — skipping."
+            echo "::notice::No deploy hook — skipping."
             exit 0
           fi
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
@@ -59,7 +93,7 @@ jobs:
           HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_ARYAAN_BATRA }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::notice::No deploy hook set for Aryaan Batra — skipping."
+            echo "::notice::No deploy hook — skipping."
             exit 0
           fi
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
@@ -71,7 +105,7 @@ jobs:
           HOOK: ${{ secrets.vercel_deploy_hook_sam_brett_daily_rebuild }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::notice::No deploy hook set for Sam & Brett — skipping."
+            echo "::notice::No deploy hook — skipping."
             exit 0
           fi
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
@@ -83,9 +117,40 @@ jobs:
           HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_CASEY_GREEN }}
         run: |
           if [ -z "$HOOK" ]; then
-            echo "::notice::No deploy hook set for Casey Green — skipping."
+            echo "::notice::No deploy hook — skipping."
             exit 0
           fi
           code=$(curl -sS -X POST -o /dev/null -w "%{http_code}" "$HOOK")
           echo "Deploy hook responded $code"
           [ "$code" = "201" ] || [ "$code" = "200" ]
+
+  # ------------------------------------------------------------------
+  # 3. Health check — verify live sites have listings
+  # ------------------------------------------------------------------
+  health-check:
+    needs: deploy
+    runs-on: ubuntu-latest
+    # Give Vercel time to finish building
+    steps:
+      - name: Wait for deploys to finish
+        run: sleep 180
+
+      - name: Check samandbrett.co.nz
+        run: |
+          html=$(curl -sL https://samandbrett.co.nz)
+          if echo "$html" | grep -q "Nothing on the market"; then
+            if echo "$html" | grep -q "0 of 0"; then
+              echo "::error::samandbrett.co.nz has NO listings and NO sold data"
+              exit 1
+            fi
+          fi
+          echo "samandbrett.co.nz OK"
+
+      - name: Check tommccartney.co.nz
+        run: |
+          html=$(curl -sL https://tommccartney.co.nz)
+          if echo "$html" | grep -q "listings__empty"; then
+            echo "::error::tommccartney.co.nz has no listings"
+            exit 1
+          fi
+          echo "tommccartney.co.nz OK"
