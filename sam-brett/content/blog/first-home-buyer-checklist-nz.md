@@ -1,7 +1,6 @@
 ---
 title: "First-Home Buyer Guide NZ: 7 Steps and a Checklist Before You Buy"
-draft: "true"
-date: "2026-12-17"
+date: "2026-11-17"
 suburb: "South Auckland"
 image: "https://images.pexels.com/photos/8292896/pexels-photo-8292896.jpeg"
 imageAlt: "Calculator on a desk for budgeting a first home purchase"

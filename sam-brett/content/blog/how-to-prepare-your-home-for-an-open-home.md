@@ -1,7 +1,6 @@
 ---
 title: "How to Prepare Your Home for an Open Home: 15 Tips to Impress Buyers"
-draft: "true"
-date: "2026-12-03"
+date: "2026-11-10"
 suburb: "South Auckland"
 image: "https://images.pexels.com/photos/4239116/pexels-photo-4239116.jpeg"
 imageAlt: "Person cleaning a bathroom sink before an open home"

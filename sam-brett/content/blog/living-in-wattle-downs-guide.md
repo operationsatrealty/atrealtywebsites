@@ -1,7 +1,6 @@
 ---
 title: "Living in Wattle Downs: A Local's Guide to South Auckland's Hidden Gem"
-draft: "true"
-date: "2026-11-26"
+date: "2026-11-06"
 image: "assets/blog/wattle-downs-aerial.jpg"
 imageAlt: "Aerial view of Wattle Downs homes and coastline on the Manukau Harbour, South Auckland"
 suburb: "Wattle Downs"

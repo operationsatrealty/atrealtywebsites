@@ -1,7 +1,6 @@
 ---
 title: "Home Styling Tips: 7 Simple Ways to Make Your Home Look Its Best"
-draft: "true"
-date: "2026-12-10"
+date: "2026-11-13"
 suburb: "South Auckland"
 image: "https://images.pexels.com/photos/8205163/pexels-photo-8205163.jpeg"
 imageAlt: "Red flowers in a white ceramic vase"
