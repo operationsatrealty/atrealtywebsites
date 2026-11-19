@@ -16,7 +16,7 @@ import { agentListings, vaultreConfigured } from "./vaultre.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const AGENT_EMAILS = ["sam.steel@raywhite.com", "brett.norris@raywhite.com"];
-const SITE_ORIGIN = "https://samandbrett.co.nz";
+const SITE_ORIGIN = "https://www.samandbrett.co.nz"; // live host; Vercel serves URLs without a trailing slash
 const PORTRAIT_SRC_SAM = "assets/sam-portrait.jpg";
 const PORTRAIT_SRC_BRETT = "assets/brett-portrait.jpg";
 
@@ -212,7 +212,7 @@ function schema(stats) {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     name: "Sam Steel & Brett Norris",
-    url: "https://samandbrett.co.nz/",
+    url: `${SITE_ORIGIN}/`,
     telephone: "+64 21 0226 9245",
     email: "sam.steel@raywhite.com",
     areaServed: ["Wattle Downs", "Hill Park", "Manurewa", "Totara Park", "The Gardens"],
@@ -449,7 +449,7 @@ if (!PREVIEW) {
       `    <priority>1.0</priority>\n` +
       `  </url>\n` +
       `  <url>\n` +
-      `    <loc>${SITE_ORIGIN}/sold/</loc>\n` +
+      `    <loc>${SITE_ORIGIN}/sold</loc>\n` +
       `    <lastmod>${lastmod}</lastmod>\n` +
       `    <changefreq>weekly</changefreq>\n` +
       `    <priority>0.8</priority>\n` +
@@ -522,7 +522,7 @@ async function buildSoldPage(sold) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sold Properties | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
 <meta name="description" content="Recently sold properties by Sam Steel and Brett Norris — Ray White Manurewa. Wattle Downs, Hill Park, Manurewa, and South Auckland.">
-<link rel="canonical" href="${SITE_ORIGIN}/sold/">
+<link rel="canonical" href="${SITE_ORIGIN}/sold">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sold Properties — Sam Steel &amp; Brett Norris">
 <meta property="og:description" content="Recently sold properties across South Auckland by Ray White Manurewa.">
@@ -746,11 +746,11 @@ async function buildBlog() {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(post.title)} | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
 <meta name="description" content="${esc(post.excerpt)}">
-<link rel="canonical" href="${SITE_ORIGIN}/blog/${post.slug}/">
+<link rel="canonical" href="${SITE_ORIGIN}/blog/${post.slug}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${esc(post.title)}">
 <meta property="og:description" content="${esc(post.excerpt)}">
-<meta property="og:url" content="${SITE_ORIGIN}/blog/${post.slug}/">
+<meta property="og:url" content="${SITE_ORIGIN}/blog/${post.slug}">
 <meta property="og:image" content="${esc(absoluteAssetUrl(post.heroSrc))}">
 <meta property="article:published_time" content="${esc(post.date)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -924,7 +924,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Market Insights | Sam Steel &amp; Brett Norris · Ray White Manurewa</title>
 <meta name="description" content="Real estate insights for Wattle Downs, Manurewa, Hill Park, Totara Park, and The Gardens — market updates, buyer guides and selling tips.">
-<link rel="canonical" href="${SITE_ORIGIN}/blog/">
+<link rel="canonical" href="${SITE_ORIGIN}/blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Market Insights — Sam Steel &amp; Brett Norris">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1120,7 +1120,7 @@ function extractFaqs(md) {
 }
 
 function blogSchema(post) {
-  const url = `${SITE_ORIGIN}/blog/${post.slug}/`;
+  const url = `${SITE_ORIGIN}/blog/${post.slug}`;
   const agents = [
     { "@type": "Person", name: "Sam Steel", jobTitle: "Real Estate Salesperson", email: "sam.steel@raywhite.com", telephone: "+64 21 0226 9245", url: `${SITE_ORIGIN}/#about` },
     { "@type": "Person", name: "Brett Norris", jobTitle: "Real Estate Salesperson", email: "brett.norris@raywhite.com", telephone: "+64 27 498 8529", url: `${SITE_ORIGIN}/#about` },
@@ -1150,7 +1150,7 @@ function blogSchema(post) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_ORIGIN}/` },
-        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog/` },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog` },
         { "@type": "ListItem", position: 3, name: post.title, item: url },
       ],
     },
@@ -1250,9 +1250,9 @@ const blogPosts = await buildBlog();
 if (!PREVIEW && blogPosts?.length) {
   const sitemapPath = path.join(OUT, "sitemap.xml");
   const entries = [
-    { loc: `${SITE_ORIGIN}/blog/`, lastmod: blogPosts[0].date, freq: "weekly", priority: "0.8" },
+    { loc: `${SITE_ORIGIN}/blog`, lastmod: blogPosts[0].date, freq: "weekly", priority: "0.8" },
     ...blogPosts.map((p) => ({
-      loc: `${SITE_ORIGIN}/blog/${p.slug}/`,
+      loc: `${SITE_ORIGIN}/blog/${p.slug}`,
       lastmod: p.updated || p.date,
       freq: "monthly",
       priority: "0.7",
