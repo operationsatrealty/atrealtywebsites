@@ -56,6 +56,6 @@ Investors should keep an eye on several factors through Q4 2026:
 
 Whether you're adding to an existing portfolio or purchasing your first investment property, the starting point is the same: understand the current market value of the properties you're considering, the realistic rental return, and the total cost of ownership.
 
-We work with investors across South Auckland every week and can provide comparable sales data, rental estimates, and straightforward advice on where the opportunities sit. [Get in touch](/index.html#contact) to discuss your investment goals.
+We work with investors across South Auckland every week and can provide comparable sales data, rental estimates, and straightforward advice on where the opportunities sit. [Get in touch](/#contact) to discuss your investment goals.
 
 *Data sourced from REINZ monthly property reports and Tenancy Services rental data, current as at September 2026.*

@@ -62,6 +62,6 @@ The difference between a good result and a great result often comes down to:
 
 ## Thinking About Your Next Move?
 
-Whether you're considering selling in Wattle Downs or looking to buy into this suburb, understanding the current market is the first step. [Request a free, no-obligation appraisal](/index.html#contact) and we'll show you exactly where your property sits based on the latest sales data.
+Whether you're considering selling in Wattle Downs or looking to buy into this suburb, understanding the current market is the first step. [Request a free, no-obligation appraisal](/#contact) and we'll show you exactly where your property sits based on the latest sales data.
 
 *Data sourced from REINZ and realestate.co.nz, current as at September 2026.*

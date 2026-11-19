@@ -70,6 +70,6 @@ Total timeline from decision to settled: approximately 3–4 months.
 
 ## Ready to Find Out What Your Home Is Worth?
 
-A no-obligation appraisal gives you the information you need to make a confident decision — whether you sell now, in six months, or not at all. [Request your free appraisal](/index.html#contact) and we'll walk you through the current data for your street and suburb.
+A no-obligation appraisal gives you the information you need to make a confident decision — whether you sell now, in six months, or not at all. [Request your free appraisal](/#contact) and we'll walk you through the current data for your street and suburb.
 
 *Market data sourced from REINZ monthly reports, current as at September 2026.*

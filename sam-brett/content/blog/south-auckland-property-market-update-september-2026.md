@@ -53,6 +53,6 @@ The First Home Grant (formerly HomeStart) was discontinued in May 2024, but thes
 
 The South Auckland market has shown resilience through 2026. Interest rate movements and any changes to lending restrictions will be the key factors to watch through the final quarter of the year. For now, the fundamentals — population growth, constrained land supply, and relative affordability — continue to support property values in this part of Auckland.
 
-Whether you're considering selling or just want to understand where your property sits in the current market, a no-obligation appraisal is a good starting point. [Get in touch with Sam and Brett](/index.html#contact) to discuss your situation.
+Whether you're considering selling or just want to understand where your property sits in the current market, a no-obligation appraisal is a good starting point. [Get in touch with Sam and Brett](/#contact) to discuss your situation.
 
 *Data sourced from REINZ monthly property reports and realestate.co.nz market insights, current as at September 2026.*

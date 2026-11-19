@@ -67,6 +67,6 @@ The key question for sellers is always timing versus preparation. In the current
 
 Every home is different, and suburb medians only tell part of the story. Your property's value depends on its size, condition, aspect, and what comparable properties nearby have recently sold for.
 
-[Request a free, no-obligation appraisal](/index.html#contact) and we'll provide a detailed assessment based on the latest Wattle Downs sales data — not just the headline numbers.
+[Request a free, no-obligation appraisal](/#contact) and we'll provide a detailed assessment based on the latest Wattle Downs sales data — not just the headline numbers.
 
 *Data sourced from REINZ monthly property reports, current as at September 2026.*
