@@ -426,6 +426,12 @@ if (PREVIEW) {
 }
 
 if (!PREVIEW) {
+  // public/ is copied to the site root as-is (e.g. Google Search Console verification files).
+  for (const name of await fs.readdir(path.join(HERE, "public")).catch(() => [])) {
+    if (name.startsWith(".")) continue;
+    await fs.copyFile(path.join(HERE, "public", name), path.join(OUT, name));
+  }
+
   await fs.writeFile(
     path.join(OUT, "robots.txt"),
     `User-agent: *\nAllow: /\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`
