@@ -188,3 +188,25 @@ This is advanced — keep it simple for now, just write manually.
 **Blog built:** 2026-09-29  
 **Posts included:** 3 (Wattle Downs market, first-home buyer guide, when to sell)  
 **Ready to extend**: Add more `.md` files and rebuild
+
+## Scheduling, drafts, images and schema
+
+Optional frontmatter fields:
+
+```markdown
+---
+title: "Post title"
+date: "2026-12-03"          # go-live date (NZ time)
+draft: "true"               # hold back until approved; delete this line to approve
+image: "assets/blog/my-photo.jpg"   # or an https:// image URL; resized at build time
+imageAlt: "Describe the photo"
+updated: "2027-01-15"       # optional "last updated" date for search engines
+suburb: "Wattle Downs"
+excerpt: "Shown in listings and as the search result summary."
+---
+```
+
+- **Scheduling:** posts dated in the future (and posts with `draft: "true"`) are left out of the site, the blog index and the sitemap. The daily rebuild (`.github/workflows/daily-rebuild.yml`, 05:00 UTC, about 6pm NZ time) publishes each post on its date.
+- **Links between posts:** a link to a post that isn't live yet shows as plain text until that post publishes.
+- **Preview drafts locally:** `node build.mjs --offline --drafts`. This builds everything, so never deploy that output.
+- **Schema:** every post automatically gets BlogPosting and Breadcrumb structured data. A section headed "Frequently asked questions" with `###` question headings also produces FAQPage schema.

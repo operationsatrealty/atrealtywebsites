@@ -4,6 +4,7 @@
  *   node build.mjs             → dist/  (production: live embed, CDN photos)
  *   node build.mjs --preview   → dist-preview/  (self-contained)
  *   node build.mjs --offline   → skip VaultRE, use the committed snapshot
+ *   node build.mjs --drafts    → also build draft and future-dated blog posts (local review only)
  */
 
 import fs from "node:fs/promises";
@@ -22,6 +23,7 @@ const PORTRAIT_SRC_BRETT = "assets/brett-portrait.jpg";
 const argv = new Set(process.argv.slice(2));
 const PREVIEW = argv.has("--preview");
 const OFFLINE = argv.has("--offline");
+const INCLUDE_DRAFTS = argv.has("--drafts"); // local review only: also build drafts and future-dated posts
 const OUT = path.join(HERE, PREVIEW ? "dist-preview" : "dist");
 
 /* ------------------------------------------------------------------ */
@@ -659,7 +661,7 @@ async function buildBlog() {
 
   // Read all markdown files
   const files = await fs.readdir(blogDir);
-  const posts = [];
+  let posts = [];
 
   for (const file of files.filter(f => f.endsWith('.md'))) {
     const content = await fs.readFile(path.join(blogDir, file), 'utf8');
@@ -684,12 +686,50 @@ async function buildBlog() {
       date: frontmatter.date || '',
       suburb: frontmatter.suburb || '',
       excerpt: frontmatter.excerpt || '',
-      content: markdown,
+      image: frontmatter.image || '',
+      imageAlt: frontmatter.imageAlt || frontmatter.title || '',
+      updated: frontmatter.updated || '',
+      draft: /^(true|yes)$/i.test(frontmatter.draft || ''),
+      // The page hero already renders the title as <h1>; drop a duplicate leading "# Title".
+      content: markdown.replace(/^\s*# .*\n/, ''),
     });
+  }
+
+  // Scheduled publishing: hold back drafts and posts dated after today (NZ time).
+  // The daily rebuild (.github/workflows/daily-rebuild.yml) publishes them on their date.
+  const todayNZ = new Intl.DateTimeFormat("en-CA", { timeZone: "Pacific/Auckland" }).format(new Date());
+  for (const p of posts.filter((p) => p.draft || (p.date && p.date > todayNZ))) {
+    console.log(`[build]   blog: holding back "${p.slug}" (${p.draft ? "draft" : `scheduled ${p.date}`})`);
+  }
+  if (!INCLUDE_DRAFTS) posts = posts.filter((p) => !p.draft && !(p.date && p.date > todayNZ));
+
+  // Links to posts that aren't live yet become plain text until they publish.
+  const live = new Set(posts.map((p) => p.slug));
+  for (const p of posts) {
+    p.content = p.content.replace(/\[([^\]]+)\]\(\/blog\/([^/)#]+)\/?\)/g, (m, text, slug) => (live.has(slug) ? m : text));
   }
 
   // Sort by date descending
   posts.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+  // Per-post hero image (frontmatter `image:` — a path under assets/ or an https URL).
+  for (const p of posts) {
+    p.heroSrc = "assets/website-hero.jpg"; // site-root-relative; see assetUrl()
+    if (!p.image) continue;
+    if (!/^https?:\/\//.test(p.image)) {
+      try {
+        await fs.access(path.join(HERE, p.image));
+      } catch {
+        console.warn(`[build]   blog: image ${p.image} for "${p.slug}" not found — using default hero.`);
+        continue;
+      }
+    }
+    const src = await image(p.image, { width: 1600, quality: 74, name: `blog-${p.slug}` });
+    if (src !== p.image) {
+      // image() returns the original URL when optimising fails; keep the default hero then.
+      p.heroSrc = src;
+    }
+  }
 
   // Generate individual post pages
   for (const post of posts) {
@@ -704,6 +744,11 @@ async function buildBlog() {
 <meta property="og:type" content="article">
 <meta property="og:title" content="${esc(post.title)}">
 <meta property="og:description" content="${esc(post.excerpt)}">
+<meta property="og:url" content="${SITE_ORIGIN}/blog/${post.slug}/">
+<meta property="og:image" content="${esc(absoluteAssetUrl(post.heroSrc))}">
+<meta property="article:published_time" content="${esc(post.date)}">
+<meta name="twitter:card" content="summary_large_image">
+${blogSchema(post)}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
@@ -795,7 +840,7 @@ async function buildBlog() {
 </header>
 
 <section class="page-hero post-hero">
-  <div class="page-hero__media"><img src="../../assets/website-hero.jpg" alt="${esc(post.title)}"></div>
+  <div class="page-hero__media"><img src="${esc(assetUrl(post.heroSrc, '../../'))}" alt="${esc(post.imageAlt)}"></div>
   <div class="wrap">
     ${post.suburb ? `<span class="cat">${esc(post.suburb)}</span>` : ''}
     <h1>${esc(post.title)}</h1>
@@ -968,7 +1013,7 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
 <section class="blog-list">
   <div class="wrap">
     ${posts.length ? `<a class="featured" href="/blog/${posts[0].slug}/">
-      <div class="thumb"><img src="../assets/website-hero.jpg" alt="${esc(posts[0].title)}"></div>
+      <div class="thumb"><img src="${esc(assetUrl(posts[0].heroSrc, '../'))}" alt="${esc(posts[0].imageAlt)}"></div>
       <div>
         <span class="cat">Featured &middot; ${esc(posts[0].suburb)}</span>
         <h2>${esc(posts[0].title)}</h2>
@@ -1025,6 +1070,98 @@ document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('cli
 
   console.log(`[build] Generated ${posts.length} blog posts + index`);
   return posts;
+}
+
+/* blog: helpers for image paths and structured data                  */
+
+// `src` is site-root-relative ("assets/…"), a data: URI or an absolute URL.
+function assetUrl(src, prefix) {
+  return /^(data:|https?:)/.test(src) ? src : prefix + src;
+}
+
+function absoluteAssetUrl(src) {
+  if (/^https?:/.test(src)) return src;
+  if (src.startsWith("data:")) return `${SITE_ORIGIN}/assets/website-hero.jpg`;
+  return `${SITE_ORIGIN}/${src}`;
+}
+
+const plainText = (md) =>
+  md
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+// Questions under a "Frequently asked questions" heading: "### Question?" followed by answer text.
+function extractFaqs(md) {
+  const lines = md.split("\n");
+  const start = lines.findIndex((l) => /^#{2,3} .*frequently asked questions/i.test(l));
+  if (start === -1) return [];
+  const level = lines[start].match(/^#+/)[0].length;
+  const faqs = [];
+  let current = null;
+  for (const line of lines.slice(start + 1)) {
+    const h = line.match(/^(#{1,6}) (.+)/);
+    if (h && h[1].length <= level) break; // next section
+    if (h) {
+      current = { q: plainText(h[2]), a: [] };
+      faqs.push(current);
+    } else if (current && line.trim()) {
+      current.a.push(line.trim().replace(/^[-*] /, ""));
+    }
+  }
+  return faqs.filter((f) => f.a.length).map((f) => ({ q: f.q, a: plainText(f.a.join(" ")) }));
+}
+
+function blogSchema(post) {
+  const url = `${SITE_ORIGIN}/blog/${post.slug}/`;
+  const agents = [
+    { "@type": "Person", name: "Sam Steel", jobTitle: "Real Estate Salesperson", email: "sam.steel@raywhite.com", telephone: "+64 21 0226 9245", url: `${SITE_ORIGIN}/#about` },
+    { "@type": "Person", name: "Brett Norris", jobTitle: "Real Estate Salesperson", email: "brett.norris@raywhite.com", telephone: "+64 27 498 8529", url: `${SITE_ORIGIN}/#about` },
+  ];
+  const graph = [
+    {
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
+      headline: post.title,
+      description: post.excerpt,
+      url,
+      mainEntityOfPage: url,
+      image: absoluteAssetUrl(post.heroSrc),
+      datePublished: post.date || undefined,
+      dateModified: post.updated || post.date || undefined,
+      inLanguage: "en-NZ",
+      author: agents,
+      publisher: {
+        "@type": "RealEstateAgent",
+        name: "Ray White Manurewa",
+        telephone: "+64 9 269 0636",
+        logo: { "@type": "ImageObject", url: `${SITE_ORIGIN}/assets/raywhite-logo.png` },
+      },
+      about: post.suburb ? { "@type": "Place", name: `${post.suburb}, Auckland, New Zealand` } : undefined,
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_ORIGIN}/` },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog/` },
+        { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ],
+    },
+  ];
+  const faqs = extractFaqs(post.content);
+  if (faqs.length) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+  const json = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c");
+  return `<script type="application/ld+json">${json}</script>`;
 }
 
 function convertMarkdownToHtml(md) {
@@ -1101,4 +1238,28 @@ function convertMarkdownToHtml(md) {
 
 // Build sold page and blog
 await buildSoldPage(data.sold);
-await buildBlog();
+const blogPosts = await buildBlog();
+
+// Add the blog and every published post to the sitemap written above.
+if (!PREVIEW && blogPosts?.length) {
+  const sitemapPath = path.join(OUT, "sitemap.xml");
+  const entries = [
+    { loc: `${SITE_ORIGIN}/blog/`, lastmod: blogPosts[0].date, freq: "weekly", priority: "0.8" },
+    ...blogPosts.map((p) => ({
+      loc: `${SITE_ORIGIN}/blog/${p.slug}/`,
+      lastmod: p.updated || p.date,
+      freq: "monthly",
+      priority: "0.7",
+    })),
+  ]
+    .map(
+      (e) =>
+        `  <url>\n    <loc>${e.loc}</loc>\n` +
+        (e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>\n` : "") +
+        `    <changefreq>${e.freq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>\n`
+    )
+    .join("");
+  const sitemap = await fs.readFile(sitemapPath, "utf8");
+  await fs.writeFile(sitemapPath, sitemap.replace("</urlset>", `${entries}</urlset>`));
+  console.log(`[build] Added ${blogPosts.length} blog posts to sitemap.xml`);
+}
